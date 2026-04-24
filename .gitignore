@@ -1,0 +1,8 @@
+.DS_Store
+data/source/
+assets/images/people/originals/
+*.xlsx
+*.xls
+*.csv
+dist/
+deploy-public-*/

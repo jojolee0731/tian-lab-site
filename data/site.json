@@ -1,0 +1,1380 @@
+{
+  "meta": {
+    "title": {
+      "en": "Tian Lab | Nanoneuroscience in Rhythm",
+      "zh": "Tian Lab | 脑科学，有点节奏",
+      "es": "Tian Lab | Nanoneurociencia con ritmo"
+    },
+    "description": {
+      "en": "Tian Lab at West China Hospital of Sichuan University studies blood-brain barrier transport, multivalent interface engineering, super-resolution molecular imaging, multimodal imaging, and translational nanomedicine.",
+      "zh": "田肖和课题组聚焦血脑屏障跨胞转运、多价界面工程、超分辨分子影像、多模态影像和转化纳米医学。",
+      "es": "Tian Lab en West China Hospital, Sichuan University, estudia transporte a través de la barrera hematoencefálica, ingeniería multivalente, imagen molecular de superresolución, imagen multimodal y nanomedicina traslacional."
+    }
+  },
+  "nav": [
+    {
+      "href": "#home",
+      "label": {
+        "en": "Home",
+        "zh": "首页",
+        "es": "Inicio"
+      }
+    },
+    {
+      "href": "#research",
+      "label": {
+        "en": "Research",
+        "zh": "研究方向",
+        "es": "Investigación"
+      }
+    },
+    {
+      "href": "#publications",
+      "label": {
+        "en": "Publications",
+        "zh": "代表论文",
+        "es": "Publicaciones"
+      }
+    },
+    {
+      "href": "#covers",
+      "label": {
+        "en": "Covers",
+        "zh": "封面",
+        "es": "Portadas"
+      }
+    },
+    {
+      "href": "#people",
+      "label": {
+        "en": "People",
+        "zh": "成员",
+        "es": "Equipo"
+      }
+    },
+    {
+      "href": "#join",
+      "label": {
+        "en": "Join",
+        "zh": "加入我们",
+        "es": "Unirse"
+      }
+    },
+    {
+      "href": "#contact",
+      "label": {
+        "en": "Contact",
+        "zh": "联系",
+        "es": "Contacto"
+      }
+    }
+  ],
+  "labels": {
+    "link": {
+      "en": "Open link",
+      "zh": "打开链接",
+      "es": "Abrir enlace"
+    },
+    "article": {
+      "en": "Read article",
+      "zh": "查看论文",
+      "es": "Leer artículo"
+    },
+    "issue": {
+      "en": "Issue page",
+      "zh": "期刊页面",
+      "es": "Página del número"
+    },
+    "gallery": {
+      "en": "Cover gallery",
+      "zh": "封面来源",
+      "es": "Galería de portadas"
+    }
+  },
+  "copy": {
+    "tagline": {
+      "en": "Nanoneuroscience in Rhythm",
+      "zh": "脑科学，有点节奏",
+      "es": "Nanoneurociencia con ritmo"
+    },
+    "emailCta": {
+      "en": "Email PI",
+      "zh": "联系 PI",
+      "es": "Email PI"
+    },
+    "heroEyebrow": {
+      "en": "West China Hospital, Sichuan University · HMRRC",
+      "zh": "四川大学华西医院 · 华西磁共振研究中心",
+      "es": "West China Hospital, Universidad de Sichuan · HMRRC"
+    },
+    "heroStatement": {
+      "en": "We study the rhythm of brain disorders: how molecules move, how barriers sort, how images speak, and how therapies find their entrance.",
+      "zh": "我们想弄明白脑疾病背后的节奏：分子怎么动，屏障怎么分流，影像怎么说话，治疗怎么进场。",
+      "es": "Estudiamos el ritmo de los trastornos cerebrales: cómo se mueven las moléculas, cómo seleccionan las barreras, cómo hablan las imágenes y cómo entran las terapias."
+    },
+    "heroLabline": {
+      "en": "A public lab website for BBB/BBTB transport, super-resolution molecular imaging, MRI/PET/fluorescence imaging (FL), nanomedicine, and immune intervention.",
+      "zh": "面向血脑屏障/血脑肿瘤屏障转运、超分辨分子影像、MRI/PET/荧光成像（FL）、纳米医学与免疫干预的公开课题组网站。",
+      "es": "Un sitio público del laboratorio para transporte BBB/BBTB, imagen molecular de superresolución, MRI/PET/imagen de fluorescencia (FL), nanomedicina e intervención inmune."
+    },
+    "ctaResearch": {
+      "en": "Explore Research",
+      "zh": "进入研究",
+      "es": "Explorar investigación"
+    },
+    "ctaJoin": {
+      "en": "Join the Lab",
+      "zh": "加入课题组",
+      "es": "Unirse al laboratorio"
+    },
+    "introKicker": {
+      "en": "The Lab",
+      "zh": "课题组",
+      "es": "El laboratorio"
+    },
+    "introTitle": {
+      "en": "Precision, rhythm, and translation for brain science.",
+      "zh": "做脑科学，也要有节奏感。",
+      "es": "Precisión, ritmo y traslación para la ciencia del cerebro."
+    },
+    "introBody": {
+      "en": "Led by Prof. Xiaohe Tian, Tian Lab develops molecular imaging and nanomedicine strategies for central nervous system disorders. Chemistry, materials, neurobiology, imaging physics, AI, and clinical questions share the same rehearsal room here.",
+      "zh": "Tian Lab 做中枢神经系统疾病的分子影像和纳米医学。我们把化学、材料、神经生物学、物理、影像、AI 和临床问题放在同一个排练室里。有些问题需要精密仪器，有些问题需要一点野心和即兴。最好两者都有。",
+      "es": "Dirigido por el Prof. Xiaohe Tian, Tian Lab desarrolla estrategias de imagen molecular y nanomedicina para trastornos del sistema nervioso central. Química, materiales, neurobiología, física de imagen, IA y preguntas clínicas comparten aquí la misma sala de ensayo."
+    },
+    "researchKicker": {
+      "en": "Research Tracks",
+      "zh": "研究节拍",
+      "es": "Pistas de investigación"
+    },
+    "researchTitle": {
+      "en": "Five tracks, one brain-centered question.",
+      "zh": "五条声部，一个脑科学母题。",
+      "es": "Cinco pistas, una pregunta centrada en el cerebro."
+    },
+    "researchBody": {
+      "en": "How can molecular-scale tools cross, tune, and read biological barriers so brain disease mechanisms become visible and therapies become more precise?",
+      "zh": "我们关心的是：分子尺度的工具，怎样穿过屏障、调控界面、看见机制、进入病灶，最后真的帮到活体脑治疗。",
+      "es": "¿Cómo pueden las herramientas moleculares cruzar, modular y leer barreras biológicas para hacer visibles los mecanismos cerebrales y hacer más precisas las terapias?"
+    },
+    "publicationsKicker": {
+      "en": "Selected Publications",
+      "zh": "代表论文",
+      "es": "Publicaciones seleccionadas"
+    },
+    "publicationsTitle": {
+      "en": "Signals that shaped the lab’s direction.",
+      "zh": "塑造我们方向的几段主旋律。",
+      "es": "Señales que marcaron la dirección del laboratorio."
+    },
+    "publicationsBody": {
+      "en": "Representative work with journals, years, author abbreviations, and DOI links. Citation metrics should be rechecked live before formal grant or media use.",
+      "zh": "以下条目整理了期刊名、年份、作者缩写和 DOI 链接；引用指标用于内部快照，正式申报或媒体使用前建议重新核对。",
+      "es": "Trabajos representativos con revista, año, autores abreviados y DOI. Las métricas de citación deben revisarse en vivo antes de uso formal."
+    },
+    "coversKicker": {
+      "en": "Covers & Visual Stories",
+      "zh": "封面与视觉故事",
+      "es": "Portadas e historias visuales"
+    },
+    "coversTitle": {
+      "en": "When a paper becomes a visual signal.",
+      "zh": "论文登上封面，就像研究上了舞台。",
+      "es": "Cuando un artículo se convierte en una señal visual."
+    },
+    "coversBody": {
+      "en": "A restrained gallery of visual stories across blood-brain barrier modulation, probe chemistry, disease atlases, and nanoscale imaging.",
+      "zh": "这些封面不是单纯好看，它们把屏障调控、分子探针、疾病图谱和纳米尺度成像放在同一面墙上。",
+      "es": "Una galería sobria de historias visuales sobre modulación de barreras, química de sondas, atlas de enfermedad e imagen nanoescalar."
+    },
+    "collabKicker": {
+      "en": "Collaboration",
+      "zh": "合作与平台",
+      "es": "Colaboración"
+    },
+    "collabTitle": {
+      "en": "Barcelona, Chengdu, and the clinic.",
+      "zh": "从 IBEC 到华西，一段持续合拍的合作。",
+      "es": "Barcelona, Chengdu y la clínica."
+    },
+    "collabCaption": {
+      "en": "Prof. Xiaohe Tian with Prof. Giuseppe Battaglia at UCL, 2017.",
+      "zh": "田肖和教授与 Giuseppe Battaglia 教授，2017 于 UCL。",
+      "es": "Prof. Xiaohe Tian con Prof. Giuseppe Battaglia en UCL, 2017."
+    },
+    "collabBody": {
+      "en": "Prof. Giuseppe Battaglia at IBEC is a close collaborator of Tian Lab and Prof. Tian’s former MSc and PhD mentor. The collaboration connects Molecular Bionics in Barcelona with blood-brain barrier targeting, imaging, phenotype tuning, and translational nanomedicine at West China Hospital.",
+      "zh": "IBEC 的 Giuseppe Battaglia 教授是 Tian Lab 重要合作伙伴，也是田肖和教授硕士和博士阶段的导师。这条从巴塞罗那延伸到华西的合作线，把 Molecular Bionics、血脑屏障多价靶向、影像、表型调控和转化纳米医学接在了一起。",
+      "es": "El Prof. Giuseppe Battaglia en IBEC es un colaborador cercano de Tian Lab y fue mentor de máster y doctorado del Prof. Tian. La colaboración conecta Molecular Bionics en Barcelona con direccionamiento de la barrera hematoencefálica, imagen, modulación fenotípica y nanomedicina traslacional en West China Hospital."
+    },
+    "ventureLabel": {
+      "en": "Chengdu translational platform",
+      "zh": "成都转化平台",
+      "es": "Plataforma traslacional en Chengdu"
+    },
+    "peopleKicker": {
+      "en": "People",
+      "zh": "成员",
+      "es": "Equipo"
+    },
+    "peopleTitle": {
+      "en": "A cross-disciplinary research team.",
+      "zh": "一支跨学科的科研团队。",
+      "es": "Un equipo de investigación interdisciplinario."
+    },
+    "peopleBody": {
+      "en": "Member profiles are maintained from the current lab roster, with updates for new members, photos, and alumni records.",
+      "zh": "成员信息根据当前课题组人员表维护，并将持续更新新增成员、照片与往届成员记录。",
+      "es": "Los perfiles se mantienen a partir del listado actual del laboratorio, con actualizaciones para nuevos integrantes, fotografías y registros de alumni."
+    },
+    "joinKicker": {
+      "en": "Join Us",
+      "zh": "加入我们",
+      "es": "Únete"
+    },
+    "joinTitle": {
+      "en": "For students who can handle complexity and keep time.",
+      "zh": "欢迎会思考、会动手、也踩得住节拍的人。",
+      "es": "Para quienes manejan la complejidad y mantienen el pulso."
+    },
+    "joinBody": {
+      "en": "Tian Lab welcomes students and collaborators from medicine, physics, biology, chemistry, materials science, imaging, pharmacology, AI, and even music. We value curiosity, rigor, rhythm, and the ability to turn difficult biological questions into clean experiments.",
+      "zh": "Tian Lab 不只欢迎传统医学和生命科学背景。物理、生物、化学、材料、影像、药学、AI，甚至音乐背景的人都可以来聊。我们喜欢好奇、靠谱、有执行力，也愿意把复杂问题拆成一个个漂亮实验的人。",
+      "es": "Tian Lab da la bienvenida a estudiantes y colaboradores de medicina, física, biología, química, ciencia de materiales, imagen, farmacología, IA e incluso música. Valoramos curiosidad, rigor, ritmo y la capacidad de convertir preguntas difíciles en experimentos limpios."
+    },
+    "joinContact": {
+      "en": "Contact Prof. Tian",
+      "zh": "联系田老师",
+      "es": "Contactar al Prof. Tian"
+    },
+    "joinReview": {
+      "en": "Review Publications",
+      "zh": "查看论文",
+      "es": "Ver publicaciones"
+    },
+    "footerAffiliation": {
+      "en": "West China Hospital, Sichuan University",
+      "zh": "四川大学华西医院",
+      "es": "West China Hospital, Universidad de Sichuan"
+    },
+    "footerCenter": {
+      "en": "Huaxi MR Research Center · Department of Radiology",
+      "zh": "华西磁共振研究中心 · 放射科",
+      "es": "Huaxi MR Research Center · Departamento de Radiología"
+    },
+    "footerAddress": {
+      "en": "Chengdu, Sichuan, China",
+      "zh": "中国四川成都",
+      "es": "Chengdu, Sichuan, China"
+    }
+  },
+  "hero": {
+    "image": "./assets/images/xiaohe-tian-drummer-hero.jpg",
+    "alt": {
+      "en": "Prof. Xiaohe Tian playing drums on stage",
+      "zh": "田肖和教授在舞台上打鼓",
+      "es": "Prof. Xiaohe Tian tocando la batería en el escenario"
+    },
+    "metrics": [
+      {
+        "value": "BBB",
+        "label": {
+          "en": "Barrier transport",
+          "zh": "屏障转运",
+          "es": "Transporte de barrera"
+        }
+      },
+      {
+        "value": "LRP1",
+        "label": {
+          "en": "Interface routing",
+          "zh": "界面分流",
+          "es": "Enrutamiento de interfaz"
+        }
+      },
+      {
+        "value": "SR",
+        "label": {
+          "en": "Super-resolution",
+          "zh": "超分辨",
+          "es": "Superresolución"
+        }
+      },
+      {
+        "value": "MRI/PET/FL",
+        "label": {
+          "en": "Multimodal imaging",
+          "zh": "多模态影像",
+          "es": "Imagen multimodal"
+        }
+      }
+    ]
+  },
+  "signals": [
+    {
+      "en": "Blood-brain barrier",
+      "zh": "血脑屏障",
+      "es": "Barrera hematoencefálica"
+    },
+    {
+      "en": "Multivalent interfaces",
+      "zh": "多价界面",
+      "es": "Interfaces multivalentes"
+    },
+    {
+      "en": "Super-resolution probes",
+      "zh": "超分辨探针",
+      "es": "Sondas de superresolución"
+    },
+    {
+      "en": "MRI/PET/fluorescence imaging (FL)",
+      "zh": "MRI/PET/荧光成像（FL）",
+      "es": "MRI/PET/imagen de fluorescencia (FL)"
+    },
+    {
+      "en": "Translational nanomedicine",
+      "zh": "转化纳米医学",
+      "es": "Nanomedicina traslacional"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026",
+      "title": {
+        "en": "Structured data file introduced for People, Publications, News, and research tracks.",
+        "zh": "网站已改为结构化数据驱动，后续 People、Publications、News 可集中维护。",
+        "es": "El sitio adopta datos estructurados para People, Publications, News y líneas de investigación."
+      }
+    },
+    {
+      "date": "2025",
+      "title": {
+        "en": "Cover stories span STTT, Chemical Society Reviews, Analytical Chemistry, and MedComm.",
+        "zh": "封面故事覆盖 STTT、Chemical Society Reviews、Analytical Chemistry 和 MedComm。",
+        "es": "Las historias de portada cubren STTT, Chemical Society Reviews, Analytical Chemistry y MedComm."
+      }
+    }
+  ],
+  "researchTracks": [
+    {
+      "image": "./assets/images/track-barrier-targeting.jpg",
+      "title": {
+        "en": "Barrier Transport and LRP1 Routing",
+        "zh": "屏障转运与 LRP1 分流",
+        "es": "Transporte de barrera y enrutamiento LRP1"
+      },
+      "claim": {
+        "en": "We study how the BBB and BBTB recognize, sort, and redirect molecular cargo at the neurovascular interface.",
+        "zh": "研究 BBB/BBTB 如何在神经血管界面识别、筛选并分流分子货物。",
+        "es": "Estudiamos cómo BBB y BBTB reconocen, seleccionan y redirigen cargas moleculares en la interfaz neurovascular."
+      },
+      "points": {
+        "en": [
+          "LRP1-mediated transcytosis",
+          "Cargo affinity and multivalency",
+          "Barrier sorting under disease states"
+        ],
+        "zh": [
+          "LRP1 介导跨胞转运",
+          "货物亲和力与多价效应",
+          "疾病状态下的屏障分流规则"
+        ],
+        "es": [
+          "Transcitosis mediada por LRP1",
+          "Afinidad de carga y multivalencia",
+          "Selección de barrera en enfermedad"
+        ]
+      }
+    },
+    {
+      "image": "./assets/images/track-phenotype-probes.jpg",
+      "title": {
+        "en": "Multivalent Interface Engineering",
+        "zh": "多价界面工程",
+        "es": "Ingeniería de interfaces multivalentes"
+      },
+      "claim": {
+        "en": "Nanoscale valency becomes a design language for tuning receptor clustering, membrane behavior, and barrier phenotypes.",
+        "zh": "把纳米尺度多价效应变成设计语言，用于调控受体聚集、膜行为和屏障细胞表型。",
+        "es": "La multivalencia nanoescalar se convierte en lenguaje de diseño para modular receptores, membranas y fenotipos de barrera."
+      },
+      "points": {
+        "en": [
+          "Receptor clustering logic",
+          "Phenotype-aware nanocarriers",
+          "Gentle tuning rather than brute-force opening"
+        ],
+        "zh": [
+          "受体聚集逻辑",
+          "表型感知纳米载体",
+          "温和调控而非粗暴打开屏障"
+        ],
+        "es": [
+          "Lógica de agrupamiento receptor",
+          "Nanotransportadores sensibles al fenotipo",
+          "Modulación suave, no apertura brusca"
+        ]
+      }
+    },
+    {
+      "image": "./assets/images/track-super-resolution.jpg",
+      "title": {
+        "en": "Super-resolution Molecular Imaging",
+        "zh": "超分辨分子影像",
+        "es": "Imagen molecular de superresolución"
+      },
+      "claim": {
+        "en": "Probe chemistry and optical strategy reveal nanoscale biological signals that ordinary imaging cannot resolve.",
+        "zh": "用探针化学和光学策略读出普通影像看不见的纳米尺度生命信号。",
+        "es": "La química de sondas y la estrategia óptica revelan señales biológicas nanoescalares invisibles para la imagen convencional."
+      },
+      "points": {
+        "en": [
+          "Metal-complex imaging agents",
+          "Two-photon and organelle probes",
+          "Correlative optical and ultrastructural readouts"
+        ],
+        "zh": [
+          "金属配合物成像探针",
+          "双光子与细胞器探针",
+          "光学动态与超微结构关联读出"
+        ],
+        "es": [
+          "Agentes de imagen con complejos metálicos",
+          "Sondas de dos fotones y orgánulos",
+          "Lecturas ópticas y ultraestructurales correlativas"
+        ]
+      }
+    },
+    {
+      "image": "./assets/images/track-neurodegeneration.jpg",
+      "title": {
+        "en": "Neurodegeneration, Aging, and Inflammation",
+        "zh": "衰老、炎症与神经退行",
+        "es": "Neurodegeneración, envejecimiento e inflamación"
+      },
+      "claim": {
+        "en": "We connect disease atlases, molecular imaging, and intervention design for Alzheimer’s disease, Parkinson’s disease, aging, and cell death.",
+        "zh": "围绕阿尔茨海默病、帕金森病、衰老和细胞死亡，连接疾病图谱、分子影像和干预设计。",
+        "es": "Conectamos atlas de enfermedad, imagen molecular e intervención en Alzheimer, Parkinson, envejecimiento y muerte celular."
+      },
+      "points": {
+        "en": [
+          "Aging brain atlases",
+          "Inflammation and programmed cell death",
+          "Imaging-guided mechanism discovery"
+        ],
+        "zh": [
+          "衰老脑图谱",
+          "炎症与程序性细胞死亡",
+          "影像引导的机制发现"
+        ],
+        "es": [
+          "Atlas del cerebro envejecido",
+          "Inflamación y muerte celular programada",
+          "Descubrimiento guiado por imagen"
+        ]
+      }
+    },
+    {
+      "image": "./assets/images/track-multimodal-imaging.jpg",
+      "title": {
+        "en": "Multimodal Imaging and Translational Nanomedicine",
+        "zh": "多模态影像与转化纳米医学",
+        "es": "Imagen multimodal y nanomedicina traslacional"
+      },
+      "claim": {
+        "en": "MRI, PET, fluorescence imaging (FL), photodynamic therapy, nanovaccines, and immune intervention are integrated toward clinically meaningful brain medicine.",
+        "zh": "整合 MRI、PET、荧光成像（FL）、光动力治疗、纳米疫苗和免疫干预，服务脑疾病转化医学。",
+        "es": "MRI, PET, imagen de fluorescencia (FL), terapia fotodinámica, nanovacunas e intervención inmune se integran hacia medicina cerebral traslacional."
+      },
+      "points": {
+        "en": [
+          "MRI/PET/FL imaging workflows",
+          "Nanomedicine and immune intervention",
+          "Hospital-centered translational platforms"
+        ],
+        "zh": [
+          "MRI/PET/荧光成像（FL）工作流",
+          "纳米医学与免疫干预",
+          "医院场景的转化平台"
+        ],
+        "es": [
+          "Flujos de imagen MRI/PET/FL",
+          "Nanomedicina e intervención inmune",
+          "Plataformas traslacionales centradas en hospital"
+        ]
+      }
+    }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "title": "Rapid amyloid-β clearance and cognitive recovery through multivalent modulation of blood-brain barrier transport",
+      "authors": "Chen J., Xiang P., Duro-Castano A., Cai H., Guo B., Liu X., et al.",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "doi": "10.1038/s41392-025-02426-1",
+      "url": "https://doi.org/10.1038/s41392-025-02426-1",
+      "track": "BBB · multivalent transport",
+      "note": {
+        "en": "A current flagship study aligning barrier transport, multivalent modulation, and cognitive recovery.",
+        "zh": "代表当前主线的旗舰工作：把屏障转运、多价调控和认知恢复接在一起。",
+        "es": "Un trabajo reciente que alinea transporte de barrera, modulación multivalente y recuperación cognitiva."
+      }
+    },
+    {
+      "year": "2025",
+      "title": "Advancing super-resolution microscopy with metal complexes: functional imaging agents for nanoscale visualization",
+      "authors": "Yusoh N. A., Gill M. R., Tian X.",
+      "journal": "Chemical Society Reviews",
+      "doi": "10.1039/d4cs01193g",
+      "url": "https://doi.org/10.1039/d4cs01193g",
+      "track": "super-resolution · probes",
+      "note": {
+        "en": "A tutorial review positioning metal complexes as functional agents for nanoscale imaging.",
+        "zh": "以 tutorial review 形式系统梳理金属配合物在纳米尺度成像中的功能价值。",
+        "es": "Una revisión tutorial que sitúa complejos metálicos como agentes funcionales para imagen nanoescalar."
+      }
+    },
+    {
+      "year": "2023",
+      "title": "Vaccine adjuvants: mechanisms and platforms",
+      "authors": "Zhao T., Cai Y., Jiang Y., He X., Wei Y., Yu Y., et al.",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "doi": "10.1038/s41392-023-01557-7",
+      "url": "https://doi.org/10.1038/s41392-023-01557-7",
+      "track": "immunity · platforms",
+      "note": {
+        "en": "A high-impact review connecting immune modulation, delivery platforms, and translational design.",
+        "zh": "连接免疫调控、递送平台和转化设计的高影响力综述。",
+        "es": "Una revisión de alto impacto que conecta modulación inmune, plataformas de entrega y diseño traslacional."
+      }
+    },
+    {
+      "year": "2022",
+      "title": "Preparation and application of pH-responsive drug delivery systems",
+      "authors": "Ding H., Tan P., Fu S., Tian X., Zhang H., Ma X., et al.",
+      "journal": "Journal of Controlled Release",
+      "doi": "10.1016/j.jconrel.2022.05.056",
+      "url": "https://doi.org/10.1016/j.jconrel.2022.05.056",
+      "track": "drug delivery · disease microenvironment",
+      "note": {
+        "en": "Stimuli-responsive nanomedicine for controlled release and disease microenvironment targeting.",
+        "zh": "面向可控释放和疾病微环境靶向的刺激响应纳米医学。",
+        "es": "Nanomedicina sensible a estímulos para liberación controlada y direccionamiento al microambiente de enfermedad."
+      }
+    },
+    {
+      "year": "2017",
+      "title": "Chemotactic synthetic vesicles: Design and applications in blood-brain barrier crossing",
+      "authors": "Joseph A., Contini C., Cecchin D., Nyberg S., Ruiz-Perez L., Gaitzsch J., et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.1700362",
+      "url": "https://doi.org/10.1126/sciadv.1700362",
+      "track": "synthetic vesicles · BBB crossing",
+      "note": {
+        "en": "A core contribution to chemotactic vesicle design and brain-barrier crossing.",
+        "zh": "脑屏障转运和趋化合成囊泡设计方向的核心工作。",
+        "es": "Una contribución central al diseño de vesículas quimiotácticas y cruce de barrera cerebral."
+      }
+    },
+    {
+      "year": "2015",
+      "title": "LRP-1-mediated intracellular antibody delivery to the Central Nervous System",
+      "authors": "Tian X., Nyberg S., Sharp P. S., Madsen J., Daneshpour N., Armes S. P., et al.",
+      "journal": "Scientific Reports",
+      "doi": "10.1038/srep11990",
+      "url": "https://doi.org/10.1038/srep11990",
+      "track": "LRP1 · CNS delivery",
+      "note": {
+        "en": "Foundational work linking receptor-mediated delivery to central nervous system therapeutic access.",
+        "zh": "连接 LRP1 受体介导递送与中枢治疗可及性的奠基性工作。",
+        "es": "Trabajo fundacional que conecta entrega mediada por receptor con acceso terapéutico al sistema nervioso central."
+      }
+    },
+    {
+      "year": "2017",
+      "title": "A two-photon fluorescent probe for real-time monitoring of autophagy by ultrasensitive detection of the change in lysosomal polarity",
+      "authors": "Jiang J., Tian X., Xu C., Wang S., Feng Y., et al.",
+      "journal": "Chemical Communications",
+      "doi": "10.1039/c7cc00752c",
+      "url": "https://doi.org/10.1039/c7cc00752c",
+      "track": "two-photon probes · autophagy",
+      "note": {
+        "en": "Probe chemistry for lysosomal polarity and dynamic autophagy imaging.",
+        "zh": "用于溶酶体极性变化和动态自噬成像的探针化学。",
+        "es": "Química de sondas para polaridad lisosomal e imagen dinámica de autofagia."
+      }
+    }
+  ],
+  "covers": [
+    {
+      "image": "./assets/images/sttt-2025-november-cover.jpg",
+      "journal": "Signal Transduction and Targeted Therapy",
+      "year": "2025",
+      "url": "https://doi.org/10.1038/s41392-025-02426-1",
+      "linkType": "article",
+      "alt": {
+        "en": "STTT cover for amyloid-beta clearance through blood-brain barrier transport modulation",
+        "zh": "STTT 血脑屏障转运调控封面",
+        "es": "Portada de STTT sobre modulación del transporte de barrera hematoencefálica"
+      },
+      "title": {
+        "en": "Multivalent modulation of blood-brain barrier transport",
+        "zh": "多价调控血脑屏障转运",
+        "es": "Modulación multivalente del transporte de la barrera hematoencefálica"
+      },
+      "body": {
+        "en": "The barrier is not just something to cross; it is an interface whose recognition and sorting behavior can be tuned.",
+        "zh": "屏障不只是要被穿过，它也是一个可被识别、分选和调控的活界面。",
+        "es": "La barrera no es solo algo que cruzar; es una interfaz cuyo reconocimiento y selección pueden modularse."
+      }
+    },
+    {
+      "image": "./assets/images/chem-soc-rev-2025-cover.jpg",
+      "journal": "Chemical Society Reviews",
+      "year": "2025",
+      "url": "https://doi.org/10.1039/d4cs01193g",
+      "linkType": "article",
+      "alt": {
+        "en": "Chemical Society Reviews cover on metal complexes for super-resolution microscopy",
+        "zh": "Chemical Society Reviews 金属配合物超分辨显微封面",
+        "es": "Portada de Chemical Society Reviews sobre complejos metálicos para microscopía de superresolución"
+      },
+      "title": {
+        "en": "Metal complexes for nanoscale visualization",
+        "zh": "服务纳米尺度可视化的金属配合物",
+        "es": "Complejos metálicos para visualización nanoescalar"
+      },
+      "body": {
+        "en": "A visual bridge between coordination chemistry and the physics of seeing below the diffraction limit.",
+        "zh": "把配位化学和突破衍射极限的成像物理接到一起。",
+        "es": "Un puente visual entre química de coordinación y física de imagen bajo el límite de difracción."
+      }
+    },
+    {
+      "image": "./assets/images/analytical-chemistry-2025-cover.jpg",
+      "journal": "Analytical Chemistry",
+      "year": "2025",
+      "url": "https://pubs.acs.org/toc/ancham/97/32",
+      "linkType": "issue",
+      "alt": {
+        "en": "Analytical Chemistry cover with mitochondria and a near-infrared probe",
+        "zh": "Analytical Chemistry 线粒体与近红外探针封面",
+        "es": "Portada de Analytical Chemistry con mitocondria y sonda de infrarrojo cercano"
+      },
+      "title": {
+        "en": "Molecular probes make microenvironments visible",
+        "zh": "让细胞微环境变得可见的分子探针",
+        "es": "Sondas moleculares que hacen visible el microambiente"
+      },
+      "body": {
+        "en": "Probe chemistry turns hidden cellular states into measurable signals.",
+        "zh": "探针化学把隐藏的细胞状态变成可以测量的信号。",
+        "es": "La química de sondas transforma estados celulares ocultos en señales medibles."
+      }
+    },
+    {
+      "image": "./assets/images/medcomm-2025-cover.jpg",
+      "journal": "MedComm",
+      "year": "2025",
+      "url": "https://doi.org/10.1002/mco2.70114",
+      "linkType": "article",
+      "alt": {
+        "en": "MedComm cover on Alzheimer-like pathology in aging tree shrews",
+        "zh": "MedComm 衰老树鼩阿尔茨海默样病理封面",
+        "es": "Portada de MedComm sobre patología tipo Alzheimer en tupayas envejecidas"
+      },
+      "title": {
+        "en": "Disease atlases widen the map",
+        "zh": "疾病图谱让脑科学有更大的地图",
+        "es": "Los atlas de enfermedad amplían el mapa"
+      },
+      "body": {
+        "en": "Single-nucleus atlases connect aging, cellular identity, and neurodegenerative mechanisms.",
+        "zh": "单核图谱连接衰老、细胞身份和神经退行性机制。",
+        "es": "Los atlas de núcleo único conectan envejecimiento, identidad celular y mecanismos neurodegenerativos."
+      }
+    },
+    {
+      "image": "./assets/images/advanced-materials-2020-cover.jpg",
+      "journal": "Advanced Materials",
+      "year": "2020",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/adma.202070296",
+      "linkType": "article",
+      "alt": {
+        "en": "Advanced Materials cover on live-cell correlative super-resolution and electron microscopy",
+        "zh": "Advanced Materials 活细胞相关超分辨与电镜成像封面",
+        "es": "Portada de Advanced Materials sobre imagen correlativa de superresolución y microscopía electrónica"
+      },
+      "title": {
+        "en": "Correlative imaging at molecular detail",
+        "zh": "在分子细节层面做相关成像",
+        "es": "Imagen correlativa con detalle molecular"
+      },
+      "body": {
+        "en": "Optical dynamics and ultrastructure meet in a visual language for nanoscale biology.",
+        "zh": "光学动态和超微结构在这里被翻译成纳米生物学的视觉语言。",
+        "es": "La dinámica óptica y la ultraestructura se traducen en lenguaje visual para biología nanoescalar."
+      }
+    }
+  ],
+  "piProfile": {
+    "name": "Xiaohe Tian, PhD",
+    "role": {
+      "en": "Professor / Principal Investigator / PhD Supervisor",
+      "zh": "教授/研究员 · 博士生导师 · 课题组负责人",
+      "es": "Profesor / Investigador principal / Director doctoral"
+    },
+    "bio": {
+      "en": "Prof. Tian leads Tian Lab at West China Hospital, Sichuan University, working across nanoneuroscience, blood-brain barrier transport, molecular imaging, and translational nanomedicine. He is recognized as a national-level young talent and a Sichuan Tianfu Emei Young Talent. His training spans biotechnology, bionanotechnology, neuroscience, drug delivery, and postdoctoral chemistry research.",
+      "zh": "田肖和教授在四川大学华西医院带领 Tian Lab，研究方向覆盖纳米神经科学、血脑屏障转运、分子影像和转化纳米医学。田肖和教授为国家级青年人才、四川省天府峨眉青年人才。公开经历显示，其学术训练横跨生物技术、生物纳米技术、神经科学、药物运输和博士后化学研究。",
+      "es": "El Prof. Tian dirige Tian Lab en West China Hospital, Sichuan University, con trabajo en nanoneurociencia, transporte de barrera hematoencefálica, imagen molecular y nanomedicina traslacional. Ha sido reconocido como joven talento de nivel nacional y como Sichuan Tianfu Emei Young Talent. Su formación cruza biotecnología, bionanotecnología, neurociencia, transporte de fármacos y química postdoctoral."
+    },
+    "tags": [
+      {
+        "en": "West China Hospital",
+        "zh": "四川大学华西医院",
+        "es": "West China Hospital"
+      },
+      {
+        "en": "HMRRC / Radiology",
+        "zh": "华西磁共振研究中心 / 放射科",
+        "es": "HMRRC / Radiología"
+      },
+      {
+        "en": "Nano-neuroscience",
+        "zh": "纳米神经科学",
+        "es": "Nanoneurociencia"
+      },
+      {
+        "en": "BBB transport",
+        "zh": "血脑屏障转运",
+        "es": "Transporte BBB"
+      },
+      {
+        "en": "Molecular imaging",
+        "zh": "分子影像",
+        "es": "Imagen molecular"
+      },
+      {
+        "en": "National-level young talent",
+        "zh": "国家级青年人才",
+        "es": "Joven talento de nivel nacional"
+      },
+      {
+        "en": "Sichuan Tianfu Emei Young Talent",
+        "zh": "四川省天府峨眉青年人才",
+        "es": "Sichuan Tianfu Emei Young Talent"
+      }
+    ],
+    "facts": [
+      {
+        "label": {
+          "en": "Education",
+          "zh": "教育经历",
+          "es": "Formación"
+        },
+        "value": {
+          "en": "BSc Anhui University; MSc and PhD, University of Sheffield",
+          "zh": "安徽大学本科；英国谢菲尔德大学硕士、博士",
+          "es": "BSc Anhui University; MSc y PhD, University of Sheffield"
+        }
+      },
+      {
+        "label": {
+          "en": "Postdoctoral Training",
+          "zh": "博士后训练",
+          "es": "Formación postdoctoral"
+        },
+        "value": {
+          "en": "University College London, Department of Chemistry",
+          "zh": "英国伦敦大学学院（UCL）化学学院",
+          "es": "University College London, Departamento de Química"
+        }
+      },
+      {
+        "label": {
+          "en": "Public Roles",
+          "zh": "公开身份",
+          "es": "Roles públicos"
+        },
+        "value": {
+          "en": "National-level young talent; Sichuan Tianfu Emei Young Talent; PhD supervisor; Associate Editor of iBrain",
+          "zh": "国家级青年人才；四川省天府峨眉青年人才；博士生导师；《iBrain》期刊副主编",
+          "es": "Joven talento de nivel nacional; Sichuan Tianfu Emei Young Talent; director doctoral; editor asociado de iBrain"
+        }
+      }
+    ],
+    "links": [
+      {
+        "label": {
+          "en": "West China advisor profile",
+          "zh": "华西研究生导师页",
+          "es": "Perfil de director en West China"
+        },
+        "url": "https://yjs.cd120.com/contents/979/2630.html"
+      },
+      {
+        "label": {
+          "en": "Huaxi MR Research Center",
+          "zh": "华西磁共振研究中心",
+          "es": "Huaxi MR Research Center"
+        },
+        "url": "https://www.wchscu.cn/scientific/science_technology/platform/60414.html"
+      },
+      {
+        "label": {
+          "en": "Google Scholar",
+          "zh": "Google Scholar",
+          "es": "Google Scholar"
+        },
+        "url": "https://scholar.google.com/citations?user=ORNIJ3wAAAAJ&hl=en"
+      }
+    ]
+  },
+  "people": [
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "苏利萍",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博士三年级",
+        "es": "Doctorando, año 3"
+      },
+      "affiliation": "四川大学生物治疗全国重点实验室/生物与医药",
+      "focus": {
+        "en": "荧光成像+靶向药物递送",
+        "zh": "荧光成像+靶向药物递送",
+        "es": "荧光成像+靶向药物递送"
+      },
+      "joined": "2021.1",
+      "image": "./assets/images/people/01-member.jpg",
+      "email": "1548282220@qq.com",
+      "achievements": "Su L, Feng Z, Liu S, Hu P, Ding H, Huang R, et al. Nanoscale-engineered fluorescent probe reveals impaired mitochondria-lysosome crosstalk in Alzheimer's disease. Chemical Engineering Journal. 2025;522:167672.                      Xu X, Su L, Bai L, Li R, Wu K, Tian X, et al. Wash-free super-resolution sensing of telomeric G-quadruplex/t-loop states in living cells using a cyclometalated Ir(III) probe. Biosensors and Bioelectronics. 2026;304:118655.                  博士创新奖学金"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "项攀",
+      "role": {
+        "en": "PhD Student, Year 2",
+        "zh": "博士二年级",
+        "es": "Doctorando, año 2"
+      },
+      "affiliation": "四川大学华西临床医学院/药物化学",
+      "focus": {
+        "en": "神经退行性疾病的治疗",
+        "zh": "神经退行性疾病的治疗",
+        "es": "神经退行性疾病的治疗"
+      },
+      "joined": "2018.1",
+      "image": "./assets/images/people/02-member.jpg",
+      "email": "xiangpan1210@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "卢梓浩",
+      "role": {
+        "en": "Professional Master Student, Year 3",
+        "zh": "专业型硕士三年级",
+        "es": "Estudiante de máster profesional, año 3"
+      },
+      "affiliation": "四川大学华西医院/放射影像学",
+      "focus": {
+        "en": "小鼠多模态磁共振研究",
+        "zh": "小鼠多模态磁共振研究",
+        "es": "小鼠多模态磁共振研究"
+      },
+      "joined": "2023.9",
+      "image": "./assets/images/people/03-member.jpg",
+      "email": "luzihao_cnscsn@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "陈丹丹",
+      "role": {
+        "en": "PhD Student, Year 2",
+        "zh": "博士二年级",
+        "es": "Doctorando, año 2"
+      },
+      "affiliation": "四川大学华西医院/疾病分子与转化医学",
+      "focus": {
+        "en": "多价靶向药物应用",
+        "zh": "多价靶向药物应用",
+        "es": "多价靶向药物应用"
+      },
+      "joined": "2020.7",
+      "image": "./assets/images/people/04-member.jpg",
+      "email": "chendd013@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "Undergraduate Students",
+      "name": "易烜",
+      "role": {
+        "en": "Undergraduate Student, Year 3",
+        "zh": "本科生大三",
+        "es": "Estudiante de grado, año 3"
+      },
+      "affiliation": "四川大学机械工程学院/机械设计制造及其自动化（医工班）",
+      "focus": {
+        "en": "流体力学纳米级仿真",
+        "zh": "流体力学纳米级仿真",
+        "es": "流体力学纳米级仿真"
+      },
+      "joined": "2023.12",
+      "image": "./assets/images/people/05-member.jpg",
+      "email": "yx306238836@foxmail.com",
+      "achievements": "国家奖学金x2"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "邓粤鹏",
+      "role": {
+        "en": "Research Master Student, Year 2",
+        "zh": "科硕二年级",
+        "es": "Estudiante de máster de investigación, año 2"
+      },
+      "affiliation": "四川大学华西医院/影像医学与核医学",
+      "focus": {
+        "en": "阿尔兹海默症类淋巴系统",
+        "zh": "阿尔兹海默症类淋巴系统",
+        "es": "阿尔兹海默症类淋巴系统"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/06-member.jpg",
+      "email": "dengyuepeng423@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "Postdoctoral Fellows",
+      "name": "Nur Aininie Binti Yusoh",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博后",
+        "es": "Investigador postdoctoral"
+      },
+      "affiliation": "四川大学华西医院/药物化学",
+      "focus": {
+        "en": "钌(II)配合物靶向阿尔茨海默病Aβ聚集研究",
+        "zh": "钌(II)配合物靶向阿尔茨海默病Aβ聚集研究",
+        "es": "钌(II)配合物靶向阿尔茨海默病Aβ聚集研究"
+      },
+      "joined": "2024.11",
+      "image": "./assets/images/people/07-nur-aininie-binti-yusoh.jpg",
+      "email": "aininieyusoh@outlook.com"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "田诗菡",
+      "role": {
+        "en": "Professional Master Student, Year 2",
+        "zh": "专硕二年级",
+        "es": "Estudiante de máster profesional, año 2"
+      },
+      "affiliation": "四川大学华西医院/放射影像学",
+      "focus": {
+        "en": "阿尔茨海默症多模态磁共振研究",
+        "zh": "阿尔茨海默症多模态磁共振研究",
+        "es": "阿尔茨海默症多模态磁共振研究"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/08-member.jpg",
+      "email": "tianshihan1121@foxmail.com"
+    },
+    {
+      "kind": "member",
+      "group": "Postdoctoral Fellows",
+      "name": "杨顺杰",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博后",
+        "es": "Investigador postdoctoral"
+      },
+      "affiliation": "四川大学华西医院",
+      "focus": {
+        "en": "骨关节炎新型纳米材料治疗",
+        "zh": "骨关节炎新型纳米材料治疗",
+        "es": "骨关节炎新型纳米材料治疗"
+      },
+      "joined": "2024.11",
+      "image": "./assets/images/people/09-member.jpg",
+      "email": "707894255@qq.com",
+      "achievements": "Yang S, Wang H, Wang L, Liu L, Xu P, Tian X, Chen G. Epigenetic silencing of SPHK1-IRF7 axis drives inflammaging in age-related meniscus degeneration via sphingolipid-immune dysregulation. J Orthop Surg Res. 2025 Dec 19;21(1):46."
+    },
+    {
+      "kind": "member",
+      "group": "Research Staff",
+      "name": "陈香淼",
+      "role": {
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
+      },
+      "affiliation": "四川大学华西医院/医学检验",
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2023.12",
+      "image": "./assets/images/people/10-member.jpg",
+      "email": "xiangm_chen@foxmail.com"
+    },
+    {
+      "kind": "member",
+      "group": "Research Staff",
+      "name": "赵芮",
+      "role": {
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
+      },
+      "affiliation": "四川大学华西医院/放射影像学",
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2025.08",
+      "image": "./assets/images/people/11-member.jpg",
+      "email": "1984526447@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "Postdoctoral Fellows",
+      "name": "罗玉翎",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博后",
+        "es": "Investigador postdoctoral"
+      },
+      "affiliation": "四川大学华西医院/精神病学",
+      "focus": {
+        "en": "抑郁症与昼夜节律",
+        "zh": "抑郁症与昼夜节律",
+        "es": "抑郁症与昼夜节律"
+      },
+      "joined": "2025.12",
+      "image": "./assets/images/people/12-member.jpg",
+      "email": "yuling233@wchscu.cn",
+      "achievements": "Luo, Y., Yang, X., Du, Y., Dou, Y., Cui, W., Li, J., Wei, J., Ma, X., & Lin, Y. (2023). DNA Tetrahedra-Based Delivery of MicroRNA-22 to Reduce Depressive Symptoms in Mice. ACS Applied Materials & Interfaces."
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "李剑雨",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "四川大学华西医院/生物医学工程",
+      "focus": {
+        "en": "使用精神影像与对精神疾病的发作，诊断和治疗结果进行预测。",
+        "zh": "使用精神影像与对精神疾病的发作，诊断和治疗结果进行预测。",
+        "es": "使用精神影像与对精神疾病的发作，诊断和治疗结果进行预测。"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/13-member.jpg",
+      "email": "jianyu.li2@mail.mcgill.ca",
+      "achievements": "四川省优秀毕业生"
+    },
+    {
+      "kind": "member",
+      "group": "Postdoctoral Fellows",
+      "name": "胡潘宜",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博后",
+        "es": "Investigador postdoctoral"
+      },
+      "affiliation": "四川大学华西医院/临床医学",
+      "focus": {
+        "en": "基于纳米材料和小分子荧光探针对肝脏疾病进行研究。",
+        "zh": "基于纳米材料和小分子荧光探针对肝脏疾病进行研究。",
+        "es": "基于纳米材料和小分子荧光探针对肝脏疾病进行研究。"
+      },
+      "joined": "2023.03",
+      "image": "./assets/images/people/14-member.jpg",
+      "email": "hupanyi@wchscu.cn",
+      "achievements": "Hu P, Su L, Wang Y, Chen Y, Tian X, Qian Y. Targeting Liver Fibrosis with Nanoparticle Technology: The Dual-Drug Strategy for Hepatic Stellate Cell Activation Inhibition. ACS Applied Materials & Interfaces."
+    },
+    {
+      "kind": "member",
+      "group": "Undergraduate Students",
+      "name": "刘懿炜",
+      "role": {
+        "en": "Undergraduate Student, Year 4",
+        "zh": "本科大四",
+        "es": "Estudiante de grado, año 4"
+      },
+      "affiliation": "四川大学华西临床医学院/临床医学五年制",
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2025.06",
+      "image": "./assets/images/people/15-member.jpg",
+      "email": "liuyiwei1@stu.scu.edu.cn"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "郭林琳",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "四川大学华西医院/临床医学",
+      "focus": {
+        "en": "FAPI PET用于神经炎症成像的研究",
+        "zh": "FAPI PET用于神经炎症成像的研究",
+        "es": "FAPI PET用于神经炎症成像的研究"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/16-member.jpg",
+      "email": "guolinliny@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "杨靖",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "巴塞罗那大学/生物医药",
+      "focus": {
+        "en": "多价靶向药物在神经退行性疾病中的多模态成像",
+        "zh": "多价靶向药物在神经退行性疾病中的多模态成像",
+        "es": "多价靶向药物在神经退行性疾病中的多模态成像"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/17-member.jpg",
+      "email": "cylydyj@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "任佑祥",
+      "role": {
+        "en": "Academic Master Student, Year 3",
+        "zh": "学硕三年级",
+        "es": "Estudiante de máster académico, año 3"
+      },
+      "affiliation": "四川大学华西临床医学院/疾病医学与转化医学",
+      "focus": {
+        "en": "纳米材料和小分子荧光探针针对肝脏疾病的研究",
+        "zh": "纳米材料和小分子荧光探针针对肝脏疾病的研究",
+        "es": "纳米材料和小分子荧光探针针对肝脏疾病的研究"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/18-member.jpg",
+      "email": "renyouxiang@126.com",
+      "achievements": "Ren Y, Su L, Tang X, Hu P, Cao J, Ruan X, Yang J, Qin W, Kong M, Tian X, Ling W. FLIM-guided self-reporting of PDT efficacy using a mitochondria-targeted, viscosity-sensitive quinolinium probe. J Mater Chem B. 2025 Nov 12;13(44):14470-14480. doi: 10.1039/d5tb01668a"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "尹宏鹭",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博三",
+        "es": "Doctorando, año 3"
+      },
+      "affiliation": "巴塞罗那大学/生物医药",
+      "focus": {
+        "en": "多价肽配体纳米颗粒的表型靶向",
+        "zh": "多价肽配体纳米颗粒的表型靶向",
+        "es": "多价肽配体纳米颗粒的表型靶向"
+      },
+      "joined": "2023.07",
+      "image": "./assets/images/people/19-member.jpg",
+      "email": "hyin@ibecbarcelona.eu"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "罗其彬",
+      "role": {
+        "en": "Academic Master Student, Year 1",
+        "zh": "学硕一年级",
+        "es": "Estudiante de máster académico, año 1"
+      },
+      "affiliation": "遵义医科大学/神经外科",
+      "focus": {
+        "en": "胶质瘤TMZ耐药",
+        "zh": "胶质瘤TMZ耐药",
+        "es": "胶质瘤TMZ耐药"
+      },
+      "joined": "2026.01",
+      "image": "./assets/images/people/20-member.jpg",
+      "email": "634521213@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "Postdoctoral Fellows",
+      "name": "谢振东",
+      "role": {
+        "en": "Postdoctoral Fellow, Year 1",
+        "zh": "博后第一年",
+        "es": "Investigador postdoctoral, año 1"
+      },
+      "affiliation": "四川大学华西医院/纳米科学",
+      "focus": {
+        "en": "多价靶向药物设计与计算生物学",
+        "zh": "多价靶向药物设计与计算生物学",
+        "es": "多价靶向药物设计与计算生物学"
+      },
+      "joined": "2021.09",
+      "image": "./assets/images/people/21-member.jpg",
+      "email": "zxie@ibecbarcelona.eu",
+      "achievements": "\"Morphological Insights in Oxidative Sensitive Nanocarriers Pharmacokinetics\", Targeting, and Photodynamic Therapy.\", Haitao Ding, Liping Su, Zhendong Xie, Aroa Duro Castano, Yunkun Li, Lorena Ruiz Perez, Junyang Chen,  Kui Luo, Xiaohe Tian and Giuseppe Battaglia, J Mater. Chem. B, 2025."
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "高健",
+      "role": {
+        "en": "Academic Master Student, Year 3",
+        "zh": "学硕三年级",
+        "es": "Estudiante de máster académico, año 3"
+      },
+      "affiliation": "遵义医科大学/泌尿外科学",
+      "focus": {
+        "en": "原代类器官构建",
+        "zh": "原代类器官构建",
+        "es": "原代类器官构建"
+      },
+      "joined": "2026.03",
+      "image": "./assets/images/people/22-member.jpg",
+      "email": "137785001@qq.com",
+      "achievements": "Gao J, Luo H, Wang S, et al. Renal cell carcinoma organoids for precision medicine: bridging the gap between models and patients[J]. J Transl Med, 2025, 23: 1152."
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "胡磊",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博士三年级",
+        "es": "Doctorando, año 3"
+      },
+      "affiliation": "巴塞罗那大学/有机化学",
+      "focus": {
+        "en": "荧光探针与生物成像",
+        "zh": "荧光探针与生物成像",
+        "es": "荧光探针与生物成像"
+      },
+      "joined": "2023.09",
+      "image": "./assets/images/people/23-member.jpg",
+      "email": "hulei@wnmc.edu.cn"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "刘尚可",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "四川大学临床医学院/烧伤整形外科",
+      "focus": {
+        "en": "皮肤衰老",
+        "zh": "皮肤衰老",
+        "es": "皮肤衰老"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/24-member.jpg",
+      "email": "liushangke0424@foxmail.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "樊磊",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "四川大学华西医院临床学院/疾病分子与转化医学",
+      "focus": {
+        "en": "纳米材料治疗骨关节炎",
+        "zh": "纳米材料治疗骨关节炎",
+        "es": "纳米材料治疗骨关节炎"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/25-member.jpg",
+      "email": "1562145986@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
+      "name": "许家瑞",
+      "role": {
+        "en": "Master Student, Year 1",
+        "zh": "硕士一年级",
+        "es": "Estudiante de máster, año 1"
+      },
+      "affiliation": "四川大学华西临床医学院/超声医学技术学",
+      "focus": {
+        "en": "纳米材料和小分子荧光探针针对肝脏疾病的研究",
+        "zh": "纳米材料和小分子荧光探针针对肝脏疾病的研究",
+        "es": "纳米材料和小分子荧光探针针对肝脏疾病的研究"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/26-member.jpg",
+      "email": "871902459@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "周冠宇",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "巴塞罗那大学/生物医药",
+      "focus": {
+        "en": "多价ApoE拓扑结构在阿尔兹海默症中的的神经血管稳态重构",
+        "zh": "多价ApoE拓扑结构在阿尔兹海默症中的的神经血管稳态重构",
+        "es": "多价ApoE拓扑结构在阿尔兹海默症中的的神经血管稳态重构"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/27-member.jpg",
+      "email": "571741089@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "尹浩霖",
+      "role": {
+        "en": "Professional Doctoral Student",
+        "zh": "专博",
+        "es": "Doctorando profesional"
+      },
+      "affiliation": "四川大学华西医院/放射影像学",
+      "focus": {
+        "en": "脑内清除障碍对阿尔兹海默症的影响",
+        "zh": "脑内清除障碍对阿尔兹海默症的影响",
+        "es": "脑内清除障碍对阿尔兹海默症的影响"
+      },
+      "joined": "2023.09",
+      "image": "./assets/images/people/28-member.jpg",
+      "email": "294668550@qq.com",
+      "achievements": "Yin H, Lu Z, Deng Y, Tian X, Gong Q. Decoding blood-brain barrier dysfunction in Alzheimer's Disease: Innovations and challenges in multimodal MRI and PET imaging biomarkers. Ageing Res Rev. 2026;114:102952."
+    }
+  ]
+}

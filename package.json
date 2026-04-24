@@ -1,0 +1,11 @@
+{
+  "name": "tian-lab-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static multilingual website for Tian Lab.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "check": "node --check script.js && python3 -m json.tool data/site.json >/dev/null"
+  }
+}

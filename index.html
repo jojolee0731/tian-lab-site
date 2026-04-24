@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tian Lab | Nanoneuroscience in Rhythm</title>
+    <meta
+      name="description"
+      content="Tian Lab at West China Hospital of Sichuan University studies blood-brain barrier transport, multivalent interface engineering, super-resolution molecular imaging, multimodal imaging, and translational nanomedicine."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#07080a" />
+    <link rel="canonical" href="https://jojolee0731.github.io/tian-lab-site/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tian Lab | Nanoneuroscience in Rhythm" />
+    <meta
+      property="og:description"
+      content="A cross-disciplinary nanoneuroscience lab at West China Hospital, Sichuan University."
+    />
+    <meta property="og:image" content="./assets/images/xiaohe-tian-drummer-hero.jpg" />
+    <meta property="og:site_name" content="Tian Lab" />
+
+    <link rel="icon" href="./assets/images/adcerebri-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260424-tier-badges" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "Tian Lab",
+        "alternateName": "田肖和课题组",
+        "url": "https://jojolee0731.github.io/tian-lab-site/",
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "West China Hospital, Sichuan University"
+        },
+        "description": "Nanoneuroscience, blood-brain barrier transport, molecular imaging, and translational nanomedicine."
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#home" aria-label="Tian Lab home">
+        <span class="brand-mark">TL</span>
+        <span class="brand-copy">
+          <strong>Tian Lab</strong>
+          <span data-slot="tagline">Nanoneuroscience in Rhythm</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation"></nav>
+
+      <div class="header-tools">
+        <div class="language-switch" aria-label="Select language">
+          <button class="language-option" type="button" data-lang="en" aria-label="English">🇬🇧</button>
+          <button class="language-option" type="button" data-lang="zh" aria-label="中文">🇨🇳</button>
+          <button class="language-option" type="button" data-lang="es" aria-label="Español">🇪🇸</button>
+        </div>
+        <a class="header-action" href="mailto:xiaohe.t@wchscu.cn" data-slot="emailCta">Email PI</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-photo" data-slot="heroImage" src="./assets/images/xiaohe-tian-drummer-hero.jpg" alt="" />
+        <canvas id="rhythm-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-mask"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-slot="heroEyebrow">West China Hospital, Sichuan University · HMRRC</p>
+          <h1 id="hero-title">Tian Lab</h1>
+          <p class="hero-subtitle" data-slot="tagline">Nanoneuroscience in Rhythm</p>
+          <p class="hero-statement" data-slot="heroStatement">
+            Molecular tools for brain barriers, imaging, and translational nanomedicine.
+          </p>
+          <p class="hero-labline" data-slot="heroLabline"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research" data-slot="ctaResearch">Explore Research</a>
+            <a class="button button-secondary" href="#join" data-slot="ctaJoin">Join the Lab</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Lab snapshot">
+          <div class="tempo-meter">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <dl class="hero-metrics" id="hero-metrics"></dl>
+        </div>
+      </section>
+
+      <section class="signal-strip" id="signal-strip" aria-label="Lab signals"></section>
+
+      <section class="section section-graphite intro-band" aria-labelledby="intro-title">
+        <div class="section-inner intro-layout">
+          <div>
+            <p class="section-kicker" data-slot="introKicker">The Lab</p>
+            <h2 id="intro-title" data-slot="introTitle">Precision, rhythm, and translation for brain science.</h2>
+          </div>
+          <div class="intro-copy">
+            <p data-slot="introBody"></p>
+            <div class="news-rack" id="news-rack" aria-label="Latest news"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark research-section" id="research" aria-labelledby="research-title">
+        <video class="research-video-bg" autoplay muted loop playsinline aria-hidden="true">
+          <source src="./assets/videos/neurovascular-network-background.mp4" type="video/mp4" />
+        </video>
+        <div class="research-video-mask" aria-hidden="true"></div>
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker" data-slot="researchKicker">Research Tracks</p>
+            <h2 id="research-title" data-slot="researchTitle">Five tracks, one brain-centered question.</h2>
+            <p data-slot="researchBody"></p>
+          </div>
+          <div class="track-grid" id="track-grid"></div>
+          <div class="research-map" id="research-map" aria-label="Research logic map"></div>
+        </div>
+      </section>
+
+      <section class="section section-paper" id="publications" aria-labelledby="publications-title">
+        <div class="section-inner publications-layout">
+          <div class="section-heading sticky-heading">
+            <p class="section-kicker" data-slot="publicationsKicker">Selected Publications</p>
+            <h2 id="publications-title" data-slot="publicationsTitle">Signals that shaped the lab.</h2>
+            <p data-slot="publicationsBody"></p>
+            <a class="text-link" href="https://scholar.google.com/citations?user=ORNIJ3wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+              Google Scholar
+            </a>
+          </div>
+          <div class="publication-list" id="publication-list"></div>
+        </div>
+      </section>
+
+      <section class="section section-cover" id="covers" aria-labelledby="covers-title">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <p class="section-kicker" data-slot="coversKicker">Covers & Visual Stories</p>
+            <h2 id="covers-title" data-slot="coversTitle">When a paper becomes a visual signal.</h2>
+            <p data-slot="coversBody"></p>
+          </div>
+          <div class="cover-grid" id="cover-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-collaboration" id="collaboration" aria-labelledby="collab-title">
+        <div class="section-inner collab-layout">
+          <div>
+            <p class="section-kicker" data-slot="collabKicker">Collaboration</p>
+            <h2 id="collab-title" data-slot="collabTitle">Barcelona, Chengdu, and the clinic.</h2>
+          </div>
+          <figure class="collab-photo">
+            <img src="./assets/images/tian-battaglia-ucl-2017.jpg" alt="Prof. Xiaohe Tian with Prof. Giuseppe Battaglia at UCL in 2017" />
+            <figcaption data-slot="collabCaption"></figcaption>
+          </figure>
+          <div class="collab-copy">
+            <p data-slot="collabBody"></p>
+            <div class="venture-mark">
+              <div class="venture-logo-frame">
+                <img src="./assets/images/adcerebri-logo.png" alt="Adcerebri logo" />
+              </div>
+              <div>
+                <strong>Adcerebri · 安赛巴瑞</strong>
+                <span data-slot="ventureLabel">Chengdu translational platform</span>
+              </div>
+            </div>
+            <a class="button button-gold" href="https://ibecbarcelona.eu/molecular-bionics/" target="_blank" rel="noopener noreferrer">
+              IBEC Molecular Bionics
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="people" aria-labelledby="people-title">
+        <video class="people-video-bg" autoplay muted loop playsinline aria-hidden="true">
+          <source src="./assets/videos/neurovascular-network-background.mp4" type="video/mp4" />
+        </video>
+        <div class="people-video-mask" aria-hidden="true"></div>
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <p class="section-kicker" data-slot="peopleKicker">People</p>
+            <h2 id="people-title" data-slot="peopleTitle">A cross-disciplinary group in motion.</h2>
+            <p data-slot="peopleBody"></p>
+          </div>
+          <div class="pi-profile" id="pi-profile" aria-label="Principal investigator public profile"></div>
+          <div class="people-summary" id="people-summary" aria-label="Lab ensemble summary"></div>
+          <div class="admin-contact" id="admin-contact" aria-label="Lab administration contact"></div>
+          <div class="people-grid" id="people-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-join" id="join" aria-labelledby="join-title">
+        <div class="section-inner join-layout">
+          <div>
+            <p class="section-kicker" data-slot="joinKicker">Join Us</p>
+            <h2 id="join-title" data-slot="joinTitle">For students who can handle complexity and keep time.</h2>
+          </div>
+          <div class="join-copy">
+            <p data-slot="joinBody"></p>
+            <div class="join-actions">
+              <a class="button button-primary" href="mailto:xiaohe.t@wchscu.cn" data-slot="joinContact">Contact Prof. Tian</a>
+              <span class="contact-chip">WeChat: KnightJoseph</span>
+              <a class="button button-outline" href="#publications" data-slot="joinReview">Review Publications</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div>
+          <strong>Tian Lab</strong>
+          <p data-slot="tagline">Nanoneuroscience in Rhythm</p>
+        </div>
+        <div>
+          <span data-slot="footerAffiliation">West China Hospital, Sichuan University</span>
+          <span data-slot="footerCenter">Huaxi MR Research Center · Department of Radiology</span>
+          <span data-slot="footerAddress">Chengdu, Sichuan, China</span>
+        </div>
+        <div>
+          <a href="mailto:xiaohe.t@wchscu.cn">xiaohe.t@wchscu.cn</a>
+          <span>WeChat: KnightJoseph</span>
+          <a href="https://scholar.google.com/citations?user=ORNIJ3wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js?v=20260424-tier-badges"></script>
+  </body>
+</html>
