@@ -509,6 +509,20 @@
   ],
   "publications": [
     {
+      "year": "2026",
+      "title": "Deep cervical lymphatic-venous anastomosis attenuates cognitive dysfunction and biomarker abnormalities in severe Alzheimer's disease: A prospective single-arm study",
+      "authors": "Fu X., Zhang J., Xiao Q., Li T., Li Q., Zhang S., et al.",
+      "journal": "Alzheimer's & Dementia",
+      "doi": "10.1002/alz.71150",
+      "url": "https://doi.org/10.1002/alz.71150",
+      "track": "lymphatic drainage · Alzheimer's disease",
+      "note": {
+        "en": "A prospective clinical study linking deep cervical lymphatic-venous anastomosis with cognitive and biomarker changes in severe Alzheimer's disease.",
+        "zh": "围绕深颈部淋巴-静脉吻合、认知功能和 AD 生物标志物变化的前瞻性临床研究。",
+        "es": "Un estudio clínico prospectivo que relaciona la anastomosis linfático-venosa cervical profunda con cambios cognitivos y biomarcadores en Alzheimer grave."
+      }
+    },
+    {
       "year": "2025",
       "title": "Rapid amyloid-β clearance and cognitive recovery through multivalent modulation of blood-brain barrier transport",
       "authors": "Chen J., Xiang P., Duro-Castano A., Cai H., Guo B., Liu X., et al.",
@@ -551,17 +565,31 @@
       }
     },
     {
-      "year": "2022",
-      "title": "Preparation and application of pH-responsive drug delivery systems",
-      "authors": "Ding H., Tan P., Fu S., Tian X., Zhang H., Ma X., et al.",
-      "journal": "Journal of Controlled Release",
-      "doi": "10.1016/j.jconrel.2022.05.056",
-      "url": "https://doi.org/10.1016/j.jconrel.2022.05.056",
-      "track": "drug delivery · disease microenvironment",
+      "year": "2020",
+      "title": "On the design of precision nanomedicines",
+      "authors": "Tian X., Angioletti-Uberti S., Battaglia G.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.aat0919",
+      "url": "https://doi.org/10.1126/sciadv.aat0919",
+      "track": "precision nanomedicine · superselectivity",
       "note": {
-        "en": "Stimuli-responsive nanomedicine for controlled release and disease microenvironment targeting.",
-        "zh": "面向可控释放和疾病微环境靶向的刺激响应纳米医学。",
-        "es": "Nanomedicina sensible a estímulos para liberación controlada y direccionamiento al microambiente de enfermedad."
+        "en": "A conceptual and experimental framework for designing nanomedicines with precision and superselective targeting.",
+        "zh": "建立精准纳米药物与超选择性靶向设计的理论和实验框架。",
+        "es": "Un marco conceptual y experimental para diseñar nanomedicinas de precisión con direccionamiento superselectivo."
+      }
+    },
+    {
+      "year": "2020",
+      "title": "On the shuttling across the blood-brain barrier via tubule formation: Mechanism and cargo avidity bias",
+      "authors": "Tian X., Leite D. M., Scarpa E., Nyberg S., Fullstone G., Forth J., et al.",
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.abc4397",
+      "url": "https://doi.org/10.1126/sciadv.abc4397",
+      "track": "BBB shuttling · tubule formation",
+      "note": {
+        "en": "A mechanistic Science Advances study on blood-brain barrier shuttling, tubule formation, and cargo avidity.",
+        "zh": "解析血脑屏障穿梭、管状结构形成和货物亲合力偏好的机制性 Science Advances 工作。",
+        "es": "Un estudio mecanístico en Science Advances sobre transporte a través de la barrera hematoencefálica, formación de túbulos y avidez de carga."
       }
     },
     {
@@ -590,20 +618,6 @@
         "en": "Foundational work linking receptor-mediated delivery to central nervous system therapeutic access.",
         "zh": "连接 LRP1 受体介导递送与中枢治疗可及性的奠基性工作。",
         "es": "Trabajo fundacional que conecta entrega mediada por receptor con acceso terapéutico al sistema nervioso central."
-      }
-    },
-    {
-      "year": "2017",
-      "title": "A two-photon fluorescent probe for real-time monitoring of autophagy by ultrasensitive detection of the change in lysosomal polarity",
-      "authors": "Jiang J., Tian X., Xu C., Wang S., Feng Y., et al.",
-      "journal": "Chemical Communications",
-      "doi": "10.1039/c7cc00752c",
-      "url": "https://doi.org/10.1039/c7cc00752c",
-      "track": "two-photon probes · autophagy",
-      "note": {
-        "en": "Probe chemistry for lysosomal polarity and dynamic autophagy imaging.",
-        "zh": "用于溶酶体极性变化和动态自噬成像的探针化学。",
-        "es": "Química de sondas para polaridad lisosomal e imagen dinámica de autofagia."
       }
     }
   ],
@@ -859,9 +873,9 @@
       "group": "PhD Students",
       "name": "项攀",
       "role": {
-        "en": "PhD Student, Year 2",
-        "zh": "博士二年级",
-        "es": "Doctorando, año 2"
+        "en": "PhD Student, Year 4",
+        "zh": "博士四年级",
+        "es": "Doctorando, año 4"
       },
       "affiliation": "四川大学华西临床医学院/药物化学",
       "focus": {
