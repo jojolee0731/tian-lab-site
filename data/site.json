@@ -172,6 +172,21 @@
       "zh": "以下条目整理了期刊名、年份、作者缩写和 DOI 链接；引用指标用于内部快照，正式申报或媒体使用前建议重新核对。",
       "es": "Trabajos representativos con revista, año, autores abreviados y DOI. Las métricas de citación deben revisarse en vivo antes de uso formal."
     },
+    "recentPublicationsKicker": {
+      "en": "Recent Publications",
+      "zh": "最近发表",
+      "es": "Publicaciones recientes"
+    },
+    "recentPublicationsTitle": {
+      "en": "Five fresh signals from the team.",
+      "zh": "最近五篇新信号。",
+      "es": "Cinco señales recientes del equipo."
+    },
+    "recentPublicationsBody": {
+      "en": "Recent papers highlight how students and collaborators turn molecular probes, multimodal imaging, and cell-death readouts into mechanistic tools.",
+      "zh": "这些新近论文展示了学生和合作者如何把分子探针、多模态影像和细胞死亡读出推进成机制工具。",
+      "es": "Estos trabajos recientes muestran cómo estudiantes y colaboradores convierten sondas moleculares, imagen multimodal y lecturas de muerte celular en herramientas mecanísticas."
+    },
     "coversKicker": {
       "en": "Covers & Visual Stories",
       "zh": "封面与视觉故事",
@@ -618,6 +633,83 @@
         "en": "Foundational work linking receptor-mediated delivery to central nervous system therapeutic access.",
         "zh": "连接 LRP1 受体介导递送与中枢治疗可及性的奠基性工作。",
         "es": "Trabajo fundacional que conecta entrega mediada por receptor con acceso terapéutico al sistema nervioso central."
+      }
+    }
+  ],
+  "recentPublications": [
+    {
+      "year": "2026",
+      "title": "Molecular Mechanism of TERRA-Mediated Telomeric t-loop Formation and Its Structural Reduction in Aging Models Revealed by a Cyclometalated Iridium(III) Complex through Super-Resolution Imaging",
+      "authors": "Xu X., Su L., Zhang M., Xiong L., Tian X.",
+      "journal": "Biosensors & Bioelectronics",
+      "volume": "247",
+      "article": "115939",
+      "url": "",
+      "track": "super-resolution · telomere aging",
+      "highlight": {
+        "en": "Liping Su used an iridium-based super-resolution probe to visualize how TERRA helps organize telomeric t-loops and how this protective architecture is weakened in aging models.",
+        "zh": "苏丽萍利用铱配合物超分辨探针观察 TERRA 介导的端粒 t-loop 形成，并揭示这一保护性结构在衰老模型中的减弱。",
+        "es": "Liping Su utilizó una sonda de iridio para superresolución y mostró cómo TERRA organiza los t-loops teloméricos y cómo esta arquitectura se reduce en modelos de envejecimiento."
+      }
+    },
+    {
+      "year": "2026",
+      "title": "Decoding blood-brain barrier dysfunction in Alzheimer's Disease: Innovations and challenges in multimodal MRI and PET imaging biomarkers",
+      "authors": "Yin H., Lu Z., Deng Y., Tian X., Gong Q.",
+      "journal": "Ageing Research Reviews",
+      "volume": "114",
+      "article": "102952",
+      "url": "https://doi.org/10.1016/j.arr.2026.102952",
+      "track": "BBB dysfunction · MRI/PET biomarkers",
+      "highlight": {
+        "en": "Haolin Yin, Zihao Lu, and Yuepeng Deng mapped how MRI and PET biomarkers can decode blood-brain barrier dysfunction in Alzheimer's disease and sharpen translational imaging questions.",
+        "zh": "尹浩霖、卢梓浩和邓粤鹏梳理 MRI/PET 生物标志物如何解码阿尔茨海默病中的血脑屏障功能障碍，并把影像问题推向转化场景。",
+        "es": "Haolin Yin, Zihao Lu y Yuepeng Deng analizaron cómo los biomarcadores de MRI/PET descifran la disfunción de la barrera hematoencefálica en Alzheimer y afinan preguntas de imagen traslacional."
+      }
+    },
+    {
+      "year": "2025",
+      "title": "FLIM-Guided Self-Reporting of PDT Efficacy Using a Mitochondria-Targeted, Viscosity-Sensitive Quinolinium Probe",
+      "authors": "Ren Y., Su L., Tang X., Hu P., Cao J., Ruan X., Yang J., Qin W., Kong M., Tian X., Ling W.",
+      "journal": "Journal of Materials Chemistry B",
+      "volume": "13",
+      "article": "14470-14480",
+      "url": "https://doi.org/10.1039/D5TB01668A",
+      "track": "FLIM · mitochondrial viscosity · PDT",
+      "highlight": {
+        "en": "Youxiang Ren built a mitochondria-targeted viscosity probe that lets FLIM report photodynamic therapy efficacy from inside the organelle microenvironment.",
+        "zh": "任佑翔构建线粒体靶向黏度探针，让 FLIM 可以从细胞器微环境内部自报告光动力治疗效果。",
+        "es": "Youxiang Ren desarrolló una sonda de viscosidad dirigida a mitocondrias que permite a FLIM informar la eficacia de la terapia fotodinámica desde el microambiente organelar."
+      }
+    },
+    {
+      "year": "2025",
+      "title": "A Membrane Potential-Independent Fluorescent Probe with TICT-Driven Viscosity Sensitivity for Super-Resolution Imaging of UV-Induced Mitochondrial Remodeling",
+      "authors": "Liu S., Yu Z., Su L., Hu P., Ren Y., Liu S., Ding H., Qi S., Yang M., Zhang M., Tian X.",
+      "journal": "Sensors and Actuators B: Chemical",
+      "volume": "446",
+      "article": "138693",
+      "url": "https://doi.org/10.1016/j.snb.2025.138693",
+      "track": "mitochondrial remodeling · super-resolution",
+      "highlight": {
+        "en": "Liping Su helped develop a membrane-potential-independent viscosity probe that captures UV-induced mitochondrial remodeling under super-resolution imaging.",
+        "zh": "苏丽萍参与开发不依赖膜电位的黏度响应探针，用超分辨成像捕捉紫外诱导的线粒体重塑。",
+        "es": "Liping Su contribuyó a una sonda de viscosidad independiente del potencial de membrana que captura la remodelación mitocondrial inducida por UV con superresolución."
+      }
+    },
+    {
+      "year": "2025",
+      "title": "Reporting Cell Pyroptosis via a Light-Driven Mitochondria-to-Nucleus Migration Probe",
+      "authors": "Xiang P., Lu Z., Tang X., Ku Y., Shen Y., Tian X.",
+      "journal": "Sensors and Actuators B: Chemical",
+      "volume": "447",
+      "article": "138836",
+      "url": "https://doi.org/10.1016/j.snb.2025.138836",
+      "track": "pyroptosis · mitochondria-to-nucleus migration",
+      "highlight": {
+        "en": "Pan Xiang and Zihao Lu used a light-driven migration probe to report pyroptosis by following organelle-to-nucleus trafficking, linking cell-death chemistry with imaging readouts.",
+        "zh": "项攀和卢梓浩利用光驱动线粒体-细胞核迁移探针报告细胞焦亡，把细胞死亡化学和影像读出连接起来。",
+        "es": "Pan Xiang y Zihao Lu emplearon una sonda de migración fotoactivada para informar la piroptosis mediante tráfico mitocondria-núcleo, conectando química de muerte celular con lectura por imagen."
       }
     }
   ],

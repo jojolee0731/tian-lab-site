@@ -265,6 +265,38 @@ function renderPublications() {
     .join("");
 }
 
+function renderRecentPublications() {
+  const list = document.getElementById("recent-publication-list");
+  if (!list) return;
+
+  list.innerHTML = state.data.recentPublications
+    .map((publication) => {
+      const source = [publication.journal, publication.volume, publication.article].filter(Boolean).join(" · ");
+      const link = publication.url
+        ? `<a href="${publication.url}" target="_blank" rel="noopener noreferrer">
+            Article ${externalIcon}
+          </a>`
+        : "";
+
+      return `
+        <article class="recent-publication-item">
+          <span class="pub-year">${publication.year}</span>
+          <div class="pub-main">
+            <h3>${publication.title}</h3>
+            <p class="pub-authors">${publication.authors}</p>
+            <p class="pub-journal">${source}</p>
+            <p>${pick(publication.highlight)}</p>
+            <div class="pub-links">
+              ${link}
+              <span>${publication.track}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
 function renderCovers() {
   const grid = document.getElementById("cover-grid");
   grid.innerHTML = state.data.covers
@@ -512,6 +544,7 @@ function render() {
   renderTracks();
   renderResearchMap();
   renderPublications();
+  renderRecentPublications();
   renderCovers();
   renderPiProfile();
   renderPeopleSummary();

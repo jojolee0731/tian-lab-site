@@ -814,7 +814,8 @@ select {
   border-top: 1px solid var(--line-light);
 }
 
-.publication-item {
+.publication-item,
+.recent-publication-item {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr);
   gap: 26px;
@@ -828,7 +829,8 @@ select {
   font-weight: 900;
 }
 
-.publication-item h3 {
+.publication-item h3,
+.recent-publication-item h3 {
   margin: 0 0 10px;
   font-size: clamp(21px, 2vw, 28px);
   line-height: 1.18;
@@ -836,7 +838,8 @@ select {
 
 .pub-authors,
 .pub-journal,
-.publication-item p {
+.publication-item p,
+.recent-publication-item p {
   margin: 0;
   color: var(--muted-dark);
   font-size: 14px;
@@ -879,6 +882,38 @@ select {
 .cover-link svg {
   width: 13px;
   height: 13px;
+}
+
+.recent-publications {
+  margin-top: 52px;
+  padding-top: 34px;
+  border-top: 3px solid var(--ink);
+}
+
+.recent-publications-heading {
+  max-width: 720px;
+  margin-bottom: 10px;
+}
+
+.recent-publications-heading h3 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.05;
+}
+
+.recent-publications-heading p:not(.section-kicker) {
+  margin: 0;
+  color: var(--muted-dark);
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.recent-publication-list {
+  border-top: 1px solid var(--line-light);
+}
+
+.recent-publication-item h3 {
+  font-size: clamp(19px, 1.7vw, 24px);
 }
 
 .cover-grid {

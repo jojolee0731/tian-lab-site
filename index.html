@@ -142,7 +142,17 @@
               Google Scholar
             </a>
           </div>
-          <div class="publication-list" id="publication-list"></div>
+          <div>
+            <div class="publication-list" id="publication-list"></div>
+            <div class="recent-publications" aria-labelledby="recent-publications-title">
+              <div class="recent-publications-heading">
+                <p class="section-kicker" data-slot="recentPublicationsKicker">Recent Publications</p>
+                <h3 id="recent-publications-title" data-slot="recentPublicationsTitle">Latest signals from the lab.</h3>
+                <p data-slot="recentPublicationsBody"></p>
+              </div>
+              <div class="recent-publication-list" id="recent-publication-list"></div>
+            </div>
+          </div>
         </div>
       </section>
 
