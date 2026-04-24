@@ -104,7 +104,7 @@
     },
     "heroEyebrow": {
       "en": "West China Hospital, Sichuan University · HMRRC",
-      "zh": "四川大学华西医院 · 华西磁共振研究中心",
+      "zh": "四川大学华西医院 · 华西磁共振影像研究所",
       "es": "West China Hospital, Universidad de Sichuan · HMRRC"
     },
     "heroStatement": {
@@ -259,7 +259,7 @@
     },
     "footerCenter": {
       "en": "Huaxi MR Research Center · Department of Radiology",
-      "zh": "华西磁共振研究中心 · 放射科",
+      "zh": "华西磁共振影像研究所 · 放射科",
       "es": "Huaxi MR Research Center · Departamento de Radiología"
     },
     "footerAddress": {
@@ -739,7 +739,7 @@
       },
       {
         "en": "HMRRC / Radiology",
-        "zh": "华西磁共振研究中心 / 放射科",
+        "zh": "华西磁共振影像研究所 / 放射科",
         "es": "HMRRC / Radiología"
       },
       {
@@ -818,7 +818,7 @@
       {
         "label": {
           "en": "Huaxi MR Research Center",
-          "zh": "华西磁共振研究中心",
+          "zh": "华西磁共振影像研究所",
           "es": "Huaxi MR Research Center"
         },
         "url": "https://www.wchscu.cn/scientific/science_technology/platform/60414.html"
