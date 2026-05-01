@@ -501,6 +501,11 @@ function renderPiProfile() {
   const data = state.data.piProfile;
   profile.innerHTML = `
     <article class="pi-profile-card">
+      ${
+        data.image
+          ? `<figure class="pi-profile-photo"><img src="${data.image}" alt="${pick(data.imageAlt)}" loading="lazy" /></figure>`
+          : ""
+      }
       <span class="role">${pick(data.role)}</span>
       <h3>${data.name}</h3>
       <p>${pick(data.bio)}</p>

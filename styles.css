@@ -1074,6 +1074,21 @@ select {
   padding: 30px;
 }
 
+.pi-profile-photo {
+  margin: -30px -30px 26px;
+  background: #0a0c10;
+  overflow: hidden;
+}
+
+.pi-profile-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 38%;
+  filter: saturate(0.98) contrast(1.04);
+}
+
 .pi-profile-card h3 {
   margin: 18px 0 14px;
   font-size: clamp(28px, 3vw, 42px);

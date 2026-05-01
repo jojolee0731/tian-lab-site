@@ -827,6 +827,12 @@
   ],
   "piProfile": {
     "name": "Xiaohe Tian, PhD",
+    "image": "./assets/images/people/xiaohe-tian-pi.jpg",
+    "imageAlt": {
+      "en": "Prof. Xiaohe Tian",
+      "zh": "田肖和教授",
+      "es": "Prof. Xiaohe Tian"
+    },
     "role": {
       "en": "Professor / Principal Investigator / PhD Supervisor",
       "zh": "教授/研究员 · 博士生导师 · 课题组负责人",
