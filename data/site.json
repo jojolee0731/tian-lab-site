@@ -982,6 +982,24 @@
     {
       "kind": "member",
       "group": "Master Students",
+      "name": "刘金凤",
+      "role": {
+        "en": "Master Student, Year 2",
+        "zh": "硕士二年级",
+        "es": "Estudiante de máster, año 2"
+      },
+      "affiliation": "四川大学临床医学院/皮肤病与性病学科",
+      "focus": {
+        "en": "Epidermal lipid metabolism",
+        "zh": "表皮脂质代谢",
+        "es": "Metabolismo lipídico epidérmico"
+      },
+      "joined": "2025.09.01",
+      "email": "15196651350@163.com"
+    },
+    {
+      "kind": "member",
+      "group": "Master Students",
       "name": "卢梓浩",
       "role": {
         "en": "Professional Master Student, Year 3",
