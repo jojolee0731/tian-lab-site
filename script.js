@@ -506,11 +506,13 @@ function renderPiProfile() {
           ? `<figure class="pi-profile-photo"><img src="${data.image}" alt="${pick(data.imageAlt)}" loading="lazy" /></figure>`
           : ""
       }
-      <span class="role">${pick(data.role)}</span>
-      <h3>${data.name}</h3>
-      <p>${pick(data.bio)}</p>
-      <div class="profile-tags">
-        ${data.tags.map((tag) => `<span>${pick(tag)}</span>`).join("")}
+      <div class="pi-profile-copy">
+        <span class="role">${pick(data.role)}</span>
+        <h3>${data.name}</h3>
+        <p>${pick(data.bio)}</p>
+        <div class="profile-tags">
+          ${data.tags.map((tag) => `<span>${pick(tag)}</span>`).join("")}
+        </div>
       </div>
     </article>
     <div class="profile-facts">

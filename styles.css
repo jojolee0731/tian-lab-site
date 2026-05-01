@@ -1058,6 +1058,7 @@ select {
 .pi-profile {
   display: grid;
   grid-template-columns: minmax(320px, 1.15fr) minmax(260px, 0.85fr);
+  align-items: start;
   gap: 1px;
   margin-bottom: 34px;
   border: 1px solid var(--line-dark);
@@ -1071,12 +1072,16 @@ select {
 }
 
 .pi-profile-card {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  align-items: start;
+  gap: 24px;
   padding: 30px;
 }
 
 .pi-profile-photo {
-  width: min(220px, 100%);
-  margin: 0 0 24px;
+  width: 100%;
+  margin: 0;
   background: #0a0c10;
   overflow: hidden;
 }
@@ -1088,6 +1093,10 @@ select {
   object-fit: cover;
   object-position: center 38%;
   filter: saturate(0.98) contrast(1.04);
+}
+
+.pi-profile-copy {
+  min-width: 0;
 }
 
 .pi-profile-card h3 {
@@ -1837,6 +1846,14 @@ select {
 
   .people-summary article {
     min-height: 84px;
+  }
+
+  .pi-profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-profile-photo {
+    width: min(168px, 100%);
   }
 }
 
