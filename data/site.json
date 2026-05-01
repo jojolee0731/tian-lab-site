@@ -1289,12 +1289,12 @@
     },
     {
       "kind": "member",
-      "group": "Master Students",
+      "group": "PhD Students",
       "name": "任佑祥",
       "role": {
-        "en": "Academic Master Student, Year 3",
-        "zh": "学硕三年级",
-        "es": "Estudiante de máster académico, año 3"
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
       },
       "affiliation": "四川大学华西临床医学院/疾病医学与转化医学",
       "focus": {
