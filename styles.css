@@ -1075,7 +1075,8 @@ select {
 }
 
 .pi-profile-photo {
-  margin: -30px -30px 26px;
+  width: min(220px, 100%);
+  margin: 0 0 24px;
   background: #0a0c10;
   overflow: hidden;
 }
