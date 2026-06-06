@@ -175,14 +175,29 @@ function renderNews() {
   const rack = document.getElementById("news-rack");
   rack.innerHTML = state.data.news
     .slice(0, 3)
-    .map(
-      (item) => `
-        <article class="news-item">
+    .map((item) => {
+      const media = item.image
+        ? `<figure class="news-media">
+            <img src="${item.image}" alt="${pick(item.imageAlt) || pick(item.title)}" loading="lazy" />
+          </figure>`
+        : "";
+      const body = item.body ? `<p class="news-body">${pick(item.body)}</p>` : "";
+      const link = item.href
+        ? `<a class="news-link" href="${item.href}">${pick(item.linkLabel) || pick(state.data.labels.link)}</a>`
+        : "";
+
+      return `
+        <article class="news-item${item.image ? " with-media" : ""}">
+          ${media}
           <span>${item.date}</span>
-          <p>${pick(item.title)}</p>
+          <div class="news-copy">
+            <p class="news-title">${pick(item.title)}</p>
+            ${body}
+            ${link}
+          </div>
         </article>
-      `,
-    )
+      `;
+    })
     .join("");
 }
 
@@ -277,9 +292,15 @@ function renderRecentPublications() {
             Article ${externalIcon}
           </a>`
         : "";
+      const media = publication.image
+        ? `<figure class="recent-publication-media">
+            <img src="${publication.image}" alt="${pick(publication.imageAlt) || publication.title}" loading="lazy" />
+          </figure>`
+        : "";
 
       return `
-        <article class="recent-publication-item">
+        <article class="recent-publication-item${publication.image ? " with-media" : ""}">
+          ${media}
           <span class="pub-year">${publication.year}</span>
           <div class="pub-main">
             <h3>${publication.title}</h3>

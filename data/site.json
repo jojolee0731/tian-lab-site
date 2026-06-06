@@ -178,9 +178,9 @@
       "es": "Publicaciones recientes"
     },
     "recentPublicationsTitle": {
-      "en": "Five fresh signals from the team.",
-      "zh": "最近五篇新信号。",
-      "es": "Cinco señales recientes del equipo."
+      "en": "Fresh signals from the team.",
+      "zh": "最近的新信号。",
+      "es": "Señales recientes del equipo."
     },
     "recentPublicationsBody": {
       "en": "Recent papers highlight how students and collaborators turn molecular probes, multimodal imaging, and cell-death readouts into mechanistic tools.",
@@ -353,6 +353,31 @@
     }
   ],
   "news": [
+    {
+      "date": "2026.06",
+      "image": "./assets/images/news/2026-snb-ld-ttp-nafld-lrp1-abeta-dispatch.png",
+      "imageAlt": {
+        "en": "Illustration of LD-TTP imaging lipid droplets, LRP1 redistribution, and amyloid-beta uptake across NAFLD stages",
+        "zh": "LD-TTP 脂滴成像、LRP1 空间重排与 NAFLD 分期 Aβ 摄取变化示意图",
+        "es": "Ilustración de LD-TTP, redistribución de LRP1 y captación de Aβ durante NAFLD"
+      },
+      "title": {
+        "en": "Research dispatch: Panyi Hu et al. report an LD-TTP AIEgen probe for reading the LD-LRP1-Aβ axis in NAFLD.",
+        "zh": "科研速递：胡潘宜等在 Sensors and Actuators B: Chemical 发表 LD-TTP 脂滴探针工作，解析 NAFLD 中 LD-LRP1-Aβ 轴。",
+        "es": "Actualidad científica: Panyi Hu et al. presentan una sonda AIEgen LD-TTP para leer el eje LD-LRP1-Aβ en NAFLD."
+      },
+      "body": {
+        "en": "The paper, led by Panyi Hu with Dong Wang, Jiahan Cheng, and Xiaohe Tian as corresponding authors, links lipid-droplet remodeling to LRP1 spatial regulation and stage-dependent amyloid-β uptake in steatotic hepatocytes.",
+        "zh": "该论文由胡潘宜等完成，王栋、Jiahan Cheng 和田肖和为通讯作者；研究把脂滴重塑、LRP1 空间调控与脂肪变性肝细胞中 Aβ 摄取能力的阶段性变化连接起来。",
+        "es": "El trabajo, liderado por Panyi Hu con Dong Wang, Jiahan Cheng y Xiaohe Tian como autores de correspondencia, conecta la remodelación de gotas lipídicas con LRP1 y la captación de Aβ dependiente de etapa."
+      },
+      "href": "#publications",
+      "linkLabel": {
+        "en": "Read the dispatch",
+        "zh": "查看速递",
+        "es": "Leer la nota"
+      }
+    },
     {
       "date": "2026",
       "title": {
@@ -637,6 +662,27 @@
     }
   ],
   "recentPublications": [
+    {
+      "year": "2026",
+      "title": "A lipid droplet-targeted AIEgen probe reveals stage-dependent LRP1 spatial regulation and impaired amyloid-β uptake in NAFLD",
+      "authors": "Hu P., Su L., Liu J., Zhao R., Wang D., Cheng J., Tian X.",
+      "journal": "Sensors and Actuators B: Chemical",
+      "volume": "466",
+      "article": "140291",
+      "url": "https://doi.org/10.1016/j.snb.2026.140291",
+      "track": "LD-TTP · NAFLD · LD-LRP1-Aβ axis",
+      "image": "./assets/images/news/2026-snb-ld-ttp-nafld-lrp1-abeta-dispatch.png",
+      "imageAlt": {
+        "en": "Illustration of LD-TTP imaging lipid droplets, LRP1 redistribution, and amyloid-beta uptake across NAFLD stages",
+        "zh": "LD-TTP 脂滴成像、LRP1 空间重排与 NAFLD 分期 Aβ 摄取变化示意图",
+        "es": "Ilustración de LD-TTP, redistribución de LRP1 y captación de Aβ durante NAFLD"
+      },
+      "highlight": {
+        "en": "Panyi Hu, Liping Su, Jinfeng Liu, Rui Zhao and colleagues, with Dong Wang, Jiahan Cheng, and Xiaohe Tian as corresponding authors, report LD-TTP, a lipid-droplet-targeted AIEgen probe. The study provides cellular-level evidence that LD remodeling is coupled with LRP1 spatial reprogramming and stage-dependent amyloid-β uptake in steatotic hepatocytes.",
+        "zh": "胡潘宜、苏丽萍、刘金凤、赵蕊等完成这项工作，王栋、Jiahan Cheng 和田肖和为通讯作者。研究构建脂滴靶向 AIEgen 探针 LD-TTP，提供细胞水平证据：NAFLD 脂肪变性过程中脂滴重塑与 LRP1 空间重排相伴，并对应 Aβ 摄取能力的阶段性变化。",
+        "es": "Panyi Hu, Liping Su, Jinfeng Liu, Rui Zhao y colaboradores, con Dong Wang, Jiahan Cheng y Xiaohe Tian como autores de correspondencia, presentan LD-TTP, una sonda AIEgen dirigida a gotas lipídicas. El trabajo aporta evidencia celular de que la remodelación de LD se acopla con la reorganización espacial de LRP1 y la captación de Aβ dependiente de etapa."
+      }
+    },
     {
       "year": "2026",
       "title": "Molecular Mechanism of TERRA-Mediated Telomeric t-loop Formation and Its Structural Reduction in Aging Models Revealed by a Cyclometalated Iridium(III) Complex through Super-Resolution Imaging",
