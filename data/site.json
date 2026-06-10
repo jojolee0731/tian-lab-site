@@ -355,7 +355,7 @@
   "news": [
     {
       "date": "2026.06",
-      "image": "./assets/images/news/2026-acs-sensors-bodipy-ld-dispatch.png",
+      "image": "./assets/images/news/2026-acs-sensors-bodipy-ld-toc.png",
       "imageAlt": {
         "en": "ACS Sensors cover-style thumbnail for the BODIPY-LD research dispatch on microglial lipid-droplet remodeling",
         "zh": "ACS Sensors 论文缩略图：BODIPY-LD 揭示小胶质细胞脂滴重塑的科研速递",
@@ -575,6 +575,20 @@
   "publications": [
     {
       "year": "2026",
+      "title": "A Polarity-Sensitive Lipid Droplet Probe Reveals Aβ Species-Dependent Lipid Droplet Remodeling in Microglia",
+      "authors": "Hu P., Guo S., Ren Y., Zhao R., Su L., Cheng J., Tian X.",
+      "journal": "ACS Sensors",
+      "doi": "10.1021/acssensors.6c01055",
+      "url": "https://doi.org/10.1021/acssensors.6c01055",
+      "track": "BODIPY-LD · microglia · Aβ species",
+      "note": {
+        "en": "A polarity-sensitive lipid-droplet probe study linking Aβ species-dependent microglial lipid-droplet remodeling with reduced phagocytic capacity.",
+        "zh": "基于极性敏感脂滴探针 BODIPY-LD，解析 Aβ 物种依赖的小胶质细胞脂滴重塑及其与吞噬能力下降的关联。",
+        "es": "Un estudio con la sonda BODIPY-LD que conecta la remodelación de gotas lipídicas en microglía dependiente de especies de Aβ con una menor capacidad fagocítica."
+      }
+    },
+    {
+      "year": "2026",
       "title": "Deep cervical lymphatic-venous anastomosis attenuates cognitive dysfunction and biomarker abnormalities in severe Alzheimer's disease: A prospective single-arm study",
       "authors": "Fu X., Zhang J., Xiao Q., Li T., Li Q., Zhang S., et al.",
       "journal": "Alzheimer's & Dementia",
@@ -687,6 +701,26 @@
     }
   ],
   "recentPublications": [
+    {
+      "year": "2026",
+      "title": "A Polarity-Sensitive Lipid Droplet Probe Reveals Aβ Species-Dependent Lipid Droplet Remodeling in Microglia",
+      "authors": "Hu P., Guo S., Ren Y., Zhao R., Su L., Cheng J., Tian X.",
+      "journal": "ACS Sensors",
+      "doi": "10.1021/acssensors.6c01055",
+      "url": "https://doi.org/10.1021/acssensors.6c01055",
+      "track": "BODIPY-LD · microglia · Aβ species",
+      "image": "./assets/images/news/2026-acs-sensors-bodipy-ld-toc.png",
+      "imageAlt": {
+        "en": "TOC illustration for BODIPY-LD imaging of Aβ species-dependent lipid-droplet remodeling in microglia",
+        "zh": "BODIPY-LD 成像 Aβ 物种依赖小胶质细胞脂滴重塑的 TOC 示意图",
+        "es": "Ilustración TOC de BODIPY-LD para remodelación de gotas lipídicas en microglía dependiente de especies de Aβ"
+      },
+      "highlight": {
+        "en": "Panyi Hu and Shuo Guo are co-first authors, with Xiaohe Tian and Jiahan Cheng as corresponding authors. The study introduces BODIPY-LD, a polarity-sensitive lipid-droplet probe, and uses it to read lipid-droplet burden and polarity from cellular models to APP/PS1 brain tissue, connecting Aβ species-dependent LD remodeling to impaired microglial phagocytosis.",
+        "zh": "胡潘宜、郭硕为共同一作，田肖和、程佳汉为通讯作者。研究开发极性敏感脂滴探针 BODIPY-LD，从细胞模型到 APP/PS1 脑组织读取脂滴负荷与微环境极性，并将 Aβ 物种依赖的脂滴重塑与小胶质细胞吞噬能力下降联系起来。",
+        "es": "Panyi Hu y Shuo Guo son co-primeros autores, con Xiaohe Tian y Jiahan Cheng como autores de correspondencia. El trabajo presenta BODIPY-LD, una sonda sensible a la polaridad, y la usa para leer carga y polaridad de gotas lipídicas desde modelos celulares hasta tejido cerebral APP/PS1, conectando remodelación dependiente de especies de Aβ con fagocitosis microglial reducida."
+      }
+    },
     {
       "year": "2026",
       "title": "A lipid droplet-targeted AIEgen probe reveals stage-dependent LRP1 spatial regulation and impaired amyloid-β uptake in NAFLD",
