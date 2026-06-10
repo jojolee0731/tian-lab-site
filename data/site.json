@@ -355,6 +355,31 @@
   "news": [
     {
       "date": "2026.06",
+      "image": "./assets/images/news/2026-acs-sensors-bodipy-ld-dispatch.png",
+      "imageAlt": {
+        "en": "ACS Sensors cover-style thumbnail for the BODIPY-LD research dispatch on microglial lipid-droplet remodeling",
+        "zh": "ACS Sensors 论文缩略图：BODIPY-LD 揭示小胶质细胞脂滴重塑的科研速递",
+        "es": "Miniatura tipo ACS Sensors para la nota de investigación sobre remodelación de gotas lipídicas en microglía con BODIPY-LD"
+      },
+      "title": {
+        "en": "Research dispatch: Panyi Hu and Shuo Guo co-first-author an ACS Sensors study revealing Aβ species-dependent lipid-droplet remodeling in microglia.",
+        "zh": "科研速递：胡潘宜、郭硕共同一作在 ACS Sensors 发表 BODIPY-LD 工作，揭示 Aβ 物种依赖的小胶质细胞脂滴重塑。",
+        "es": "Actualidad científica: Panyi Hu y Shuo Guo firman como co-primeros autores un estudio en ACS Sensors sobre remodelación de gotas lipídicas en microglía dependiente de la especie de Aβ."
+      },
+      "body": {
+        "en": "Using the polarity-sensitive probe BODIPY-LD, the study maps lipid-droplet burden and polarity from cells to APP/PS1 brain tissue, shows that different Aβ species drive distinct microglial lipid-droplet states, and links LD accumulation to weakened phagocytosis. Panyi Hu and Shuo Guo are co-first authors; Xiaohe Tian and Jiahan Cheng are corresponding authors.",
+        "zh": "研究团队开发了极性敏感脂滴探针 BODIPY-LD，从细胞到 APP/PS1 脑组织描绘脂滴负荷与微环境极性变化，并提示不同 Aβ 物种会驱动不同的小胶质细胞脂滴状态，且脂滴积累与吞噬能力下降相关。胡潘宜、郭硕为共同一作，田肖和、程佳汉为通讯作者。",
+        "es": "Con la sonda sensible a la polaridad BODIPY-LD, el trabajo cartografía la carga y polaridad de las gotas lipídicas desde células hasta tejido cerebral APP/PS1, muestra que distintas especies de Aβ inducen estados diferenciales de gotas lipídicas en microglía y vincula su acumulación con una fagocitosis reducida. Panyi Hu y Shuo Guo son co-primeros autores; Xiaohe Tian y Jiahan Cheng son autores de correspondencia."
+      },
+      "href": "https://doi.org/10.1021/acssensors.6c01055",
+      "linkLabel": {
+        "en": "Read the paper",
+        "zh": "查看论文",
+        "es": "Leer el artículo"
+      }
+    },
+    {
+      "date": "2026.06",
       "image": "./assets/images/news/2026-snb-ld-ttp-nafld-lrp1-abeta-dispatch.png",
       "imageAlt": {
         "en": "Illustration of LD-TTP imaging lipid droplets, LRP1 redistribution, and amyloid-beta uptake across NAFLD stages",
