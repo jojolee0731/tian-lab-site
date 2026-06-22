@@ -355,6 +355,25 @@
   "news": [
     {
       "date": "2026.06",
+      "title": {
+        "en": "Research dispatch: Choroid plexus remodeling and CSF-mediated clearance in Alzheimer's disease.",
+        "zh": "科研速递：ADJ 文章上线，聚焦 AD 脉络丛重塑与 CSF 介导清除。",
+        "es": "Actualidad científica: remodelación del plexo coroideo y depuración mediada por CSF en Alzheimer."
+      },
+      "body": {
+        "en": "Haolin Yin and Yuepeng Deng co-first-authored \"Choroid plexus remodeling linked to impaired CSF-mediated clearance and Alzheimer's disease progression\", published online in Alzheimer's & Dementia on 22 June 2026 (DOI: 10.1002/alz.71606). The study links choroid plexus remodeling to impaired CSF-mediated clearance and Alzheimer's disease progression, adding a barrier-and-clearance perspective to AD mechanisms.",
+        "zh": "尹浩霖、邓粤鹏共同一作的 \"Choroid plexus remodeling linked to impaired CSF-mediated clearance and Alzheimer's disease progression\" 于 2026 年 6 月 22 日在 Alzheimer's & Dementia 正式上线（DOI: 10.1002/alz.71606）。该研究将脉络丛重塑与 CSF 介导清除受损及阿尔茨海默病进展联系起来，为 AD 机制研究补充了屏障与清除通路视角。",
+        "es": "Haolin Yin y Yuepeng Deng son co-primeros autores de \"Choroid plexus remodeling linked to impaired CSF-mediated clearance and Alzheimer's disease progression\", publicado en línea en Alzheimer's & Dementia el 22 de junio de 2026 (DOI: 10.1002/alz.71606). El estudio vincula la remodelación del plexo coroideo con una depuración mediada por CSF alterada y la progresión de Alzheimer."
+      },
+      "href": "https://doi.org/10.1002/alz.71606",
+      "linkLabel": {
+        "en": "Read the paper",
+        "zh": "查看论文",
+        "es": "Leer el artículo"
+      }
+    },
+    {
+      "date": "2026.06",
       "image": "./assets/images/news/2026-acs-sensors-bodipy-ld-toc.png",
       "imageAlt": {
         "en": "ACS Sensors cover-style thumbnail for the BODIPY-LD research dispatch on microglial lipid-droplet remodeling",
@@ -701,6 +720,20 @@
     }
   ],
   "recentPublications": [
+    {
+      "year": "2026",
+      "title": "Choroid plexus remodeling linked to impaired CSF-mediated clearance and Alzheimer's disease progression",
+      "authors": "Yin H., Deng Y., Lu Z., Jiang Y., Zuo C., Li J., Guo L., Ying B., Battaglia G., Tian X., Gong Q.",
+      "journal": "Alzheimer's & Dementia",
+      "doi": "10.1002/alz.71606",
+      "url": "https://doi.org/10.1002/alz.71606",
+      "track": "choroid plexus · CSF clearance · Alzheimer's disease progression",
+      "highlight": {
+        "en": "Haolin Yin and Yuepeng Deng are co-first authors. The study links choroid plexus remodeling to impaired CSF-mediated clearance and Alzheimer's disease progression, adding a barrier-and-clearance perspective to AD mechanisms.",
+        "zh": "尹浩霖、邓粤鹏为共同一作。研究将脉络丛重塑与 CSF 介导清除受损及阿尔茨海默病进展联系起来，为 AD 机制研究补充了屏障与清除通路视角。",
+        "es": "Haolin Yin y Yuepeng Deng son co-primeros autores. El estudio vincula la remodelación del plexo coroideo con una depuración mediada por CSF alterada y la progresión de Alzheimer, aportando una perspectiva de barrera y depuración."
+      }
+    },
     {
       "year": "2026",
       "title": "A Polarity-Sensitive Lipid Droplet Probe Reveals Aβ Species-Dependent Lipid Droplet Remodeling in Microglia",
