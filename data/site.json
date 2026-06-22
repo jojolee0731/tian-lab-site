@@ -355,6 +355,12 @@
   "news": [
     {
       "date": "2026.06",
+      "image": "./assets/images/news/2026-adj-choroid-plexus-csf-clearance-dispatch.png",
+      "imageAlt": {
+        "en": "Biomedical illustration of choroid plexus folds, CSF flow, and impaired clearance in Alzheimer's disease research",
+        "zh": "ADJ 论文科研速递配图：脉络丛结构、脑脊液流动与 AD 清除受损机制示意",
+        "es": "Ilustración biomédica de plexo coroideo, flujo de CSF y depuración alterada en investigación de Alzheimer"
+      },
       "title": {
         "en": "Research dispatch: Choroid plexus remodeling and CSF-mediated clearance in Alzheimer's disease.",
         "zh": "科研速递：ADJ 文章上线，聚焦 AD 脉络丛重塑与 CSF 介导清除。",
@@ -728,6 +734,12 @@
       "doi": "10.1002/alz.71606",
       "url": "https://doi.org/10.1002/alz.71606",
       "track": "choroid plexus · CSF clearance · Alzheimer's disease progression",
+      "image": "./assets/images/news/2026-adj-choroid-plexus-csf-clearance-dispatch.png",
+      "imageAlt": {
+        "en": "Biomedical illustration of choroid plexus folds, CSF flow, and impaired clearance in Alzheimer's disease research",
+        "zh": "ADJ 论文科研速递配图：脉络丛结构、脑脊液流动与 AD 清除受损机制示意",
+        "es": "Ilustración biomédica de plexo coroideo, flujo de CSF y depuración alterada en investigación de Alzheimer"
+      },
       "highlight": {
         "en": "Haolin Yin and Yuepeng Deng are co-first authors. The study links choroid plexus remodeling to impaired CSF-mediated clearance and Alzheimer's disease progression, adding a barrier-and-clearance perspective to AD mechanisms.",
         "zh": "尹浩霖、邓粤鹏为共同一作。研究将脉络丛重塑与 CSF 介导清除受损及阿尔茨海默病进展联系起来，为 AD 机制研究补充了屏障与清除通路视角。",
