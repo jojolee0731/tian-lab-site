@@ -1383,7 +1383,7 @@
         "es": "基于纳米材料和小分子荧光探针对肝脏疾病进行研究。"
       },
       "joined": "2023.03",
-      "image": "./assets/images/people/14-member.jpg",
+      "image": "./assets/images/people/14-hu-panyi-20260918.jpg",
       "email": "hupanyi@wchscu.cn",
       "achievements": "Hu P, Su L, Wang Y, Chen Y, Tian X, Qian Y. Targeting Liver Fibrosis with Nanoparticle Technology: The Dual-Drug Strategy for Hepatic Stellate Cell Activation Inhibition. ACS Applied Materials & Interfaces."
     },
@@ -1656,6 +1656,103 @@
       "image": "./assets/images/people/28-member.jpg",
       "email": "294668550@qq.com",
       "achievements": "Yin H, Lu Z, Deng Y, Tian X, Gong Q. Decoding blood-brain barrier dysfunction in Alzheimer's Disease: Innovations and challenges in multimodal MRI and PET imaging biomarkers. Ageing Res Rev. 2026;114:102952."
+    },
+    {
+      "kind": "member",
+      "group": "Undergraduate Students",
+      "name": "张舒然",
+      "role": {
+        "en": "Undergraduate Student",
+        "zh": "本科",
+        "es": "Estudiante de grado"
+      },
+      "affiliation": "多伦多大学/化学",
+      "focus": {
+        "en": "Neuroinflammation and Alzheimer’s disease pathology",
+        "zh": "神经炎症阿尔兹海默病理",
+        "es": "Neuroinflamación y patología de la enfermedad de Alzheimer"
+      },
+      "joined": "2026.08",
+      "image": "./assets/images/people/30-zhang-shuran.jpg",
+      "email": "zhang.shuran@outlook.com"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "杨怡璟",
+      "role": {
+        "en": "PhD",
+        "zh": "博士",
+        "es": "Doctorado"
+      },
+      "affiliation": "四川大学华西医院/纳米医学",
+      "focus": {
+        "en": "First-principles molecular dynamics, graph theory, and topology",
+        "zh": "第一性原理分子动力学/图论/拓扑学",
+        "es": "Dinámica molecular de primeros principios, teoría de grafos y topología"
+      },
+      "joined": "2026.05",
+      "image": "./assets/images/people/31-yang-yijing.jpg",
+      "email": "Yijing.yang@universite-paris-saclay.fr"
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "王兴澄",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "巴塞罗那大学/生物医学",
+      "focus": {
+        "en": "AI-driven protein conformational modeling and molecular interaction calculations for targeted molecules",
+        "zh": "AI 驱动蛋白构象建模与靶向分子相互作用计算",
+        "es": "Modelado de conformaciones de proteínas mediante IA y cálculo de interacciones moleculares para moléculas dirigidas"
+      },
+      "joined": "2025.9",
+      "image": "./assets/images/people/32-wang-xingcheng.jpg",
+      "email": "210718997@qq.com"
+    },
+    {
+      "kind": "member",
+      "group": "Research Staff",
+      "name": "李晴",
+      "role": {
+        "en": "Technician",
+        "zh": "技术员",
+        "es": "Personal técnico"
+      },
+      "affiliation": "四川大学厦门华西医院研究院/化学",
+      "focus": {
+        "en": "Inorganic nanomaterials for cancer therapy",
+        "zh": "无机纳米材料在肿瘤治疗中的应用",
+        "es": "Nanomateriales inorgánicos para el tratamiento del cáncer"
+      },
+      "joined": "2026.03.16",
+      "image": "./assets/images/people/33-li-qing.jpg",
+      "email": "li3222406658@163.com",
+      "achievements": "Qing Lia,,Rui Sua,, et al Glycyrrhetinic acid nanoparticles combined with ferrotherapy for  improved cancer immunotherapy. Acta Biomaterialia, 2022, 144: 109-120."
+    },
+    {
+      "kind": "member",
+      "group": "PhD Students",
+      "name": "邢亿开",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Doctorando, año 1"
+      },
+      "affiliation": "四川大学华西临床医学院/胸外科",
+      "focus": {
+        "en": "Pulmonary interstitial fibrosis",
+        "zh": "肺间质纤维化",
+        "es": "Fibrosis intersticial pulmonar"
+      },
+      "joined": "2026.09",
+      "image": "./assets/images/people/34-xing-yikai.jpg",
+      "achievements": "Xing Y, Yang Z, Zhou J, Liu Z, Zhang Y, Liu L, Pu Q. T≤2cmN0 non-small cell lung cancer with visible pleural retraction will benefit from lobectomy rather than sublobar resection: An inverse probability of treatment weighting study. Eur J Surg Oncol. 2025 Dec;51(12):110526. doi: 10.1016/j.ejso.2025.110526. Epub 2025 Oct 21. PMID: 41138295.",
+      "email": "yikai_xing@126.com"
     }
   ]
 }
