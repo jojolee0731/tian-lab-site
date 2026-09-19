@@ -6,3 +6,5 @@ assets/images/people/originals/
 *.csv
 dist/
 deploy-public-*/
+qa/
+__pycache__/

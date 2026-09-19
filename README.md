@@ -1,78 +1,78 @@
 # Tian Lab Website
 
-Tian Lab public website prototype: static, fast, multilingual, and data-driven.
+科研内容优先的静态网站，包含英文、中文和西班牙语三种语言。每种语言有首页、研究方向、研究成果、团队、加入、学术合作和新闻归档七个页面，共21页。
 
-## Local Preview
+正文、成员和论文直接写入生成后的HTML。JavaScript仅负责导航折叠、论文筛选、旧锚点兼容等渐进增强；关闭JavaScript仍能阅读页面和使用普通链接。
 
-Run from this folder:
+## 版本与线上入口
 
-```bash
-npm run dev
+2026-09-19改版在独立worktree `tian-lab-site-review-20260919`、分支 `codex/site-improvement-20260919` 中完成。用户已明确授权正式上线，并委托选择新增论文；发布目标为该仓库 `main` 分支根目录的 GitHub Pages。
+
+现有线上地址：[Tian Lab](https://jojolee0731.github.io/tian-lab-site/)。
+
+## 构建与预览
+
+在本目录运行，构建无需安装第三方Python包：
+
+```sh
+python3 scripts/build_site.py
 ```
 
-Open:
+本轮本地预览地址为`http://127.0.0.1:4185/`，中文入口为`http://127.0.0.1:4185/zh/`，西班牙语入口为`http://127.0.0.1:4185/es/`。如需自行启动服务器：
 
-```text
-http://localhost:4173/
+```sh
+python3 -m http.server 4185 --bind 127.0.0.1
 ```
 
-The site is static. It can also run with:
+如果端口已占用，先确认是否已有本项目的预览；需要独立启动时可将端口改为4186或另一个空闲端口。不要停止未知进程或用户已有服务。`npm run dev`和`npm run preview`是保留的便捷命令，默认端口为4173。
 
-```bash
-python3 -m http.server 4173 --bind 127.0.0.1
+## 内容与实现位置
+
+| 文件 | 用途 |
+| --- | --- |
+| `data/publications.json` | 既有论文与已选新增论文的唯一目录、题名、作者、DOI、正式年份、已核实上线日期、类型、三语说明和展示ID |
+| `data/people.json` | PI及33名现有成员、分组、真实肖像、角色、单位、研究方向和已确认英文姓名 |
+| `data/contact.json` | PI和行政联系方式、公开单位信息与官方入口 |
+| `data/site.json` | 保留的旧版来源与校验基线；生成器仍从中读取已有封面、新闻及部分机构/合作文案 |
+| `scripts/build_site.py` | 页面结构、导航、研究主题、代表成果故事及三语UI文案；生成21个HTML页面 |
+| `styles.css` | 视觉层级、响应式布局、焦点样式及减少动态效果支持 |
+| `script.js` | 渐进增强；生产域名才加载原有分析脚本，本地预览不加载 |
+| `assets/images/` | 已有科研插画、封面、肖像及其他真实图像资产 |
+| `sitemap.xml` / `robots.txt` | 与静态页面路径对应的站点地图及爬虫入口 |
+
+修改数据、页面结构或文案后，重新运行构建，不要直接修改生成的HTML，否则下一次构建会覆盖这些修改。`data/site.json`同时承担原始目录保留检查，本次应保持不动；后续若维护新闻和封面，可先将对应内容抽取为独立来源，再调整生成器及校验基线。
+
+七个页面文件为`index.html`、`research.html`、`publications.html`、`people.html`、`join.html`、`collaborate.html`、`news.html`。英文位于根目录，中文位于`zh/`，西班牙语位于`es/`。保持三语页面对应，添加页面时同步导航、canonical、语言替代链接及站点地图。
+
+## 内容维护边界
+
+- 用户已授权从14篇候选中选择新增论文。选择依据与取舍见 `data/publication-selection.json`，书目信息和核验来源见[论文来源与修正说明](publication-source-notes.md)。原有16篇仍保留。
+- 用户确认尹浩霖已毕业，已从当前成员名单移除；论文署名及历史科研报道保留。该变更记录在 `data/content-decisions.json`。
+- `year`使用正式期刊年；`publishedOnline`只填写已核实的首次上线日期。DOI中的年份不能替代发表日期，缺失日期不推算。论文类型、模型和证据范围须与正式来源一致。
+- 成员英文姓名以已核实拼写为准，尚未确认时保留原姓名。缺失的研究方向不补造，成员年级不随年份自动递增。
+- 团队没有合照，当前用真实成员肖像和分工展示。用户另要求移除合作页2017年UCL合照，三语页面均不再展示，源图片保留。不得合成合照或虚构实验室活动。
+- 已有新闻示意图和封面用于介绍研究，与原始实验数据区分。申请页列出咨询路径，不承诺未确认的名额、资助或培养安排。
+- 新增公开内容时同时维护三语版本；公众页面不承载内部维护说明。
+
+## 验证
+
+运行现有检查命令：
+
+```sh
+npm run check
 ```
 
-## If localhost does not open
+该命令依次检查JavaScript语法、生成页面与源文件的一致性，以及本地路径/锚点、页面语言与基础结构、论文和成员的保留情况。可单独运行：
 
-1. Confirm the server is running:
-
-```bash
-lsof -nP -iTCP:4173 -sTCP:LISTEN
+```sh
+python3 scripts/build_site.py --check
+python3 scripts/check_site.py
 ```
 
-2. If nothing is listening, start it again with `npm run dev`.
-3. If another process owns the port, stop that process or run:
+结构检查不代替实际视觉与交互检查。页面修改后，按受影响范围检查320、390、768、1440像素视窗，核对三语换行、菜单键盘操作、语言切换、论文筛选、链接与直接访问。外部出版商的验证码或访问限制，应与真正失效链接区分。
 
-```bash
-python3 -m http.server 4174 --bind 127.0.0.1
-```
+## 发布范围
 
-Then open `http://localhost:4174/`.
+本次改版已获发布授权。先构建并验证最终静态文件，再以普通快进方式更新仓库 `main`；GitHub Pages从根目录部署。发布后核对构建提交号与实际线上页面，不能将推送成功直接视为上线验证完成。
 
-## Editing Content
-
-Most public-facing content lives in:
-
-```text
-data/site.json
-```
-
-Use that single file to update:
-
-- research tracks
-- publications and DOI links
-- cover gallery
-- people placeholders and alumni
-- news items
-- English / Chinese / Spanish copy
-
-Images live in:
-
-```text
-assets/images/
-```
-
-## Current Public Sections
-
-- Home: full-screen drummer hero, lab claim, CTA, rhythm canvas
-- Research: five research tracks with claims and capability bullets
-- Publications: representative works with journal, year, author abbreviations, DOI links
-- Covers & Visual Stories: STTT, Chem Soc Rev, Analytical Chemistry, MedComm, Advanced Materials
-- Collaboration: IBEC Molecular Bionics and Adcerebri as a translational platform
-- People / Join / Contact: structured placeholders ready for later table import
-
-## Deployment Notes
-
-- GitHub Pages: deploy the folder as a static site.
-- Vercel: import the folder and use no build command.
-- Current GitHub Pages target: `https://jojolee0731.github.io/tian-lab-site/`.
+后续新增或移除内容时，应同步维护决策记录与校验规则：保留基线论文及其他成员，仅允许已记录的论文新增和成员移除，不为通过检查而清空保留约束。

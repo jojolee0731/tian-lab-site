@@ -1,0 +1,287 @@
+{
+  "checked": "2026-09-19",
+  "authorization": "User authorized publication selection and official deployment in the current continuation; selection no longer waits for individual PI choices.",
+  "criteria": [
+    "Prioritize verified PI authorship and primary-source identity evidence.",
+    "Add six works supporting molecular tools, receptor mechanisms, material interfaces and clearance; also retain two verified neuroscience collaborations.",
+    "Do not imply every collaboration is lab-led or established clinical treatment.",
+    "Preserve all16 original works and the original9 selected IDs; homepage recent view limited to6."
+  ],
+  "chosenDOIs": [
+    "10.1002/advs.77608",
+    "10.1016/j.snb.2026.140691",
+    "10.1016/j.snb.2026.140415",
+    "10.1093/bioinformatics/btag357",
+    "10.1021/acs.analchem.5c05434",
+    "10.1002/anie.202517752",
+    "10.1038/s41586-025-10061-7",
+    "10.3389/fnagi.2025.1669405"
+  ],
+  "homepageRecentIds": [
+    "advs-2026-nmdar-tcells",
+    "snb-2026-mgo-abeta",
+    "snb-2026-dual-lock-mito",
+    "alz-2026-choroid-plexus",
+    "bioinformatics-2026-lrp1-glycans",
+    "nature-2026-5ht2a-gi"
+  ],
+  "homepageOrderNote": "A curated recent view prioritizing latest collaboration, molecular imaging and receptor work, plus one explicitly marked Nature collaboration. Not a claim of exhaustive chronological ranking; MGO exact first-online date is not verified.",
+  "candidates": [
+    {
+      "number": 1,
+      "doi": "10.1002/advs.77608",
+      "title": "Single-Cell Profiling Reveals Clonally Expanded CX3CR1+ T Cells in Anti-NMDA Receptor Encephalitis",
+      "decision": "include",
+      "reason": "近期神经免疫合作研究；患者单细胞多组学与脑脊液免疫状态拓展本组合作范围，按合作成果展示。",
+      "source": [
+        "https://pubmed.ncbi.nlm.nih.gov/42711907/",
+        "https://api.crossref.org/works/10.1002/advs.77608"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": [
+          "Functional and Molecular Imaging Key Laboratory of Sichuan Province Huaxi MR Research Center (HMRRC) Department of Radiology West China Hospital Sichuan University Chengdu Sichuan China"
+        ]
+      },
+      "catalogId": "advs-2026-nmdar-tcells"
+    },
+    {
+      "number": 2,
+      "doi": "10.1016/j.snb.2026.140691",
+      "title": "A reaction-based Iridium(III) phosphorescent probe for selective imaging of methylglyoxal and its correlation with amyloid-β pathology in Alzheimer’s disease",
+      "decision": "include",
+      "reason": "将反应型铱探针与AD相关MGO/Aβ病理联系，直接支撑疾病相关分子成像。",
+      "source": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0925400526012700",
+        "https://api.crossref.org/works/10.1016/j.snb.2026.140691"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": []
+      },
+      "catalogId": "snb-2026-mgo-abeta",
+      "accessNote": "Crossref current title, seven authors, volume/article and matching PI ORCID verified. Publisher body inaccessible; exact first-online date and detailed model claims intentionally omitted."
+    },
+    {
+      "number": 3,
+      "doi": "10.1016/j.snb.2026.140415",
+      "title": "An iridium(III) probe for mitochondrial viscosity imaging via dual-lock targeting under depolarized conditions",
+      "decision": "include",
+      "reason": "解决去极化条件下线粒体探针滞留和黏度读出问题，支撑功能分子工具主线。",
+      "source": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0925400526009937",
+        "https://api.crossref.org/works/10.1016/j.snb.2026.140415"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": []
+      },
+      "catalogId": "snb-2026-dual-lock-mito"
+    },
+    {
+      "number": 4,
+      "doi": "10.1093/bioinformatics/btag357",
+      "title": "A computational analysis of the glycoprotein lipoprotein receptor-related protein 1 structure and the role of glycans as quaternary glue",
+      "decision": "include",
+      "reason": "为LRP1受体与屏障转运研究补充计算结构视角；明确属于模型预测。",
+      "source": [
+        "https://academic.oup.com/bioinformatics/article/42/7/btag357/8702723",
+        "https://api.crossref.org/works/10.1093/bioinformatics/btag357"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": null,
+        "affiliation": [
+          "Department of Radiology and Huaxi MR Research Center (HMRRC), Functional and Molecular Imaging Key Laboratory of Sichuan Province, West China Hospital of Sichuan University , Chengdu, Sichuan Province 610000,",
+          "Department of Radiology and National Clinical Research Center for Geriatrics, Frontiers Science Center for Disease-Related Molecular Network, State Key Laboratory of Biotherapy, West China Hospital of Sichuan University , Chengdu, Sichuan Province 610000,"
+        ]
+      },
+      "catalogId": "bioinformatics-2026-lrp1-glycans"
+    },
+    {
+      "number": 5,
+      "doi": "10.1039/d6tc01087c",
+      "title": "A transparent and ionic conductive hydrogel integrating photochromism and electromagnetic interference shielding for smart window applications",
+      "decision": "defer",
+      "reason": "透明导电水凝胶与智能窗研究与当前网站三条科研主线联系较间接，暂不进入此次更新。",
+      "source": [
+        "https://pubs.rsc.org/en/content/articlelanding/2026/tc/d6tc01087c",
+        "https://api.crossref.org/works/10.1039/d6tc01087c"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": [
+          "Department of Radiology, Huaxi MR Research Center (HMRRC), Frontiers Science Center for Disease-Related Molecular Network, State Key Laboratory of Biotherapy, West China Hospital of Sichuan University, Chengdu 610000, Sichuan Province, China",
+          "Xiamen Key Laboratory of Psychoradiology and Neuromodulation, West China Xiamen Hospital of Sichuan University, Fujian, China"
+        ]
+      }
+    },
+    {
+      "number": 6,
+      "doi": "10.1016/j.nantod.2026.103039",
+      "title": "Lipid nanoparticle used in mRNA vaccine promotes tumor metastasis in mouse model via mtDNA-induced neutrophil activation and NETosis",
+      "decision": "defer",
+      "reason": "属于LNP与小鼠肿瘤转移的合作研究；本轮优先更直接的脑屏障、分子成像及神经科学合作成果。",
+      "source": [
+        "https://www.sciencedirect.com/science/article/pii/S1748013226000666",
+        "https://api.crossref.org/works/10.1016/j.nantod.2026.103039"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": null,
+        "affiliation": []
+      }
+    },
+    {
+      "number": 7,
+      "doi": "10.1021/acs.analchem.5c05434",
+      "title": "A Novel RNA-Light Probe for Structured-Illumination Microscopy Super-Resolution Imaging of Nucleolar Ultrastructure and Analysis of Nucleolar Dynamics",
+      "decision": "include",
+      "reason": "RNA探针与SIM核仁超分辨读出补充现有脂滴/线粒体探针，体现成像工具的测量对象与能力。",
+      "source": [
+        "https://pubs.acs.org/doi/abs/10.1021/acs.analchem.5c05434",
+        "https://api.crossref.org/works/10.1021/acs.analchem.5c05434"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": [
+          "Huaxi MR Research Centre (HMRRC), Functional and Molecular Imaging Key Laboratory of Sichuan Province, Department of Radiology and National Clinical Research Center for Geriatrics",
+          "West China Hospital of Sichuan University"
+        ]
+      },
+      "catalogId": "analchem-2026-rna-nucleolus"
+    },
+    {
+      "number": 8,
+      "doi": "10.1039/d6dt00099a",
+      "title": "Nitro-substituted ruthenium( ii ) polypyridyl complexes synergise with ATR inhibitors to enhance replication stress in cancer cells",
+      "decision": "defer",
+      "reason": "金属配合物与肿瘤复制压力研究真实相关，但本轮不继续增加较远的抗癌应用条目。",
+      "source": [
+        "https://pubs.rsc.org/en/content/articlelanding/2026/dt/d6dt00099a",
+        "https://api.crossref.org/works/10.1039/d6dt00099a"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": [
+          "Department of Radiology, Huaxi MR Research Center (HMRRC), Institute of Radiology and Medical Imaging, West China Hospital of Sichuan University, Sichuan University, Chengdu, Sichuan, China"
+        ]
+      }
+    },
+    {
+      "number": 9,
+      "doi": "10.1002/anie.202517752",
+      "title": "Hydrophilic Janus Micelles From an ABC Triblock Copolymer",
+      "decision": "include",
+      "reason": "以可核实的材料结构研究补充分子界面设计基础；不将Janus胶束直接声称为已验证脑递送系统。",
+      "source": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/anie.202517752",
+        "https://api.crossref.org/works/10.1002/anie.202517752"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": null,
+        "affiliation": [
+          "Functional and Molecular Imaging Key Laboratory of Sichuan Province, Huaxi MR Research Centre (HMRRC), Department of Radiology and Laboratory of Aging Research and Cancer Drug Target State Key Laboratory of Biotherapy and Cancer Center and National Clinical Research Center For Geriatrics West China Hospital of Sichuan University  Chengdu China",
+          "Huaxi Xiamen Institute of Medical Research and The Xiamen Key Laboratory of Psychoradiology and Neuromodulation West China Xiamen Hospital of Sichuan University  Xiamen Fujian China"
+        ]
+      },
+      "catalogId": "anie-2026-janus-micelles"
+    },
+    {
+      "number": 10,
+      "doi": "10.1016/j.stemcr.2026.102859",
+      "title": "Anesthetic-induced neurodevelopmental changes with region-specific responses to propofol in forebrain organoids",
+      "decision": "defer",
+      "reason": "前脑类器官合作研究与神经发育相关；本轮已选择两项神经科学合作成果，暂保留为后续候选。",
+      "source": [
+        "https://pubmed.ncbi.nlm.nih.gov/41861818/",
+        "https://api.crossref.org/works/10.1016/j.stemcr.2026.102859"
+      ],
+      "identityEvidence": {
+        "author": "Xiao-He Tian",
+        "orcid": null,
+        "affiliation": []
+      }
+    },
+    {
+      "number": 11,
+      "doi": "10.1038/s41586-025-10061-7",
+      "title": "Psychedelics elicit their effects by 5-HT2A receptor-mediated Gi signalling",
+      "decision": "include",
+      "reason": "神经受体信号合作研究；官方作者贡献可核实本组参与共聚焦成像，展示具体合作能力而非宣称主导全篇。",
+      "source": [
+        "https://www.nature.com/articles/s41586-025-10061-7",
+        "https://api.crossref.org/works/10.1038/s41586-025-10061-7"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": [
+          "Functional and Molecular Imaging Key Laboratory of Sichuan Province, Department of Radiology, Huaxi MR Research Centre, West China Hospital of Sichuan University"
+        ]
+      },
+      "catalogId": "nature-2026-5ht2a-gi",
+      "contributionEvidence": "Official article lists Dandan Chen and Xiaohe Tian under Huaxi HMRRC affiliation and identifies Xiaohe Tian as a supervisor of confocal imaging. He is not listed among corresponding authors."
+    },
+    {
+      "number": 12,
+      "doi": "10.1038/s41378-025-01146-4",
+      "title": "Iridium complex-loaded biomimetic vesicles enable enhanced photodynamic therapy and immune modulation",
+      "decision": "defer",
+      "reason": "铱囊泡PDT与免疫调节属于跨疾病应用，本轮已有功能探针与材料结构内容，暂不继续扩充肿瘤方向。",
+      "source": [
+        "https://www.nature.com/articles/s41378-025-01146-4",
+        "https://api.crossref.org/works/10.1038/s41378-025-01146-4"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": "https://orcid.org/0000-0002-2294-3945",
+        "affiliation": []
+      }
+    },
+    {
+      "number": 13,
+      "doi": "10.1016/j.jddst.2026.108086",
+      "title": "Intracellular delivery of anti-dengue envelope monoclonal antibodies via PEG-PLGA nanoparticles suppresses viral replication and attenuates hepatocyte apoptosis",
+      "decision": "defer",
+      "reason": "抗登革病毒抗体递送与当前脑屏障及成像叙事相对间接，留作后续合作成果扩展。",
+      "source": [
+        "https://www.sciencedirect.com/science/article/pii/S1773224726001115",
+        "https://api.crossref.org/works/10.1016/j.jddst.2026.108086"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": null,
+        "affiliation": []
+      }
+    },
+    {
+      "number": 14,
+      "doi": "10.3389/fnagi.2025.1669405",
+      "title": "LRP1 at the crossroads of Aβ clearance and therapeutic targeting in Alzheimer’s disease",
+      "decision": "include",
+      "reason": "LRP1/Aβ清除综述直接连接受体、屏障转运与疾病清除主线；明确标注综述，不作为新增实验验证。",
+      "source": [
+        "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2025.1669405/full",
+        "https://api.crossref.org/works/10.3389/fnagi.2025.1669405"
+      ],
+      "identityEvidence": {
+        "author": "Xiaohe Tian",
+        "orcid": null,
+        "affiliation": [
+          "Department of Radiology, Huaxi MR Research Center, West China Hospital of Sichuan University; Psychoradiology Key Laboratory of Sichuan Province"
+        ],
+        "publisherEmail": "xiaohe.t@wchscu.cn"
+      },
+      "catalogId": "fnagi-2026-lrp1-clearance",
+      "citationYearNote": "Publisher PDF citation explicitly uses2026; issue/volume17 carries2025 in some indexes. Website uses publisher citation2026, separate online2026-01-09."
+    }
+  ]
+}

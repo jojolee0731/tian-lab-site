@@ -1,0 +1,83 @@
+{
+  "checked": "2026-09-19",
+  "pi": {
+    "name": {
+      "zh": "田肖和",
+      "en": "Xiaohe Tian",
+      "es": "Xiaohe Tian"
+    },
+    "role": {
+      "zh": "课题组负责人",
+      "en": "Principal Investigator",
+      "es": "Investigador principal"
+    },
+    "email": "xiaohe.t@wchscu.cn",
+    "wechat": "KnightJoseph",
+    "affiliation": {
+      "zh": "四川大学华西医院 · 华西磁共振影像研究所 / 放射科",
+      "en": "West China Hospital, Sichuan University · Huaxi MR Research Center / Department of Radiology",
+      "es": "Hospital de China Occidental, Universidad de Sichuan · Centro de Investigación de Resonancia Magnética de Huaxi / Departamento de Radiología"
+    },
+    "location": {
+      "zh": "中国四川成都",
+      "en": "Chengdu, Sichuan, China",
+      "es": "Chengdu, Sichuan, China"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "West China advisor profile",
+          "zh": "华西研究生导师页",
+          "es": "Perfil oficial como director de posgrado"
+        },
+        "url": "https://yjs.cd120.com/contents/979/2630.html"
+      },
+      {
+        "label": {
+          "en": "Huaxi MR Research Center",
+          "zh": "华西磁共振影像研究所",
+          "es": "Centro de Investigación de Resonancia Magnética de Huaxi"
+        },
+        "url": "https://www.wchscu.cn/scientific/science_technology/platform/60414.html"
+      },
+      {
+        "label": {
+          "en": "Google Scholar",
+          "zh": "Google Scholar",
+          "es": "Google Scholar"
+        },
+        "url": "https://scholar.google.com/citations?user=ORNIJ3wAAAAJ&hl=en"
+      }
+    ]
+  },
+  "admin": {
+    "memberId": "member-11",
+    "name": {
+      "zh": "陈香淼",
+      "en": "Xiangmiao Chen",
+      "es": "Xiangmiao Chen"
+    },
+    "role": {
+      "zh": "科研行政助理",
+      "en": "Research Administrative Assistant",
+      "es": "Asistencia administrativa de investigación"
+    },
+    "email": "xiangm_chen@foxmail.com",
+    "image": "./assets/images/people/10-member.jpg",
+    "affiliation": {
+      "en": "West China Hospital, Sichuan University · Laboratory Medicine",
+      "zh": "四川大学华西医院/医学检验",
+      "es": "Hospital de China Occidental, Universidad de Sichuan · Medicina de laboratorio"
+    },
+    "responsibilities": {
+      "zh": "入组安排、排期、内部协调、报销和课题组日常事务。",
+      "en": "Onboarding, scheduling, internal coordination, reimbursements and routine lab matters.",
+      "es": "Incorporación, programación, coordinación interna, reembolsos y asuntos cotidianos del laboratorio."
+    },
+    "cta": {
+      "zh": "联系课题组行政",
+      "en": "Email the lab office",
+      "es": "Contactar con la administración"
+    }
+  }
+}

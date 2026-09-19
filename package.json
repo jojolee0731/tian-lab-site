@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
     "preview": "python3 -m http.server 4173 --bind 127.0.0.1",
-    "check": "node --check script.js && python3 -m json.tool data/site.json >/dev/null"
+    "check": "node --check script.js && python3 scripts/build_site.py --check && python3 scripts/check_site.py",
+    "build": "python3 scripts/build_site.py"
   }
 }

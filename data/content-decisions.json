@@ -1,0 +1,17 @@
+{
+  "checked": "2026-09-19",
+  "removedPeople": [
+    {
+      "id": "member-29",
+      "name": "尹浩霖",
+      "reason": "Graduated; user explicitly confirmed removal from the current team."
+    }
+  ],
+  "removedDisplayAssets": [
+    {
+      "path": "assets/images/tian-battaglia-ucl-2017.jpg",
+      "scope": "All language versions of the collaboration page",
+      "reason": "User requested removing the displayed 2017 UCL joint photograph; original file retained."
+    }
+  ]
+}

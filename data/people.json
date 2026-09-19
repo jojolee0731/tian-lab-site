@@ -1,0 +1,894 @@
+{
+  "checked": "2026-09-19",
+  "pi": {
+    "name": "Xiaohe Tian, PhD",
+    "image": "./assets/images/people/xiaohe-tian-pi.jpg",
+    "imageAlt": {
+      "en": "Prof. Xiaohe Tian",
+      "zh": "田肖和教授",
+      "es": "Prof. Xiaohe Tian"
+    },
+    "role": {
+      "en": "Professor / Principal Investigator / PhD Supervisor",
+      "zh": "教授/研究员 · 博士生导师 · 课题组负责人",
+      "es": "Profesor · Investigador principal · Director de tesis doctorales"
+    },
+    "bio": {
+      "en": "Xiaohe Tian leads Tian Lab at West China Hospital, Sichuan University. His research connects brain barrier transport, multivalent interface design and molecular imaging to questions in neurodegenerative disease and nanomedicine. He trained at Anhui University and the University of Sheffield, followed by postdoctoral research in chemistry at University College London.",
+      "zh": "田肖和在四川大学华西医院带领Tian Lab，围绕脑屏障转运、多价界面设计与分子影像，开展神经退行性疾病与纳米医学研究。他先后在安徽大学、英国谢菲尔德大学学习，并在伦敦大学学院化学学院开展博士后研究。",
+      "es": "Xiaohe Tian dirige Tian Lab en el Hospital de China Occidental de la Universidad de Sichuan. Su investigación conecta el transporte a través de las barreras cerebrales, el diseño de interfaces multivalentes y la imagen molecular con preguntas sobre enfermedades neurodegenerativas y nanomedicina. Se formó en la Universidad de Anhui y la Universidad de Sheffield y realizó investigación posdoctoral en química en University College London."
+    },
+    "tags": [
+      {
+        "en": "West China Hospital",
+        "zh": "四川大学华西医院",
+        "es": "Hospital de China Occidental"
+      },
+      {
+        "en": "HMRRC / Radiology",
+        "zh": "华西磁共振影像研究所 / 放射科",
+        "es": "HMRRC / Radiología"
+      },
+      {
+        "en": "Nano-neuroscience",
+        "zh": "纳米神经科学",
+        "es": "Nanoneurociencia"
+      },
+      {
+        "en": "BBB transport",
+        "zh": "血脑屏障转运",
+        "es": "Transporte a través de la barrera hematoencefálica"
+      },
+      {
+        "en": "Molecular imaging",
+        "zh": "分子影像",
+        "es": "Imagen molecular"
+      },
+      {
+        "en": "National-level young talent",
+        "zh": "国家级青年人才",
+        "es": "Joven talento de nivel nacional"
+      },
+      {
+        "en": "Sichuan Tianfu Emei Young Talent",
+        "zh": "四川省天府峨眉青年人才",
+        "es": "Programa Tianfu Emei de Sichuan para jóvenes talentos"
+      }
+    ],
+    "facts": [
+      {
+        "label": {
+          "en": "Education",
+          "zh": "教育经历",
+          "es": "Formación"
+        },
+        "value": {
+          "en": "BSc Anhui University; MSc and PhD, University of Sheffield",
+          "zh": "安徽大学本科；英国谢菲尔德大学硕士、博士",
+          "es": "Grado, Universidad de Anhui; máster y doctorado, Universidad de Sheffield"
+        }
+      },
+      {
+        "label": {
+          "en": "Postdoctoral Training",
+          "zh": "博士后训练",
+          "es": "Formación postdoctoral"
+        },
+        "value": {
+          "en": "University College London, Department of Chemistry",
+          "zh": "英国伦敦大学学院（UCL）化学学院",
+          "es": "Departamento de Química, University College London"
+        }
+      },
+      {
+        "label": {
+          "en": "Appointments and recognition",
+          "zh": "任职与人才计划",
+          "es": "Cargos y reconocimientos"
+        },
+        "value": {
+          "en": "National-level young talent; Sichuan Tianfu Emei Young Talent; PhD supervisor; Associate Editor of iBrain",
+          "zh": "国家级青年人才；四川省天府峨眉青年人才；博士生导师；《iBrain》期刊副主编",
+          "es": "Programa nacional para jóvenes talentos; programa Tianfu Emei de Sichuan para jóvenes talentos; director de tesis doctorales; editor asociado de iBrain"
+        }
+      }
+    ],
+    "links": [
+      {
+        "label": {
+          "en": "West China advisor profile",
+          "zh": "华西研究生导师页",
+          "es": "Perfil oficial como director de posgrado"
+        },
+        "url": "https://yjs.cd120.com/contents/979/2630.html"
+      },
+      {
+        "label": {
+          "en": "Huaxi MR Research Center",
+          "zh": "华西磁共振影像研究所",
+          "es": "Centro de Investigación de Resonancia Magnética de Huaxi"
+        },
+        "url": "https://www.wchscu.cn/scientific/science_technology/platform/60414.html"
+      },
+      {
+        "label": {
+          "en": "Google Scholar",
+          "zh": "Google Scholar",
+          "es": "Google Scholar"
+        },
+        "url": "https://scholar.google.com/citations?user=ORNIJ3wAAAAJ&hl=en"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "member-01",
+      "name": "苏利萍",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博士三年级",
+        "es": "Estudiante de doctorado, año 3"
+      },
+      "affiliation": {
+        "en": "State Key Laboratory of Biotherapy, Sichuan University · Biology and Medicine",
+        "zh": "四川大学生物治疗全国重点实验室/生物与医药",
+        "es": "Laboratorio Estatal de Bioterapia, Universidad de Sichuan · Biología y medicina"
+      },
+      "focus": {
+        "en": "Fluorescence imaging and targeted drug delivery",
+        "zh": "荧光成像与靶向药物递送",
+        "es": "Imagen de fluorescencia y administración dirigida de fármacos"
+      },
+      "joined": "2021.1",
+      "image": "./assets/images/people/01-member.jpg",
+      "email": "1548282220@qq.com",
+      "nameEn": "Liping Su"
+    },
+    {
+      "id": "member-02",
+      "name": "项攀",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 4",
+        "zh": "博士四年级",
+        "es": "Estudiante de doctorado, año 4"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Medicinal Chemistry",
+        "zh": "四川大学华西临床医学院/药物化学",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Química medicinal"
+      },
+      "focus": {
+        "en": "Therapeutic approaches to neurodegenerative diseases",
+        "zh": "神经退行性疾病的治疗",
+        "es": "Estrategias terapéuticas para enfermedades neurodegenerativas"
+      },
+      "joined": "2018.1",
+      "image": "./assets/images/people/02-member.jpg",
+      "email": "xiangpan1210@163.com",
+      "nameEn": "Pan Xiang"
+    },
+    {
+      "id": "member-03",
+      "name": "刘金凤",
+      "group": "student",
+      "role": {
+        "en": "Master’s Student, Year 2",
+        "zh": "硕士二年级",
+        "es": "Estudiante de máster, año 2"
+      },
+      "affiliation": {
+        "en": "School of Medicine, Sichuan University · Dermatology and Venereology",
+        "zh": "四川大学临床医学院/皮肤病与性病学科",
+        "es": "Facultad de Medicina, Universidad de Sichuan · Dermatología y venereología"
+      },
+      "focus": {
+        "en": "Epidermal lipid metabolism",
+        "zh": "表皮脂质代谢",
+        "es": "Metabolismo lipídico epidérmico"
+      },
+      "joined": "2025.09.01",
+      "image": "./assets/images/people/29-member.jpg",
+      "email": "15196651350@163.com",
+      "nameEn": "Jinfeng Liu"
+    },
+    {
+      "id": "member-04",
+      "name": "卢梓浩",
+      "group": "student",
+      "role": {
+        "en": "Professional Master’s Student, Year 3",
+        "zh": "专业型硕士三年级",
+        "es": "Estudiante de máster profesional, año 3"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Radiological Imaging",
+        "zh": "四川大学华西医院/放射影像学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen radiológica"
+      },
+      "focus": {
+        "en": "Multimodal magnetic resonance imaging in mice",
+        "zh": "小鼠多模态磁共振研究",
+        "es": "Imagen por resonancia magnética multimodal en ratones"
+      },
+      "joined": "2023.9",
+      "image": "./assets/images/people/03-member.jpg",
+      "email": "luzihao_cnscsn@163.com",
+      "nameEn": "Zihao Lu"
+    },
+    {
+      "id": "member-05",
+      "name": "陈丹丹",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 2",
+        "zh": "博士二年级",
+        "es": "Estudiante de doctorado, año 2"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Molecular and Translational Medicine",
+        "zh": "四川大学华西医院/疾病分子与转化医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Medicina molecular y traslacional"
+      },
+      "focus": {
+        "en": "Applications of multivalent targeted drugs",
+        "zh": "多价靶向药物应用",
+        "es": "Aplicaciones de fármacos con direccionamiento multivalente"
+      },
+      "joined": "2020.7",
+      "image": "./assets/images/people/04-member.jpg",
+      "email": "chendd013@163.com"
+    },
+    {
+      "id": "member-06",
+      "name": "易烜",
+      "group": "student",
+      "role": {
+        "en": "Undergraduate Student, Year 3",
+        "zh": "本科生大三",
+        "es": "Estudiante de grado, año 3"
+      },
+      "affiliation": {
+        "en": "School of Mechanical Engineering, Sichuan University · Mechanical Design, Manufacturing and Automation (Medical Engineering Track)",
+        "zh": "四川大学机械工程学院/机械设计制造及其自动化（医工班）",
+        "es": "Facultad de Ingeniería Mecánica, Universidad de Sichuan · Diseño mecánico, fabricación y automatización (itinerario de ingeniería médica)"
+      },
+      "focus": {
+        "en": "Nanoscale fluid dynamics simulations",
+        "zh": "纳米尺度流体力学仿真",
+        "es": "Simulación de dinámica de fluidos a escala nanométrica"
+      },
+      "joined": "2023.12",
+      "image": "./assets/images/people/05-member.jpg",
+      "email": "yx306238836@foxmail.com"
+    },
+    {
+      "id": "member-07",
+      "name": "邓粤鹏",
+      "group": "student",
+      "role": {
+        "en": "Research Master’s Student, Year 2",
+        "zh": "科硕二年级",
+        "es": "Estudiante de máster de investigación, año 2"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Medical Imaging and Nuclear Medicine",
+        "zh": "四川大学华西医院/影像医学与核医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen médica y medicina nuclear"
+      },
+      "focus": {
+        "en": "The glymphatic system in Alzheimer’s disease",
+        "zh": "阿尔茨海默病中的类淋巴系统",
+        "es": "El sistema glinfático en la enfermedad de Alzheimer"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/06-member.jpg",
+      "email": "dengyuepeng423@163.com",
+      "nameEn": "Yuepeng Deng"
+    },
+    {
+      "id": "member-08",
+      "name": "Nur Aininie Binti Yusoh",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Medicinal Chemistry",
+        "zh": "四川大学华西医院/药物化学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Química medicinal"
+      },
+      "focus": {
+        "en": "Ruthenium(II) complexes targeting Aβ aggregation in Alzheimer’s disease",
+        "zh": "钌(II)配合物靶向阿尔茨海默病Aβ聚集研究",
+        "es": "Complejos de rutenio(II) dirigidos a la agregación de Aβ en la enfermedad de Alzheimer"
+      },
+      "joined": "2024.11",
+      "image": "./assets/images/people/07-nur-aininie-binti-yusoh.jpg",
+      "email": "aininieyusoh@outlook.com"
+    },
+    {
+      "id": "member-09",
+      "name": "田诗菡",
+      "group": "student",
+      "role": {
+        "en": "Professional Master’s Student, Year 2",
+        "zh": "专硕二年级",
+        "es": "Estudiante de máster profesional, año 2"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Radiological Imaging",
+        "zh": "四川大学华西医院/放射影像学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen radiológica"
+      },
+      "focus": {
+        "en": "Multimodal magnetic resonance imaging in Alzheimer’s disease",
+        "zh": "阿尔茨海默病的多模态磁共振研究",
+        "es": "Imagen por resonancia magnética multimodal en la enfermedad de Alzheimer"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/08-member.jpg",
+      "email": "tianshihan1121@foxmail.com"
+    },
+    {
+      "id": "member-10",
+      "name": "杨顺杰",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University",
+        "zh": "四川大学华西医院",
+        "es": "Hospital de China Occidental, Universidad de Sichuan"
+      },
+      "focus": {
+        "en": "Novel nanomaterials for osteoarthritis treatment",
+        "zh": "新型纳米材料用于骨关节炎治疗",
+        "es": "Nuevos nanomateriales para el tratamiento de la artrosis"
+      },
+      "joined": "2024.11",
+      "image": "./assets/images/people/09-member.jpg",
+      "email": "707894255@qq.com"
+    },
+    {
+      "id": "member-11",
+      "name": "陈香淼",
+      "group": "admin",
+      "role": {
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Laboratory Medicine",
+        "zh": "四川大学华西医院/医学检验",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Medicina de laboratorio"
+      },
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2023.12",
+      "image": "./assets/images/people/10-member.jpg",
+      "email": "xiangm_chen@foxmail.com",
+      "nameEn": "Xiangmiao Chen"
+    },
+    {
+      "id": "member-12",
+      "name": "赵芮",
+      "group": "staff",
+      "role": {
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Radiological Imaging",
+        "zh": "四川大学华西医院/放射影像学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen radiológica"
+      },
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2025.08",
+      "image": "./assets/images/people/11-member.jpg",
+      "email": "1984526447@qq.com",
+      "nameEn": "Rui Zhao"
+    },
+    {
+      "id": "member-13",
+      "name": "罗玉翎",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Psychiatry",
+        "zh": "四川大学华西医院/精神病学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Psiquiatría"
+      },
+      "focus": {
+        "en": "Depression and circadian rhythms",
+        "zh": "抑郁症与昼夜节律",
+        "es": "Depresión y ritmos circadianos"
+      },
+      "joined": "2025.12",
+      "image": "./assets/images/people/12-member.jpg",
+      "email": "yuling233@wchscu.cn"
+    },
+    {
+      "id": "member-14",
+      "name": "李剑雨",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Biomedical Engineering",
+        "zh": "四川大学华西医院/生物医学工程",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Ingeniería biomédica"
+      },
+      "focus": {
+        "en": "Psychiatric neuroimaging for predicting disease onset, diagnosis and treatment outcomes",
+        "zh": "使用精神影像研究精神疾病的发作、诊断与治疗结局预测",
+        "es": "Neuroimagen psiquiátrica para predecir el inicio de enfermedades, el diagnóstico y los resultados del tratamiento"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/13-member.jpg",
+      "email": "jianyu.li2@mail.mcgill.ca"
+    },
+    {
+      "id": "member-15",
+      "name": "胡潘宜",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Clinical Medicine",
+        "zh": "四川大学华西医院/临床医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Medicina clínica"
+      },
+      "focus": {
+        "en": "Nanomaterials and small-molecule fluorescent probes for liver disease research",
+        "zh": "利用纳米材料和小分子荧光探针研究肝脏疾病",
+        "es": "Nanomateriales y sondas fluorescentes de molécula pequeña para investigar enfermedades hepáticas"
+      },
+      "joined": "2023.03",
+      "image": "./assets/images/people/14-hu-panyi-20260918.jpg",
+      "email": "hupanyi@wchscu.cn",
+      "nameEn": "Panyi Hu"
+    },
+    {
+      "id": "member-16",
+      "name": "刘懿炜",
+      "group": "student",
+      "role": {
+        "en": "Undergraduate Student, Year 4",
+        "zh": "本科大四",
+        "es": "Estudiante de grado, año 4"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Clinical Medicine (Five-Year Programme)",
+        "zh": "四川大学华西临床医学院/临床医学五年制",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Medicina clínica (programa de cinco años)"
+      },
+      "focus": {
+        "en": "",
+        "zh": "",
+        "es": ""
+      },
+      "joined": "2025.06",
+      "image": "./assets/images/people/15-member.jpg",
+      "email": "liuyiwei1@stu.scu.edu.cn"
+    },
+    {
+      "id": "member-17",
+      "name": "郭林琳",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Clinical Medicine",
+        "zh": "四川大学华西医院/临床医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Medicina clínica"
+      },
+      "focus": {
+        "en": "FAPI PET imaging of neuroinflammation",
+        "zh": "FAPI PET用于神经炎症成像",
+        "es": "Imagen de neuroinflamación mediante PET con FAPI"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/16-member.jpg",
+      "email": "guolinliny@163.com"
+    },
+    {
+      "id": "member-18",
+      "name": "杨靖",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "University of Barcelona · Biomedicine",
+        "zh": "巴塞罗那大学/生物医药",
+        "es": "Universidad de Barcelona · Biomedicina"
+      },
+      "focus": {
+        "en": "Multimodal imaging of multivalent targeted drugs in neurodegenerative diseases",
+        "zh": "神经退行性疾病中多价靶向药物的多模态成像",
+        "es": "Imagen multimodal de fármacos con direccionamiento multivalente en enfermedades neurodegenerativas"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/17-member.jpg",
+      "email": "cylydyj@163.com"
+    },
+    {
+      "id": "member-19",
+      "name": "任佑祥",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Disease and Translational Medicine",
+        "zh": "四川大学华西临床医学院/疾病医学与转化医学",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Medicina de enfermedades y medicina traslacional"
+      },
+      "focus": {
+        "en": "Nanomaterials and small-molecule fluorescent probes for liver disease research",
+        "zh": "利用纳米材料和小分子荧光探针研究肝脏疾病",
+        "es": "Nanomateriales y sondas fluorescentes de molécula pequeña para investigar enfermedades hepáticas"
+      },
+      "joined": "2024.09",
+      "image": "./assets/images/people/18-member.jpg",
+      "email": "renyouxiang@126.com",
+      "nameEn": "Youxiang Ren"
+    },
+    {
+      "id": "member-20",
+      "name": "尹宏鹭",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博士三年级",
+        "es": "Estudiante de doctorado, año 3"
+      },
+      "affiliation": {
+        "en": "University of Barcelona · Biomedicine",
+        "zh": "巴塞罗那大学/生物医药",
+        "es": "Universidad de Barcelona · Biomedicina"
+      },
+      "focus": {
+        "en": "Phenotype targeting with multivalent peptide-ligand nanoparticles",
+        "zh": "多价肽配体纳米颗粒的表型靶向",
+        "es": "Direccionamiento a fenotipos con nanopartículas de ligandos peptídicos multivalentes"
+      },
+      "joined": "2023.07",
+      "image": "./assets/images/people/19-member.jpg",
+      "email": "hyin@ibecbarcelona.eu"
+    },
+    {
+      "id": "member-21",
+      "name": "罗其彬",
+      "group": "student",
+      "role": {
+        "en": "Academic Master’s Student, Year 1",
+        "zh": "学硕一年级",
+        "es": "Estudiante de máster académico, año 1"
+      },
+      "affiliation": {
+        "en": "Zunyi Medical University · Neurosurgery",
+        "zh": "遵义医科大学/神经外科",
+        "es": "Universidad Médica de Zunyi · Neurocirugía"
+      },
+      "focus": {
+        "en": "Temozolomide (TMZ) resistance in glioma",
+        "zh": "胶质瘤替莫唑胺（TMZ）耐药",
+        "es": "Resistencia a temozolomida (TMZ) en gliomas"
+      },
+      "joined": "2026.01",
+      "image": "./assets/images/people/20-member.jpg",
+      "email": "634521213@qq.com"
+    },
+    {
+      "id": "member-22",
+      "name": "谢振东",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow, Year 1",
+        "zh": "博士后第一年",
+        "es": "Personal posdoctoral, año 1"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Nanoscience",
+        "zh": "四川大学华西医院/纳米科学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Nanociencia"
+      },
+      "focus": {
+        "en": "Multivalent targeted drug design and computational biology",
+        "zh": "多价靶向药物设计与计算生物学",
+        "es": "Diseño de fármacos con direccionamiento multivalente y biología computacional"
+      },
+      "joined": "2021.09",
+      "image": "./assets/images/people/21-member.jpg",
+      "email": "zxie@ibecbarcelona.eu",
+      "nameEn": "Zhendong Xie"
+    },
+    {
+      "id": "member-23",
+      "name": "高健",
+      "group": "student",
+      "role": {
+        "en": "Academic Master’s Student, Year 3",
+        "zh": "学硕三年级",
+        "es": "Estudiante de máster académico, año 3"
+      },
+      "affiliation": {
+        "en": "Zunyi Medical University · Urology",
+        "zh": "遵义医科大学/泌尿外科学",
+        "es": "Universidad Médica de Zunyi · Urología"
+      },
+      "focus": {
+        "en": "Establishment of primary organoids",
+        "zh": "原代类器官构建",
+        "es": "Establecimiento de organoides primarios"
+      },
+      "joined": "2026.03",
+      "image": "./assets/images/people/22-member.jpg",
+      "email": "137785001@qq.com"
+    },
+    {
+      "id": "member-24",
+      "name": "胡磊",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 3",
+        "zh": "博士三年级",
+        "es": "Estudiante de doctorado, año 3"
+      },
+      "affiliation": {
+        "en": "University of Barcelona · Organic Chemistry",
+        "zh": "巴塞罗那大学/有机化学",
+        "es": "Universidad de Barcelona · Química orgánica"
+      },
+      "focus": {
+        "en": "Fluorescent probes and bioimaging",
+        "zh": "荧光探针与生物成像",
+        "es": "Sondas fluorescentes y bioimagen"
+      },
+      "joined": "2023.09",
+      "image": "./assets/images/people/23-member.jpg",
+      "email": "hulei@wnmc.edu.cn"
+    },
+    {
+      "id": "member-25",
+      "name": "刘尚可",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "School of Medicine, Sichuan University · Burns and Plastic Surgery",
+        "zh": "四川大学临床医学院/烧伤整形外科",
+        "es": "Facultad de Medicina, Universidad de Sichuan · Quemaduras y cirugía plástica"
+      },
+      "focus": {
+        "en": "Skin ageing",
+        "zh": "皮肤衰老",
+        "es": "Envejecimiento cutáneo"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/24-member.jpg",
+      "email": "liushangke0424@foxmail.com"
+    },
+    {
+      "id": "member-26",
+      "name": "樊磊",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Molecular and Translational Medicine",
+        "zh": "四川大学华西医院临床学院/疾病分子与转化医学",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Medicina molecular y traslacional"
+      },
+      "focus": {
+        "en": "Nanomaterials for osteoarthritis treatment",
+        "zh": "纳米材料用于骨关节炎治疗",
+        "es": "Nanomateriales para el tratamiento de la artrosis"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/25-member.jpg",
+      "email": "1562145986@qq.com"
+    },
+    {
+      "id": "member-27",
+      "name": "许家瑞",
+      "group": "student",
+      "role": {
+        "en": "Master’s Student, Year 1",
+        "zh": "硕士一年级",
+        "es": "Estudiante de máster, año 1"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Medical Ultrasound Technology",
+        "zh": "四川大学华西临床医学院/超声医学技术学",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Tecnología de ecografía médica"
+      },
+      "focus": {
+        "en": "Nanomaterials and small-molecule fluorescent probes for liver disease research",
+        "zh": "利用纳米材料和小分子荧光探针研究肝脏疾病",
+        "es": "Nanomateriales y sondas fluorescentes de molécula pequeña para investigar enfermedades hepáticas"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/26-member.jpg",
+      "email": "871902459@qq.com"
+    },
+    {
+      "id": "member-28",
+      "name": "周冠宇",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "University of Barcelona · Biomedicine",
+        "zh": "巴塞罗那大学/生物医药",
+        "es": "Universidad de Barcelona · Biomedicina"
+      },
+      "focus": {
+        "en": "Multivalent ApoE topology and neurovascular homeostasis remodelling in Alzheimer’s disease",
+        "zh": "多价ApoE拓扑结构与阿尔茨海默病中的神经血管稳态重构",
+        "es": "Topología multivalente de ApoE y remodelación de la homeostasis neurovascular en la enfermedad de Alzheimer"
+      },
+      "joined": "2025.09",
+      "image": "./assets/images/people/27-member.jpg",
+      "email": "571741089@qq.com"
+    },
+    {
+      "id": "member-30",
+      "name": "张舒然",
+      "group": "student",
+      "role": {
+        "en": "Undergraduate Student",
+        "zh": "本科",
+        "es": "Estudiante de grado"
+      },
+      "affiliation": {
+        "en": "University of Toronto · Chemistry",
+        "zh": "多伦多大学/化学",
+        "es": "Universidad de Toronto · Química"
+      },
+      "focus": {
+        "en": "Neuroinflammation and Alzheimer’s disease pathology",
+        "zh": "神经炎症与阿尔茨海默病病理",
+        "es": "Neuroinflamación y patología de la enfermedad de Alzheimer"
+      },
+      "joined": "2026.08",
+      "image": "./assets/images/people/30-zhang-shuran.jpg",
+      "email": "zhang.shuran@outlook.com"
+    },
+    {
+      "id": "member-31",
+      "name": "杨怡璟",
+      "group": "student",
+      "role": {
+        "en": "PhD",
+        "zh": "博士",
+        "es": "Doctorado"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Nanomedicine",
+        "zh": "四川大学华西医院/纳米医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Nanomedicina"
+      },
+      "focus": {
+        "en": "First-principles molecular dynamics, graph theory and topology",
+        "zh": "第一性原理分子动力学、图论与拓扑学",
+        "es": "Dinámica molecular de primeros principios, teoría de grafos y topología"
+      },
+      "joined": "2026.05",
+      "image": "./assets/images/people/31-yang-yijing.jpg",
+      "email": "Yijing.yang@universite-paris-saclay.fr"
+    },
+    {
+      "id": "member-32",
+      "name": "王兴澄",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "University of Barcelona · Biomedicine",
+        "zh": "巴塞罗那大学/生物医学",
+        "es": "Universidad de Barcelona · Biomedicina"
+      },
+      "focus": {
+        "en": "AI-driven protein conformational modelling and molecular interaction calculations for targeted molecules",
+        "zh": "AI驱动的蛋白构象建模与靶向分子相互作用计算",
+        "es": "Modelado de conformaciones de proteínas mediante IA y cálculo de interacciones moleculares para moléculas dirigidas"
+      },
+      "joined": "2025.9",
+      "image": "./assets/images/people/32-wang-xingcheng.jpg",
+      "email": "210718997@qq.com"
+    },
+    {
+      "id": "member-33",
+      "name": "李晴",
+      "group": "staff",
+      "role": {
+        "en": "Technician",
+        "zh": "技术员",
+        "es": "Personal técnico"
+      },
+      "affiliation": {
+        "en": "Research Institute, West China Hospital Xiamen, Sichuan University · Chemistry",
+        "zh": "四川大学厦门华西医院研究院/化学",
+        "es": "Instituto de Investigación, Hospital de China Occidental de Xiamen, Universidad de Sichuan · Química"
+      },
+      "focus": {
+        "en": "Inorganic nanomaterials for cancer therapy",
+        "zh": "无机纳米材料在肿瘤治疗中的应用",
+        "es": "Nanomateriales inorgánicos para el tratamiento del cáncer"
+      },
+      "joined": "2026.03.16",
+      "image": "./assets/images/people/33-li-qing.jpg",
+      "email": "li3222406658@163.com"
+    },
+    {
+      "id": "member-34",
+      "name": "邢亿开",
+      "group": "student",
+      "role": {
+        "en": "PhD Student, Year 1",
+        "zh": "博士一年级",
+        "es": "Estudiante de doctorado, año 1"
+      },
+      "affiliation": {
+        "en": "West China School of Medicine, Sichuan University · Thoracic Surgery",
+        "zh": "四川大学华西临床医学院/胸外科",
+        "es": "Facultad de Medicina de China Occidental, Universidad de Sichuan · Cirugía torácica"
+      },
+      "focus": {
+        "en": "Pulmonary interstitial fibrosis",
+        "zh": "肺间质纤维化",
+        "es": "Fibrosis intersticial pulmonar"
+      },
+      "joined": "2026.09",
+      "image": "./assets/images/people/34-xing-yikai.jpg",
+      "email": "yikai_xing@126.com"
+    }
+  ]
+}
