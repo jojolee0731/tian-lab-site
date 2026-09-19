@@ -1,0 +1,2 @@
+# Used only by the reviewed-profile exporter; the static generator is stdlib-only.
+Pillow==12.3.0

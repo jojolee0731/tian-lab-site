@@ -13,5 +13,152 @@
       "scope": "All language versions of the collaboration page",
       "reason": "User requested removing the displayed 2017 UCL joint photograph; original file retained."
     }
-  ]
+  ],
+  "addedPeople": [
+    {
+      "id": "member-35",
+      "name": "陶怡然",
+      "reason": "User explicitly requested this member addition and placement in the technical team. The current title is 高级实验师, corrected after the user challenged the initial title and verified against the West China Hospital notice of 2026-08-31. The supplied PhD in Pharmacology, employment since 2019, lab entry in September 2026, research focus, affiliation, email and original portrait are preserved. No English name spelling was supplied."
+    }
+  ],
+  "updatedPeople": [
+    {
+      "id": "member-31",
+      "name": "杨怡璟",
+      "fields": {
+        "group": {
+          "from": "student",
+          "to": "postdoc"
+        },
+        "role": {
+          "from": {
+            "en": "PhD",
+            "zh": "博士",
+            "es": "Doctorado"
+          },
+          "to": {
+            "en": "Postdoctoral Fellow",
+            "zh": "博士后",
+            "es": "Personal posdoctoral"
+          }
+        }
+      },
+      "reason": "User explicitly corrected Yang Yijing’s position to postdoctoral fellow on 2026-09-19. Only the group and the three language versions of the role were changed; all other member information was preserved."
+    },
+    {
+      "id": "member-35",
+      "name": "陶怡然",
+      "checked": "2026-09-19",
+      "fields": {
+        "role": {
+          "from": {
+            "en": "Associate Professor · PhD in Pharmacology",
+            "zh": "副教授 · 药理学博士",
+            "es": "Profesorado asociado · Doctorado en Farmacología"
+          },
+          "to": {
+            "en": "Senior Experimentalist · PhD in Pharmacology",
+            "zh": "高级实验师 · 药理学博士",
+            "es": "Técnica superior de laboratorio · Doctora en Farmacología"
+          }
+        }
+      },
+      "reason": "User corrected that Tao Yiran is not an associate professor. The current Chinese title 高级实验师 was verified in an official West China Hospital notice. Only the three role labels changed; technical-team placement and all other fields remain unchanged. No other personal information from the notice was added.",
+      "source": {
+        "url": "https://www.wchscu.cn/public/bmxxy1_dynamics/98659.html",
+        "title": "2026年第三批创新型人才国际合作培养项目推荐选派人员公示",
+        "publisher": "四川大学华西医院国际合作与交流办公室",
+        "published": "2026-08-31",
+        "verified": "2026-09-19",
+        "supports": "陶怡然的现任职称：四川大学华西医院高级实验师"
+      },
+      "translationNote": "Senior Experimentalist and Técnica superior de laboratorio are descriptive translations of 高级实验师, not verified official English or Spanish titles. PhD in Pharmacology remains based on the user-supplied member information."
+    }
+  ],
+  "roleDisplayNormalization": {
+    "checked": "2026-09-19",
+    "reason": "User requested uniform student and postdoctoral role labels without study-year or degree-track qualifiers.",
+    "scope": "Only role.en, role.zh and role.es for all current student and postdoc members. Doctoral, master’s and undergraduate student categories remain distinct. Faculty qualifications, technical and administrative job titles, every other member field and the historical data/site.json remain unchanged.",
+    "labels": {
+      "doctoral": {
+        "en": "Doctoral student",
+        "zh": "博士生",
+        "es": "Estudiante de doctorado"
+      },
+      "masters": {
+        "en": "Master's student",
+        "zh": "硕士生",
+        "es": "Estudiante de máster"
+      },
+      "undergraduate": {
+        "en": "Undergraduate student",
+        "zh": "本科生",
+        "es": "Estudiante de grado"
+      },
+      "postdoc": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      }
+    },
+    "memberIds": [
+      "member-01",
+      "member-02",
+      "member-03",
+      "member-04",
+      "member-05",
+      "member-06",
+      "member-07",
+      "member-08",
+      "member-09",
+      "member-10",
+      "member-13",
+      "member-14",
+      "member-15",
+      "member-16",
+      "member-17",
+      "member-18",
+      "member-19",
+      "member-20",
+      "member-21",
+      "member-22",
+      "member-23",
+      "member-24",
+      "member-25",
+      "member-26",
+      "member-27",
+      "member-28",
+      "member-30",
+      "member-31",
+      "member-32",
+      "member-34"
+    ],
+    "changedMemberIds": [
+      "member-01",
+      "member-02",
+      "member-03",
+      "member-04",
+      "member-05",
+      "member-06",
+      "member-07",
+      "member-09",
+      "member-14",
+      "member-16",
+      "member-17",
+      "member-18",
+      "member-19",
+      "member-20",
+      "member-21",
+      "member-22",
+      "member-23",
+      "member-24",
+      "member-25",
+      "member-26",
+      "member-27",
+      "member-28",
+      "member-30",
+      "member-32",
+      "member-34"
+    ]
+  }
 }

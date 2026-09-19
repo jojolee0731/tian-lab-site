@@ -1,0 +1,2 @@
+# Preserve whitespace inside the generated dependency bundle's string literals.
+members/vendor/supabase.js -whitespace linguist-generated=true

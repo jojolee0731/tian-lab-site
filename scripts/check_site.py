@@ -8,7 +8,7 @@ previously published people/publications. External availability and visual
 quality require separate checks.
 
 Optional decision files permit only explicit content deltas: chosenDOIs in
-data/publication-selection.json, and removedPeople in data/content-decisions.json.
+data/publication-selection.json, and removedPeople/addedPeople in data/content-decisions.json.
 Without these decisions, the original catalog-preservation rules still apply.
 """
 
@@ -212,6 +212,33 @@ def approved_removals(decisions, original_people, fail):
     return removed
 
 
+def approved_people_additions(decisions, original_people, fail):
+    """Accept only explicitly named new IDs; a removed ID may never be reused."""
+    path = "data/content-decisions.json"
+    if not decisions or not isinstance(decisions, dict):
+        return {}
+    values = decisions.get("addedPeople", [])
+    if not isinstance(values, list):
+        fail(f"{path}: addedPeople must be a list")
+        return {}
+    original_ids = {baseline_person_id(record, i) for i, record in enumerate(original_people)}
+    original_names = {person_name(record) for record in original_people}
+    added = {}
+    for decision in values:
+        if not isinstance(decision, dict) or not all(isinstance(decision.get(key), str) and decision[key].strip() for key in ("id", "name", "reason")):
+            fail(f"{path}: addition requires nonempty id, name, and reason")
+            continue
+        identity, name = decision['id'], decision['name'].strip()
+        if not re.fullmatch(r"member-\d{2,}", identity) or identity in original_ids or name in original_names:
+            fail(f"{path}: addition must use a new stable ID and a new member name: {identity}")
+            continue
+        if identity in added or name in added.values():
+            fail(f"{path}: duplicate member addition: {identity}")
+            continue
+        added[identity] = name
+    return added
+
+
 def check_preservation(baseline, datasets, decisions, selection, fail):
     """Require baseline content minus named removals plus the exact DOI allowlist."""
     old_papers = baseline.get("publications", []) + baseline.get("recentPublications", [])
@@ -219,6 +246,7 @@ def check_preservation(baseline, datasets, decisions, selection, fail):
     added_ids = approved_additions(selection, original_paper_ids, fail)
     original_people = baseline.get("people", [])
     removed_ids = approved_removals(decisions, original_people, fail)
+    added_people = approved_people_additions(decisions, original_people, fail)
     expected_people = [p for i, p in enumerate(original_people) if baseline_person_id(p, i) not in removed_ids]
 
     if "publications" in datasets:
@@ -236,15 +264,19 @@ def check_preservation(baseline, datasets, decisions, selection, fail):
 
     if "people" in datasets:
         new_people = datasets["people"]
-        if len(expected_people) != len(new_people):
-            fail(f"data/people.json: expected {len(expected_people)} current members after {len(removed_ids)} approved removal(s), found {len(new_people)}")
+        expected_count = len(expected_people) + len(added_people)
+        if expected_count != len(new_people):
+            fail(f"data/people.json: expected {expected_count} current members after {len(removed_ids)} approved removal(s) and {len(added_people)} approved addition(s), found {len(new_people)}")
         expected_identities = Counter(person_identity(p) for p in expected_people)
-        new_identities = Counter(person_identity(p) for p in new_people)
+        new_identities = Counter(person_identity(p) for p in new_people if p.get('id') not in added_people)
+        for person in new_people:
+            if person.get('id') in added_people and person_name(person) != added_people[person['id']]:
+                fail(f"data/people.json: added member name does not match authorized ID: {person['id']}")
         for identity in sorted((expected_identities - new_identities).elements()):
             fail(f"data/people.json: existing member identity not preserved: {identity}")
         for identity in sorted((new_identities - expected_identities).elements()):
             fail(f"data/people.json: unexpected or explicitly removed member identity: {identity}")
-        expected_ids = {baseline_person_id(p, i) for i, p in enumerate(original_people)} - removed_ids
+        expected_ids = ({baseline_person_id(p, i) for i, p in enumerate(original_people)} - removed_ids) | set(added_people)
         actual_ids = {str(p.get("id", "")) for p in new_people}
         for identity in sorted(expected_ids - actual_ids):
             fail(f"data/people.json: stable member ID not preserved: {identity}")
@@ -300,9 +332,22 @@ def main():
                 return None
         return documents[path]
 
+    # Member pages follow stable current-roster IDs, not a fixed page-count limit.
+    roster_data = read_json(root / "data/people.json")
+    member_pages = []
+    if roster_data is not None:
+        try:
+            for person in records_from(roster_data, "people"):
+                identity = person.get("id", "")
+                if not isinstance(identity, str) or not re.fullmatch(r"member-\d{2,}", identity):
+                    fail("data/people.json: unsafe or missing member ID for a public page")
+                else:
+                    member_pages.append("person-" + identity)
+        except ValueError as exc:
+            fail(f"data/people.json: {exc}")
     expected_documents = {}
     for prefix, language in LANGUAGES.items():
-        for page in PAGES:
+        for page in (*PAGES, *member_pages):
             path = (root / prefix / f"{page}.html").resolve()
             if not path.is_file():
                 fail(f"{relative(path)}: required generated page missing")
@@ -356,7 +401,7 @@ def main():
             target = target / "index.html"
         return target, unquote(parsed.fragment)
 
-    # Validate source references and fragment destinations throughout all 21 pages.
+    # Validate source references throughout core and current member pages.
     for document in list(expected_documents.values()):
         for node in document.nodes:
             refs = [(attr, node.attrs[attr]) for attr in ("href", "src", "poster") if attr in node.attrs]

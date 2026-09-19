@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
     "preview": "python3 -m http.server 4173 --bind 127.0.0.1",
-    "check": "node --check script.js && python3 scripts/build_site.py --check && python3 scripts/check_site.py",
-    "build": "python3 scripts/build_site.py"
+    "check": "node --check script.js && node --check members/app.js && node --check members/model.mjs && python3 scripts/build_site.py --check && python3 scripts/check_site.py",
+    "build": "python3 scripts/build_site.py",
+    "bundle:members": "node scripts/bundle_member_client.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

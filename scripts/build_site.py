@@ -5,6 +5,8 @@ from html import escape
 import json
 from urllib.parse import quote
 import argparse
+import xml.etree.ElementTree as ET
+from member_profile import load_profiles
 
 ROOT=Path(__file__).resolve().parents[1]
 BASE='https://jojolee0731.github.io/tian-lab-site/'
@@ -22,12 +24,19 @@ UI={
 'explore':tri('Explore our research','了解研究方向','Explorar la investigación'), 'allpapers':tri('All publications','全部论文','Todas las publicaciones'), 'allpeople':tri('Meet the team','认识团队成员','Conoce al equipo'),
 'paper':tri('Read paper','阅读论文','Leer el artículo'), 'evidence':tri('Evidence & context','证据与适用范围','Evidencia y contexto'), 'question':tri('The question','科学问题','La pregunta'), 'approach':tri('Our approach','研究思路','Nuestro enfoque'),
 'outcome':tri('What this adds','科学贡献','Qué aporta'), 'recent':tri('Recent publications','最近发表','Publicaciones recientes'), 'stories':tri('Research in focus','代表性研究','Investigación destacada'),
-'focus':tri('Research interests','研究兴趣','Intereses de investigación'), 'affiliation':tri('Affiliation','所在单位','Afiliación'), 'joined':tri('Joined','入组时间','Incorporación'), 'details':tri('Profile & contact','资料与联系','Perfil y contacto'),
-'postdoc':tri('Postdoctoral researchers','博士后','Investigadores posdoctorales'), 'student':tri('Research students','研究生','Estudiantes de investigación'), 'staff':tri('Research support','科研支持','Apoyo a la investigación'), 'admin':tri('Lab administration','课题组行政联系','Administración del laboratorio'),
+'focus':tri('Research interests','研究兴趣','Intereses de investigación'), 'affiliation':tri('Affiliation','所在单位','Afiliación'), 'joined':tri('Joined Tian Lab','入组时间','Incorporación a Tian Lab'), 'details':tri('Profile & contact','资料与联系','Perfil y contacto'),
+'qualification':tri('Qualification','学位','Titulación'), 'employment':tri('Employment','在职经历','Trayectoria laboral'),
+'postdoc':tri('Postdoctoral researchers','博士后','Investigadores posdoctorales'), 'student':tri('Research students','研究生','Estudiantes de investigación'), 'staff':tri('Technical team','技术组','Equipo técnico'), 'admin':tri('Lab administration','课题组行政联系','Administración del laboratorio'),
 'year':tri('Year','年份','Año'), 'topic':tri('Research theme','研究主题','Tema de investigación'), 'all':tri('All','全部','Todas'), 'reset':tri('Reset filters','重置筛选','Restablecer filtros'), 'results':tri('publications shown','篇论文','publicaciones visibles'), 'noresults':tri('No matching publications. Try another filter.','没有符合条件的论文，请调整筛选。','No hay resultados. Prueba otro filtro.'),
 'cover':tri('Journal cover illustration','期刊封面插画','Ilustración de portada'), 'covers':tri('Covers & visual stories','封面与视觉故事','Portadas e historias visuales'), 'issue':tri('View journal issue','查看期刊当期目录','Ver el número de la revista'), 'coverrecord':tri('View cover record','查看封面条目','Ver registro de portada'),
 'contact':tri('Contact Xiaohe Tian','联系田肖和老师','Contactar con Xiaohe Tian'), 'location':tri('Chengdu, China','中国 · 成都','Chengdu, China'), 'featured':tri('Selected work','代表作','Trabajo destacado'),
 'applications':tri('Applications & collaborations','拓展应用与合作','Aplicaciones y colaboraciones'),
+'profile':tri('Personal page','个人主页','Página personal'), 'memberlogin':tri('Member sign-in','成员登录','Acceso de miembros'),
+'backpeople':tri('Back to the team','返回团队页面','Volver al equipo'), 'aboutmember':tri('About','个人介绍','Presentación'),
+'education':tri('Education & experience','教育与经历','Formación y experiencia'), 'projects':tri('Research projects','研究项目','Proyectos de investigación'),
+'memberpapers':tri('Publications','发表论文','Publicaciones'), 'contribution':tri('My contribution','个人贡献','Mi contribución'),
+'progress':tri('Progress','研究进展','Avances'), 'imagereference':tri('Image source','图片来源','Fuente de la imagen'), 'externallinks':tri('Links','相关链接','Enlaces'),
+'inlab':tri('During time at Tian Lab','在Tian Lab期间','Durante la estancia en Tian Lab'), 'beforelab':tri('Before joining Tian Lab','加入Tian Lab之前','Antes de incorporarse a Tian Lab'),
 }
 HERO=tri('Understanding brain barriers. Designing molecular tools. Reading disease biology.','理解脑屏障，设计分子工具，读出疾病变化。','Comprender las barreras cerebrales. Diseñar herramientas moleculares. Observar la biología de la enfermedad.')
 INTRO=tri('We study how brain barriers recognize and transport molecular cargo, and how these processes change in disease. We combine multivalent interface design, molecular probes, and imaging across scales to investigate barrier function, pathological molecule clearance, and responses to intervention.','我们研究分子如何被脑屏障识别与运输，以及这些过程如何影响脑疾病。通过多价界面设计、分子探针和跨尺度成像，我们探索屏障功能、病理分子清除与干预响应之间的联系。','Estudiamos cómo las barreras cerebrales reconocen y transportan moléculas y cómo estos procesos cambian en la enfermedad. Combinamos el diseño de interfaces multivalentes, sondas moleculares e imagen a distintas escalas para investigar la función de las barreras, la eliminación de moléculas patológicas y la respuesta a intervenciones.')
@@ -47,6 +56,8 @@ class Site:
   self.lang=lang;self.prefix='./' if lang=='en' else '../'
   self.pubs=read('publications.json');self.people=read('people.json');self.contact=read('contact.json')
   self.pmap={p['id']:p for p in self.pubs['items']}
+  self.profiles=load_profiles(ROOT,self.people['items'])
+  self.membermap={p['id']:p for p in self.people['items']}
  def tx(self,x): return e(t(x,self.lang))
  def u(self,k):return self.tx(UI[k])
  def asset(self,path):return self.prefix+path.removeprefix('./')
@@ -89,10 +100,86 @@ class Site:
    if t(p.get('focus'),self.lang):s+=f'<p class="member-focus">{self.tx(p["focus"])}</p>'
    s+='<details><summary>'+self.u('details')+'</summary><div class="member-details">'
    s+=f'<p>{self.tx(p["affiliation"])}</p><p>{self.u("joined")}: {e(p["joined"])}</p>'
+   if p.get('qualification'):s+='<p>'+self.u('qualification')+': '+self.tx(p['qualification'])+'</p>'
+   if p.get('employment'):s+='<p>'+self.u('employment')+': '+self.tx(p['employment'])+'</p>'
    if p.get('email'):s+=f'<a href="mailto:{e(p["email"])}">{e(p["email"])}</a>'
    s+='</div></details>'
-  else:s+=self.link('people',self.tx(tri('View profile','查看资料','Ver perfil')),'quiet-link','#person-'+p['id'])
+  s+=self.link('people',self.u('profile'),'quiet-link profile-member-link','#pi') if p['id']=='pi' else self.link('person-'+p['id'],self.u('profile'),'quiet-link profile-member-link')
   return f'<article class="member {"member-mini" if mini else ""}"'+('' if mini else f' id="person-{p["id"]}"')+'>'+s+'</div></article>'
+ def profile_value(self,content,key):
+  primary=content.get(key,'');english=content.get(key+'_en','')
+  if self.lang=='zh':return (primary,'zh-CN') if primary else (english,'en')
+  return (english,'en') if english else (primary,'zh-CN')
+ def profile_text(self,content,key,tag='p',cls='profile-text'):
+  value,lang=self.profile_value(content,key)
+  return f'<{tag} class="{e(cls)}" lang="{lang}">{e(value)}</{tag}>' if value else ''
+ def person_page(self,member_id):
+  p=self.membermap[member_id];record=self.profiles.get(member_id,{})
+  content=record.get('content',{});name=p['name'] if self.lang=='zh' else p.get('nameEn',p['name'])
+  role=self.contact['admin']['role'] if p['group']=='admin' and self.contact.get('admin',{}).get('memberId')==member_id else p['role']
+  avatar=content.get('avatar_path') or p['image'];email=content.get('public_email') or p.get('email','')
+  h='<section class="section page-intro"><a class="profile-back" href="people.html#person-'+e(member_id)+'">← '+self.u('backpeople')+'</a><div class="profile-hero">'+self.img(avatar,name,'profile-portrait',True)+'<div class="profile-hero-copy"><p class="eyebrow">'+self.u('profile')+'</p><h1 lang="'+('zh-CN' if name==p['name'] and not name.isascii() else 'en')+'">'+e(name)+'</h1>'
+  if self.lang!='zh' and name!=p['name']:h+='<p class="profile-native-name" lang="zh-CN">'+e(p['name'])+'</p>'
+  h+='<p class="member-role">'+self.tx(role)+'</p>'
+  if t(p.get('focus'),self.lang):h+='<p>'+self.tx(p['focus'])+'</p>'
+  h+='<dl class="profile-identity"><div><dt>'+self.u('affiliation')+'</dt><dd>'+self.tx(p['affiliation'])+'</dd></div>'
+  if p.get('joined'):h+='<div><dt>'+self.u('joined')+'</dt><dd>'+e(p['joined'])+'</dd></div>'
+  if p.get('qualification'):h+='<div><dt>'+self.u('qualification')+'</dt><dd>'+self.tx(p['qualification'])+'</dd></div>'
+  if p.get('employment'):h+='<div><dt>'+self.u('employment')+'</dt><dd>'+self.tx(p['employment'])+'</dd></div>'
+  h+='</dl>'
+  if email:h+='<div class="profile-contact"><a href="mailto:'+e(quote(email,safe='@.+'))+'">'+e(email)+'</a></div>'
+  h+='</div></div>'
+  # Supplied English is optional; mark original languages rather than machine-translating research claims.
+  pairs=[self.profile_value(content,k) for k in ('bio','interests','education')]
+  for project in content.get('projects',[]):pairs.extend(self.profile_value(project,k) for k in ('title','question','approach','contribution','progress','image_caption'))
+  for paper in content.get('papers',[]):pairs.append(self.profile_value(paper,'contribution'))
+  used={lang for value,lang in pairs if value}
+  if self.lang=='es' and used:
+   h+='<p class="profile-language-note">'+self.tx(tri('','','Los textos de investigación se muestran en el inglés proporcionado por su autor o, si no está disponible, en el original chino.'))+'</p>'
+  elif self.lang=='en' and 'zh-CN' in used:
+   h+='<p class="profile-language-note">Some research details are shown in their original Chinese; an English version has not been supplied.</p>'
+  elif self.lang=='zh' and 'en' in used:
+   h+='<p class="profile-language-note">部分研究内容按成员提供的英文原文展示。</p>'
+  sections=[]
+  for key,label in [('bio','aboutmember'),('interests','focus'),('education','education')]:
+   if self.profile_value(content,key)[0]:sections.append((key,label))
+  if content.get('projects'):sections.append(('projects','projects'))
+  if content.get('papers'):sections.append(('papers','memberpapers'))
+  if content.get('links'):sections.append(('links','externallinks'))
+  if sections:h+='<nav class="profile-nav" aria-label="'+self.u('profile')+'">'+''.join('<a href="#'+key+'">'+self.u(label)+'</a>' for key,label in sections)+'</nav>'
+  h+='</section>'
+  for key,label in [('bio','aboutmember'),('interests','focus'),('education','education')]:
+   body=self.profile_text(content,key)
+   if body:h+='<section class="section profile-section" id="'+key+'"><h2>'+self.u(label)+'</h2>'+body+'</section>'
+  if content.get('projects'):
+   h+='<section class="section profile-section" id="projects"><h2>'+self.u('projects')+'</h2>'
+   for i,project in enumerate(content['projects'],1):
+    h+='<article class="profile-project" id="project-'+str(i)+'">'+self.profile_text(project,'title','h3','')+'<div class="profile-project-grid'+(' has-image' if project.get('image_path') else '')+'"><dl>'
+    for key,label in [('question','question'),('approach','approach'),('contribution','contribution'),('progress','progress')]:
+     text=self.profile_text(project,key,'dd')
+     if text:h+='<dt>'+self.u(label)+'</dt>'+text
+    h+='</dl>'
+    if project.get('image_path'):
+     caption,lang=self.profile_value(project,'image_caption')
+     h+='<figure>'+self.img(project['image_path'],caption)+'<figcaption lang="'+lang+'">'+e(caption)
+     if project.get('image_source'):h+='<span class="profile-image-source">'+self.u('imagereference')+': '+e(project['image_source'])+'</span>'
+     h+='</figcaption></figure>'
+    h+='</div></article>'
+   h+='</section>'
+  if content.get('papers'):
+   h+='<section class="section profile-section" id="papers"><h2>'+self.u('memberpapers')+'</h2><ol class="profile-papers">'
+   for paper in content['papers']:
+    h+='<li class="profile-paper"><span class="profile-paper-context">'+self.u('inlab' if paper['context']=='in_lab' else 'beforelab')+'</span><h3>'+e(paper['title'])+'</h3>'
+    if paper.get('authors'):h+='<p class="authors">'+e(paper['authors'])+'</p>'
+    if paper.get('journal') or paper.get('year'):h+='<p>'+e(' · '.join(x for x in (paper.get('journal'),paper.get('year')) if x))+'</p>'
+    if paper.get('doi'):h+='<p><a href="https://doi.org/'+e(quote(paper['doi'],safe='/():;'))+'" rel="noopener noreferrer">'+self.u('paper')+' ↗</a></p>'
+    contribution=self.profile_text(paper,'contribution')
+    if contribution:h+='<h4>'+self.u('contribution')+'</h4>'+contribution
+    h+='</li>'
+   h+='</ol></section>'
+  if content.get('links'):
+   h+='<section class="section profile-section" id="links"><h2>'+self.u('externallinks')+'</h2><ul class="profile-external-links">'+''.join('<li><a href="'+e(link['url'])+'" rel="noopener noreferrer">'+e(link['label'])+' ↗</a></li>' for link in content['links'])+'</ul></section>'
+  return h
  def actions(self):
   a=tri('A question worth exploring together.','从一个值得共同研究的问题开始。','Una pregunta para explorar juntos.')
   return '<section class="section action-band">'+self.heading(self.tx(a),'','',2)+'<div class="action-links">'+self.link('join',self.u('join'),'button')+self.link('collaborate',self.u('collaborate'),'button button-outline')+'</div></section>'
@@ -140,7 +227,7 @@ class Site:
    h+=f'<section class="section people-section" id="{g}"><h2>{self.u(g)}</h2><div class="people-grid">'+''.join(self.member(p) for p in self.people['items'] if p['group']==g)+'</div></section>'
   admin=self.contact.get('admin')
   if admin:
-   h+=f'<section class="section admin-card" id="admin">{self.img(admin["image"],admin["name"])}<div id="person-{admin["memberId"]}"><p class="eyebrow">'+self.u('admin')+'</p><h2>'+self.tx(admin['name'])+'</h2><p>'+self.tx(admin['role'])+'</p><p>'+self.tx(admin['responsibilities'])+f'</p><a href="mailto:{e(admin["email"])}">{e(admin["email"])}</a></div></section>'
+   h+=f'<section class="section admin-card" id="admin">{self.img(admin["image"],admin["name"])}<div id="person-{admin["memberId"]}"><p class="eyebrow">'+self.u('admin')+'</p><h2>'+self.tx(admin['name'])+'</h2><p>'+self.tx(admin['role'])+'</p><p>'+self.tx(admin['responsibilities'])+f'</p><a href="mailto:{e(admin["email"])}">{e(admin["email"])}</a>'+self.link('person-'+admin['memberId'],self.u('profile'),'quiet-link profile-member-link')+'</div></section>'
   h+='<section class="section culture"><div>'+self.heading(self.tx(tri('Beyond the bench','科研之外','Más allá del laboratorio')),self.tx(tri('Music is part of Xiaohe Tian’s life outside research. The lab’s original “Nanoneuroscience in Rhythm” identity lives here, alongside the people behind the science.','音乐也是田肖和老师科研之外的生活组成部分。网站原有的“脑科学，有点节奏”留在这里，为严谨的研究介绍补充一点人的温度。','La música forma parte de la vida de Xiaohe Tian fuera de la investigación. La identidad original «Nanoneurociencia con ritmo» se conserva aquí, junto a las personas detrás de la ciencia.')),'',2)+'</div><figure>'+self.img('./assets/images/xiaohe-tian-drummer-hero.jpg',tri('Xiaohe Tian playing drums','田肖和演奏架子鼓','Xiaohe Tian tocando la batería'))+'</figure></section>'+self.actions()
   return h
  def join(self):
@@ -171,26 +258,44 @@ class Site:
    h+='</div></article>'
   return h+'</div></section>'
  def render(self,page):
-  content=self.people_page() if page=='people' else getattr(self,page)()
+  person_id=page.removeprefix('person-') if page.startswith('person-member-') else None
+  person=self.membermap.get(person_id) if person_id else None
+  if person_id and not person:raise ValueError('Unknown member page: '+page)
+  content=self.person_page(person_id) if person else self.people_page() if page=='people' else getattr(self,page)()
   path=('' if self.lang=='en' else self.lang+'/')+('' if page=='index' else page+'.html')
-  title='Tian Lab — '+self.u(page)
+  title=(e(person['name'] if self.lang=='zh' else person.get('nameEn',person['name']))+' — Tian Lab') if person else 'Tian Lab — '+self.u(page)
+  description=(t(person['role'],self.lang)+' · '+t(person['affiliation'],self.lang)+' · '+t(person.get('focus'),self.lang)) if person else t(INTRO,self.lang)
+  description=e(description)
+  share_image=(self.profiles.get(person_id,{}).get('content',{}).get('avatar_path') or person['image']) if person else 'assets/images/sttt-2025-november-cover.jpg'
+  share_image=e(BASE+share_image.removeprefix('./'))
+  og_type='profile' if person else 'website'
   langs=''.join(f'<a href="{self.prefix}{"" if l=="en" else l+"/"}{page}.html" lang="{l}" hreflang="{l}"'+(' aria-current="true"' if l==self.lang else '')+f'>{label}</a>' for l,label in [('en','English'),('zh','中文'),('es','Español')])
-  nav=''.join('<a href="'+p+'.html"'+(' aria-current="page"' if p==page else '')+'>'+self.u(p)+'</a>' for p in ('research','publications','people','join','collaborate'))
-  head=f'<!doctype html>\n<html lang="{"zh-CN" if self.lang=="zh" else self.lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><meta name="description" content="{self.tx(INTRO)}"><link rel="canonical" href="{BASE+path}">'
+  nav=''.join('<a href="'+p+'.html"'+(' aria-current="page"' if p==page or (person and p=='people') else '')+'>'+self.u(p)+'</a>' for p in ('research','publications','people','join','collaborate'))
+  head=f'<!doctype html>\n<html lang="{"zh-CN" if self.lang=="zh" else self.lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{BASE+path}">'
   for l in LANGS:head+=f'<link rel="alternate" hreflang="{"zh-CN" if l=="zh" else l}" href="{BASE}{"" if l=="en" else l+"/"}{"" if page=="index" else page+".html"}">'
-  head+=f'<meta property="og:title" content="{title}"><meta property="og:description" content="{self.tx(INTRO)}"><meta property="og:type" content="website"><meta property="og:url" content="{BASE+path}"><meta property="og:image" content="{BASE}assets/images/sttt-2025-november-cover.jpg"><meta name="theme-color" content="#142829"><link rel="icon" type="image/svg+xml" href="{self.prefix}assets/favicon.svg"><link rel="stylesheet" href="{self.prefix}styles.css"><script src="{self.prefix}script.js" defer></script></head>'
-  header=f'<body data-page="{page}"><a class="skip-link" href="#main">{self.u("skip")}</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="{self.tx(tri("Tian Lab home","Tian Lab 首页","Inicio de Tian Lab"))}"><span class="brand-mark" aria-hidden="true">T<span>↗</span></span><span>Tian Lab<small>{self.tx(tri("Brain barriers & molecular imaging","脑屏障与分子影像","Barreras cerebrales e imagen"))}</small></span></a><button class="menu-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>{self.u("menu")} <span aria-hidden="true">☰</span></button><div id="site-nav"><nav aria-label="{self.u("navigation")}">{nav}</nav><nav class="language-nav" aria-label="{self.u("languages")}">{langs}</nav></div></div></header><main id="main" tabindex="-1">'
-  footer='<footer class="site-footer"><div><a class="footer-brand" href="index.html">Tian Lab</a><p>'+self.tx(source['copy']['footerAffiliation'])+'<br>'+self.tx(source['copy']['footerCenter'])+'<br>'+self.u('location')+'</p></div><div><a href="mailto:'+e(self.contact['pi']['email'])+'">'+e(self.contact['pi']['email'])+'</a><div class="footer-links">'+self.link('join',self.u('join'),'')+self.link('collaborate',self.u('collaborate'),'')+self.link('news',self.u('news'),'')+'</div></div></footer></body></html>\n'
+  head+=f'<meta property="og:title" content="{title}"><meta property="og:description" content="{description}"><meta property="og:type" content="{og_type}"><meta property="og:url" content="{BASE+path}"><meta property="og:image" content="{share_image}"><meta name="theme-color" content="#142829"><link rel="icon" type="image/svg+xml" href="{self.prefix}assets/favicon.svg"><link rel="stylesheet" href="{self.prefix}styles.css"><script src="{self.prefix}script.js" defer></script>'+ (f'<link rel="stylesheet" href="{self.prefix}member-profile.css">' if person else '')+'</head>'
+  header=f'<body data-page="{page}"><a class="skip-link" href="#main">{self.u("skip")}</a><header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="{self.tx(tri("Tian Lab home","Tian Lab 首页","Inicio de Tian Lab"))}"><img class="brand-mark" src="{self.prefix}assets/logo-mark.svg" width="40" height="40" alt="" aria-hidden="true"><span>Tian Lab<small>{self.tx(tri("Brain barriers & molecular imaging","脑屏障与分子影像","Barreras cerebrales e imagen"))}</small></span></a><button class="menu-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>{self.u("menu")} <span aria-hidden="true">☰</span></button><div id="site-nav"><nav aria-label="{self.u("navigation")}">{nav}</nav><nav class="language-nav" aria-label="{self.u("languages")}">{langs}</nav></div></div></header><main id="main" tabindex="-1">'
+  footer='<footer class="site-footer"><div><a class="footer-brand" href="index.html">Tian Lab</a><p>'+self.tx(source['copy']['footerAffiliation'])+'<br>'+self.tx(source['copy']['footerCenter'])+'<br>'+self.u('location')+'</p></div><div><a href="mailto:'+e(self.contact['pi']['email'])+'">'+e(self.contact['pi']['email'])+'</a><div class="footer-links">'+self.link('join',self.u('join'),'')+self.link('collaborate',self.u('collaborate'),'')+self.link('news',self.u('news'),'')+'<a href="'+self.prefix+'members/">'+self.u('memberlogin')+'</a></div></div></footer></body></html>\n'
   return (head+header+content+'</main>'+footer).replace('><','>\n<')
 
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--check',action='store_true');args=parser.parse_args();changed=[]
  for lang in LANGS:
   site=Site(lang)
-  for page in PAGES:
+  for page in (*PAGES,*('person-'+person['id'] for person in site.people['items'])):
    target=ROOT/('' if lang=='en' else lang)/(page+'.html');html=site.render(page)
    if args.check:
     if not target.exists() or target.read_text()!=html:changed.append(str(target.relative_to(ROOT)))
    else:target.parent.mkdir(parents=True,exist_ok=True);target.write_text(html)
  if changed:raise SystemExit('Out-of-date generated pages: '+', '.join(changed))
- print('21 static pages '+('match sources' if args.check else 'built'))
+ namespace='http://www.sitemaps.org/schemas/sitemap/0.9'
+ ET.register_namespace('',namespace);urls=ET.Element('{'+namespace+'}urlset')
+ for lang in LANGS:
+  for page in (*PAGES,*('person-'+person['id'] for person in site.people['items'])):
+   entry=ET.SubElement(urls,'{'+namespace+'}url');ET.SubElement(entry,'{'+namespace+'}loc').text=BASE+('' if lang=='en' else lang+'/')+('' if page=='index' else page+'.html')
+ ET.indent(urls,space='  ');sitemap=ET.tostring(urls,encoding='unicode',xml_declaration=False)+'\n'
+ sitemap='<?xml version="1.0" encoding="UTF-8"?>\n'+sitemap
+ if args.check:
+  if not (ROOT/'sitemap.xml').exists() or (ROOT/'sitemap.xml').read_text()!=sitemap:raise SystemExit('Out-of-date generated sitemap.xml')
+ else:(ROOT/'sitemap.xml').write_text(sitemap)
+ print(str(len(LANGS)*(len(PAGES)+len(site.people['items'])))+' static pages '+('match sources' if args.check else 'built'))

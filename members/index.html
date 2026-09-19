@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.crossref.org; img-src 'self' blob: https://*.supabase.co; object-src 'none'; base-uri 'none'; form-action 'self'">
+<title>成员工作台 · Tian Lab</title><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="workbench.css"><script src="app.js" type="module"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar"><a class="brand" href="../zh/index.html"><img class="brand-mark" src="../assets/logo-mark.svg" width="34" height="34" alt="" aria-hidden="true">Tian Lab <span>成员工作台</span></a><div class="top-actions"><a href="../zh/people.html">公开团队页 ↗</a><span id="account-label" hidden></span><button id="sign-out" type="button" hidden>退出</button></div></header>
+<main id="main" tabindex="-1">
+<div id="notice" class="notice" role="status" aria-live="polite">正在连接工作台…</div>
+<section id="login-view" class="login-panel" hidden>
+<p class="eyebrow">MEMBER WORKSPACE</p><h1>让研究被看见。</h1><p class="intro">更新个人介绍、项目配图与发表论文。保存草稿，预览页面，提交审核。</p>
+<form id="login-form"><label for="login-email">受邀邮箱</label><input id="login-email" name="email" type="email" autocomplete="email" required placeholder="name@example.edu"><button class="primary" type="submit">发送登录验证码</button><p class="hint">使用管理员为您开通的邮箱。</p></form>
+<form id="verify-form" hidden><label for="login-code">邮箱验证码</label><input id="login-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,8}" minlength="6" maxlength="8" required><button class="primary" type="submit">验证并登录</button><button type="button" id="change-email">更换邮箱</button></form>
+</section>
+<section id="workspace" hidden>
+<div class="workspace-heading"><div><p class="eyebrow" id="workspace-eyebrow">我的研究主页</p><h1 id="workspace-title">成员工作台</h1><p id="workspace-subtitle" class="muted"></p></div><a id="public-link" class="text-link" hidden>查看公开主页 ↗</a></div>
+<nav id="workspace-nav" class="workspace-nav" aria-label="工作台栏目"><button type="button" data-view="editor" aria-current="page">编辑主页</button><button type="button" data-view="review" hidden>内容审核</button><button type="button" data-view="access" hidden>成员权限</button></nav>
+<div id="editor-view" hidden>
+<form id="profile-form">
+<div class="editor-layout"><nav class="section-index" aria-label="编辑区域"><a href="#profile-basics">01 个人介绍</a><a href="#profile-projects">02 科研项目</a><a href="#profile-papers">03 发表论文</a><a href="#profile-links">04 学术链接</a><p>中文优先，英文可选。姓名、身份及在读状态由管理员维护。</p></nav><div class="editor-sections">
+<section class="panel" id="profile-basics"><div class="section-heading"><span>01</span><div><h2>个人介绍</h2><p>让访客了解您的研究兴趣和经历。</p></div></div><div id="identity-card" class="identity-card"></div><div id="basic-fields"></div><div class="upload-row"><label>更新头像<input type="file" id="avatar-file" accept="image/jpeg,image/png,image/webp"></label><button id="reset-avatar" type="button">使用原头像</button></div><img id="avatar-preview" class="avatar-preview" alt="待提交头像预览" hidden><p class="hint">JPG、PNG 或 WebP，单张不超过5 MB。上传后需保存草稿。</p></section>
+<section class="panel" id="profile-projects"><div class="section-heading"><span>02</span><div><h2>科研项目</h2><p>展示1–3项研究，说明问题、思路和您承担的工作。填写可公开的概述。</p></div></div><div id="project-list"></div><button id="add-project" type="button">＋ 添加项目</button></section>
+<section class="panel" id="profile-papers"><div class="section-heading"><span>03</span><div><h2>发表论文</h2><p>关联已发表论文。入组前成果可以展示，并注明背景。</p></div></div><div class="paper-import"><label for="catalog-picker">从课题组论文库选择</label><div class="inline-controls"><select id="catalog-picker"><option value="">选择一篇论文</option></select><button id="add-catalog-paper" type="button">添加</button></div><label for="doi-import">通过 DOI 获取书目信息</label><div class="inline-controls"><input id="doi-import" type="text" placeholder="10.xxxx/xxxxx"><button id="fetch-doi" type="button">查询并添加</button></div><p class="hint">查询结果需核对作者、年份和本人贡献；也可手动填写。</p></div><div id="paper-list"></div><button id="add-paper" type="button">＋ 手动添加论文</button></section>
+<section class="panel" id="profile-links"><div class="section-heading"><span>04</span><div><h2>学术链接</h2><p>可添加 ORCID、Google Scholar 或其他学术主页，最多5项。</p></div></div><div id="link-list"></div><button id="add-link" type="button">＋ 添加链接</button></section>
+</div></div><div class="savebar"><p id="save-state">草稿尚未修改</p><div><button id="preview-profile" type="button">预览主页</button><button id="save-draft" type="submit">保存草稿</button><button id="submit-profile" class="primary" type="button">提交审核</button></div></div>
+</form><section class="panel compact" id="member-status" aria-label="审核进度"></section>
+</div>
+<section id="review-view" hidden><div class="panel compact"><div class="section-top"><div><h2>内容审核</h2><p>审核通过后进入待发布版本；正式网站保持原版，直到发布检查成功。</p></div><button id="refresh-reviews" type="button">刷新</button></div><div class="publish-controls"><button class="primary" id="publish-site" type="button">发布已批准内容</button><button id="check-live" type="button">检查线上版本</button><a href="https://github.com/jojolee0731/tian-lab-site/actions/workflows/publish-members.yml" target="_blank" rel="noopener noreferrer">查看发布进度 ↗</a></div><p id="publish-state" role="status"></p></div><div id="review-list"></div></section>
+<section id="access-view" hidden><div class="panel"><h2>开通成员权限</h2><p>将登录邮箱绑定到成员。开通后，将工作台链接交给本人即可。</p><form id="access-form" class="access-form"><label for="access-email">登录邮箱</label><input id="access-email" type="email" required autocomplete="off"><label for="access-member">对应成员</label><select id="access-member" required></select><label for="access-role">权限</label><select id="access-role"><option value="member">成员：编辑本人</option><option value="admin">管理员：审核及发布</option></select><button class="primary" type="submit">开通权限</button></form><p class="hint">此操作登记访问权限，不向成员发送邮件。</p></div><div class="panel"><h2>已开通账号</h2><div id="access-list"></div></div></section>
+</section>
+<noscript><p class="notice error">成员工作台需要启用 JavaScript。公开网站仍可正常阅读。</p></noscript>
+</main>
+<dialog id="preview-dialog"><div class="dialog-head"><h2>个人主页预览</h2><button type="button" id="close-preview" aria-label="关闭预览">关闭</button></div><p class="preview-notice">仅您与审核管理员可查看此草稿。正式网站在审核、发布成功后更新。</p><article id="preview-content"></article></dialog>
+<footer>个人内容经审核后公开。登录与草稿不计入网站访问分析。</footer>
+</body></html>

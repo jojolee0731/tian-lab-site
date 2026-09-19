@@ -138,19 +138,9 @@ strong {
 .brand-mark {
   width:40px;
   height:40px;
-  display:grid;
-  place-items:center;
-  position:relative;
-  border:1px solid var(--ink);
-  font-family:Georgia,serif;
-  font-size:2.1rem;
-  font-weight:400
-}
-.brand-mark span {
-  position:absolute;
-  right:2px;
-  top:0;
-  font:14px Arial
+  display:block;
+  flex-shrink:0;
+  object-fit:contain
 }
 #site-nav {
   display:flex;
@@ -1157,8 +1147,7 @@ strong {
   }
   .brand-mark {
     width:34px;
-    height:34px;
-    font-size:1.8rem
+    height:34px
   }
   .brand small {
     font-size:.6rem;
