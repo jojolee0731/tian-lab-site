@@ -1,0 +1,94 @@
+name: Publish approved member profiles
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: approved-member-publication
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'jojolee0731/tian-lab-site' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the pinned image validator
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Test exporter and publication authorization
+        run: |
+          python -m unittest discover -s tests -p 'test_member_export.py'
+          node --test tests/*.test.mjs
+      - name: Fetch only administrator-approved snapshots
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/export_member_profiles.py --manifest "$RUNNER_TEMP/member-public-files.json"
+      - name: Build and validate all public pages
+        run: |
+          python scripts/build_site.py
+          npm run check
+      - name: Guard the approved public diff
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/member_publish_guard.py --manifest "$RUNNER_TEMP/member-public-files.json" --stage
+      - name: Create a public-only Pages artifact
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/member_publish_guard.py --package "$RUNNER_TEMP/member-public-site"
+      - name: Record the reviewed public snapshot
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if git diff --cached --quiet; then
+            echo "The approved public snapshot is already recorded."
+          else
+            git config user.name "Tian Lab publication bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Publish approved member profile snapshots"
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/member-public-site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the checked public artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
