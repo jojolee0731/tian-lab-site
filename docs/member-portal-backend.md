@@ -2,7 +2,11 @@
 
 Implemented by `supabase/migrations/202609190001_member_portal.sql`, `202609190002_signup_allowlist.sql`, and `202609190003_encoded_email_controls.sql`. This document describes actual SQL behavior and activation steps; SQL installation and verified Auth Hook activation are separate states.
 
-As of 2026-09-19, the public roster has 34 members and initial access is administrator-only, without bulk invitations. All 3 cloud migrations succeeded and the signup allowlist Hook is enabled. QQ SMTP plus Confirm Signup and Magic Link templates using `{{ .Token }}` are saved; the user has confirmed receiving/copying the email code. Local `members/config.json` is `enabled: true`. Administrator login completion, registration rejection and the full review/publication flow remain unverified. See the concise [member/admin guide](member-portal-guide.md).
+On 2026-09-19, the member workbench code was deployed with Pages `build_type: workflow`; the live portal configuration is `enabled: true`. The [first main push run 35452195446](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452195446) and [dedicated PAT dispatch run 35452251756](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452251756) both succeeded. The latter exported the real Supabase approved catalog, guarded and committed the public diff, and deployed Pages. Bot commit `ae2838b9d9f3efc681026d3feb3d5cbf8c0da273` only normalized the empty `data/member-profiles.json`; no real member content or images were published in that check.
+
+All 3 cloud migrations succeeded, the signup Hook is enabled, and QQ SMTP plus both `{{ .Token }}` templates are saved. The user confirmed receipt of the login code. Initial access is administrator-only, without bulk invitations. Real administrator OTP completion, the administrator-button-to-Edge path, registration rejection and real member save/upload/review workflows remain unverified. See the concise [member/admin guide](member-portal-guide.md).
+
+Deployment evidence: application commit `6089557`; workflow initialization commit `55a842fb69770a5046e8ade6a775c59c351e0279`. Live HTTP/browser checks confirmed member-35 as “高级实验师 · 药理学博士”, member-31 as “博士后”, the agreed four role categories for student/postdoc records, and successful Logo loading. Direct requests for the backend document and migration files returned 404, consistent with the Pages artifact allowlist.
 
 The dedicated single-repository GitHub Actions token is saved as the Supabase Edge Secret `GITHUB_PUBLISH_TOKEN`; GitHub Actions secrets contain `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. The GitHub token expires on **2027-09-19** and must be replaced in the Edge Secret before expiry. No credential value is recorded here.
 
@@ -60,9 +64,9 @@ If an enabled admin already exists, one-time bootstrap refuses to replace it. Su
 3. Configure Supabase Auth for email OTP sign-in and the exact allowed site/redirect URLs. QQ SMTP and both Token templates are saved, and the user confirmed receipt of the code; next verify successful administrator sign-in. Keep the SMTP authorization code in service configuration only. Only a confirmed Auth email matching the allowlist gains portal access. Signup availability is not equivalent to portal authorization. Start with the administrator, then explicitly open individual member access; do not bulk invite the roster.
 4. Put only the public project URL and anon/publishable key into `members/config.json`. Never put service-role keys or GitHub tokens there.
    For the publishing workflow, store `SUPABASE_URL` and the recommended modern `SUPABASE_SECRET_KEY` (`sb_secret_…`) in GitHub Actions secrets. The exporter sends a modern key in the `apikey` header; it is not a Bearer JWT. The legacy `SUPABASE_SERVICE_ROLE_KEY` remains a supported fallback using its JWT headers. Both elevated key types resolve to the database `service_role` role, so the SQL export permission is unchanged. The Edge function separately verifies the administrator's own Auth JWT using a publishable key before dispatching; an API key alone never grants a browser administrator access.
-5. Perform hosted checks with at least an invited member, an unrelated member and the confirmed administrator. Verify private Storage through the actual API, email sign-in/redirects, cross-member rejection, approval, export and dispatch. Do not label the portal activated until the browser/Auth/Storage round trip succeeds.
+5. Complete the remaining hosted user-flow checks with an invited member, an unrelated member and the administrator: OTP sign-in, the authenticated Edge publish button, real draft/image save and review, cross-member rejection, and publication of a real approved snapshot. Code deployment and direct PAT dispatch are already verified; they do not replace these user-session checks.
 
-For website publication, also deploy `supabase/functions/publish-site`, set its server-only `GITHUB_PUBLISH_TOKEN` (target repository Actions write), and configure GitHub Pages to use the checked Actions artifact. The function re-verifies the user JWT and live admin invitation; an `approved` database row or a `202 queued` response is not a deployment receipt. Confirm the workflow's deployment result and the public `data/member-profiles.json` version. A normal main-branch push follows static build/deploy without refreshing approved backend snapshots; use the authorized dispatch path for member content export.
+`supabase/functions/publish-site` is deployed, its server-only `GITHUB_PUBLISH_TOKEN` is set, and GitHub Pages uses the checked Actions artifact. Direct PAT dispatch succeeded; the real administrator-button-to-Edge call still needs verification. The function re-verifies the user JWT and live admin invitation; an `approved` database row or a `202 queued` response is not a deployment receipt. Confirm the workflow's deployment result and public profile version. A normal main-branch push follows static build/deploy without refreshing approved backend snapshots; use the authorized dispatch path for member content export.
 
 ## Reproducible real-PostgreSQL tests
 
@@ -74,14 +78,14 @@ The runner creates a temporary native PostgreSQL cluster, listens on a private U
 
 The 2026-09-19 combined run passed 159 assertions on native PostgreSQL16.15. Tests execute as real database roles, not a mocked JavaScript RLS layer. Covered behavior includes unauthorized/disabled/unverified sessions, account-bound edits, stale revisions, immutable submissions/reviews, unauthorized approval/export/table reads, own review feedback, path and field validation, private uploads, overwrite/delete resistance even in the presence of broad Storage policies, approval export versus newer private drafts, restore history/version increments, signup allowlist checks, encoded email controls, and removal of inactive members from export.
 
-This is an actual PostgreSQL RPC/privilege/RLS execution result. It is **not** a hosted Supabase Auth, Storage byte-validation, email-delivery or deployment integration test. Those remain activation checks.
+This is an actual PostgreSQL RPC/privilege/RLS execution result. It does **not** verify hosted user sessions, real member Storage uploads or the member review workflow. Separate cloud evidence confirms email receipt, code deployment and direct PAT dispatch; the remaining user-flow checks are listed above.
 
 ## Live read-only check and invitation-only signup gate
 
 On 2026-09-19, live REST requests using the privately stored project keys confirmed:
 
 - Anonymous `portal_self`, `list_submissions`, `list_member_access`, and `export_public_profiles` returned HTTP401 / SQLSTATE42501.
-- Anonymous attempts to read accounts/drafts through the default schema returned404 / PGRST205; choosing the private schema returned406 / PGRST106 (not exposed).
+- Anonymous attempts to read accounts/drafts through the default schema returned 404 / PGRST205; choosing the private schema returned406 / PGRST106 (not exposed).
 - The service-role approved export returned HTTP200 with exactly `{"schemaVersion":1,"profiles":{}}`.
 - Anonymous listing of the private bucket returned an empty array. With no test objects/users created, this is only a no-disclosure observation; live cross-member Storage access still needs an invited-user integration test.
 - Public Auth settings reported `disable_signup:false`, `mailer_autoconfirm:false`, and email authentication enabled. No signup, OTP, invitation, user-creation or mutation request was made.
@@ -102,7 +106,7 @@ The local suite includes all 3 migrations and runs without cloud access:
 python3 supabase/tests/run_local_sql.py
 ```
 
-After adding003, the combined suite passed 159 assertions on native PostgreSQL16.15: the original 80,13 hook assertions, and66 checks covering every encoded control byte in public-email and mailto fields. The runner applies all migrations and always runs the hook assertions (`--with-signup-hook` is retained as a compatibility flag). The unchanged 159-test result is reused after the main task's confirmed cloud deployment of003. These tests verify SQL behavior; separate observations confirm Hook activation and email receipt. Administrator OTP completion, registration rejection and member workflow checks remain outstanding.
+After adding003, the combined suite passed 159 assertions on native PostgreSQL16.15: the original 80, 13 hook assertions, and 66 checks covering every encoded control byte in public-email and mailto fields. The runner applies all migrations and always runs the hook assertions (`--with-signup-hook` is retained as a compatibility flag). The unchanged 159-test result is reused. Separate cloud observations confirm Hook activation, email receipt, code deployment and direct PAT dispatch. Administrator OTP completion, the authenticated Edge button, registration rejection and real member workflow checks remain outstanding.
 
 ## Official technical references
 
