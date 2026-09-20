@@ -96,6 +96,7 @@ class Site:
  def member(self,p,mini=False):
   name=p['name'] if self.lang=='zh' else p.get('nameEn',p['name'])
   s=self.img(p['image'],name)+f'<div><h3>{e(name)}</h3><p class="member-role">{self.tx(p["role"])}</p>'
+  if t(p.get('labNote'),self.lang):s+='<p class="member-role member-lab">'+self.tx(p['labNote'])+'</p>'
   if not mini:
    if t(p.get('focus'),self.lang):s+=f'<p class="member-focus">{self.tx(p["focus"])}</p>'
    s+='<details><summary>'+self.u('details')+'</summary><div class="member-details">'
@@ -121,6 +122,7 @@ class Site:
   h='<section class="section page-intro"><a class="profile-back" href="people.html#person-'+e(member_id)+'">← '+self.u('backpeople')+'</a><div class="profile-hero">'+self.img(avatar,name,'profile-portrait',True)+'<div class="profile-hero-copy"><p class="eyebrow">'+self.u('profile')+'</p><h1 lang="'+('zh-CN' if name==p['name'] and not name.isascii() else 'en')+'">'+e(name)+'</h1>'
   if self.lang!='zh' and name!=p['name']:h+='<p class="profile-native-name" lang="zh-CN">'+e(p['name'])+'</p>'
   h+='<p class="member-role">'+self.tx(role)+'</p>'
+  if t(p.get('labNote'),self.lang):h+='<p class="member-role member-lab">'+self.tx(p['labNote'])+'</p>'
   if t(p.get('focus'),self.lang):h+='<p>'+self.tx(p['focus'])+'</p>'
   h+='<dl class="profile-identity"><div><dt>'+self.u('affiliation')+'</dt><dd>'+self.tx(p['affiliation'])+'</dd></div>'
   if p.get('joined'):h+='<div><dt>'+self.u('joined')+'</dt><dd>'+e(p['joined'])+'</dd></div>'

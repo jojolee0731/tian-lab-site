@@ -429,7 +429,12 @@
       },
       "joined": "2026.03.16",
       "image": "./assets/images/people/33-li-qing.jpg",
-      "email": "li3222406658@163.com"
+      "email": "li3222406658@163.com",
+      "labNote": {
+        "en": "West China Xiamen · Nanoneuroscience Laboratory",
+        "zh": "厦门华西 · 纳米神经实验室",
+        "es": "Hospital de China Occidental de Xiamen · Laboratorio de Nanoneurociencia"
+      }
     },
     {
       "id": "member-13",
