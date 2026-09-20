@@ -31,6 +31,30 @@ def main():
             run(psql+['-f',migration],stdout=subprocess.DEVNULL)
         run(psql+['-f',root/'supabase/tests/permissions.sql'])
         run(psql+['-f',root/'supabase/tests/signup_hook.sql'])
+        run(psql+['-f',root/'supabase/tests/review_notifications.sql'])
+        # Two real database sessions race for one due notification. Keep each
+        # transaction open briefly so SKIP LOCKED is exercised, not just leases.
+        run(psql+['-c', """
+            insert into member_portal.registry(member_id,member)
+              values('member-notify-race','{"name":"Concurrent test member"}');
+            insert into member_portal.accounts(email,role)
+              values('xiangm_chen@foxmail.com','admin');
+            insert into member_portal.submissions(member_id,payload,revision,submitted_by)
+              values('member-notify-race','{}',1,'20000000-0000-0000-0000-000000000099');
+        """],stdout=subprocess.DEVNULL)
+        claim_sql="""begin; set role service_role;
+            select jsonb_array_length(public.claim_review_notifications(1));
+            select pg_sleep(1); commit;"""
+        workers=[subprocess.Popen([str(x) for x in psql+['-A','-t','-q','-c',claim_sql]],
+                                 env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+                 for _ in range(2)]
+        counts=[]
+        for worker in workers:
+            out,err=worker.communicate(timeout=10)
+            if worker.returncode:raise RuntimeError('Concurrent notification claim failed: '+err)
+            counts.append(int(out.strip()))
+        if sorted(counts)!=[0,1]:raise AssertionError(f'Concurrent workers claimed {counts}; expected one winner')
+        print('PASS: concurrent PostgreSQL workers claimed one notification exactly once.')
         print('PASS: isolated native PostgreSQL RPC/permission/RLS suite. Supabase hosted integration is not implied.')
     finally:
         if started:run([pg/'pg_ctl','-D',temp/'data','-m','immediate','-w','stop'],stdout=subprocess.DEVNULL)
