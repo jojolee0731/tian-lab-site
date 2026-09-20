@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-19",
+  "checked": "2026-09-20",
   "removedPeople": [
     {
       "id": "member-29",
@@ -19,6 +19,11 @@
       "id": "member-35",
       "name": "陶怡然",
       "reason": "User explicitly requested this member addition and placement in the technical team. The current title is 高级实验师, corrected after the user challenged the initial title and verified against the West China Hospital notice of 2026-08-31. The supplied PhD in Pharmacology, employment since 2019, lab entry in September 2026, research focus, affiliation, email and original portrait are preserved. No English name spelling was supplied."
+    },
+    {
+      "id": "member-36",
+      "name": "Akhil Venugopal",
+      "reason": "User requested adding this postdoctoral fellow on 2026-09-20 with info.docx, then explicitly preferred avenugopal18@outlook.com for contact and login. The document provides the original photo, research focus, West China Hospital nanomedicine affiliation and July 2026 joining date. Its author metadata identifies Akhil Venugopal, consistent with the original Gmail in the document. No Chinese name was invented."
     }
   ],
   "updatedPeople": [

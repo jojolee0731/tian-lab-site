@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-19",
+  "checked": "2026-09-20",
   "pi": {
     "name": "Xiaohe Tian, PhD",
     "image": "./assets/images/people/xiaohe-tian-pi.jpg",
@@ -922,6 +922,30 @@
       "joined": "2026.09",
       "image": "./assets/images/people/34-xing-yikai.jpg",
       "email": "yikai_xing@126.com"
+    },
+    {
+      "id": "member-36",
+      "name": "Akhil Venugopal",
+      "nameEn": "Akhil Venugopal",
+      "group": "postdoc",
+      "role": {
+        "en": "Postdoctoral Fellow",
+        "zh": "博士后",
+        "es": "Personal posdoctoral"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · Nanomedicine",
+        "zh": "四川大学华西医院 · 纳米医学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Nanomedicina"
+      },
+      "focus": {
+        "en": "Engineering Multivalent Polymeric Nanocarriers for Precision Nanomedicine",
+        "zh": "面向精准纳米医学的多价聚合物纳米载体工程",
+        "es": "Diseño de nanoportadores poliméricos multivalentes para la nanomedicina de precisión"
+      },
+      "joined": "2026.07",
+      "image": "./assets/images/people/36-akhil-venugopal.jpeg",
+      "email": "avenugopal18@outlook.com"
     }
   ]
 }
