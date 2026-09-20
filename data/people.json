@@ -381,6 +381,34 @@
       "nameEn": "Xiangmiao Chen"
     },
     {
+      "id": "member-35",
+      "name": "陶怡然",
+      "group": "staff",
+      "role": {
+        "en": "Senior Experimentalist · PhD in Pharmacology",
+        "zh": "高级实验师 · 药理学博士",
+        "es": "Técnica superior de laboratorio · Doctora en Farmacología"
+      },
+      "affiliation": {
+        "en": "West China Hospital, Sichuan University · West China–California Center for Predictive and Interventional Medicine",
+        "zh": "四川大学华西医院/华西-加州预测干预医学研究中心",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Centro de Medicina Predictiva e Intervencionista West China–California"
+      },
+      "focus": {
+        "en": "Preparation and pharmacological efficacy studies of antibodies and antibody–drug conjugates",
+        "zh": "抗体及抗体偶联药物制备与药效研究",
+        "es": "Preparación y evaluación de la eficacia farmacológica de anticuerpos y conjugados anticuerpo-fármaco"
+      },
+      "employment": {
+        "en": "2019–present",
+        "zh": "2019年至今",
+        "es": "2019–actualidad"
+      },
+      "joined": "2026.09",
+      "image": "./assets/images/people/35-member.jpg",
+      "email": "taoyr@scu.edu.cn"
+    },
+    {
       "id": "member-12",
       "name": "赵芮",
       "group": "staff",
@@ -889,34 +917,6 @@
       "joined": "2026.09",
       "image": "./assets/images/people/34-xing-yikai.jpg",
       "email": "yikai_xing@126.com"
-    },
-    {
-      "id": "member-35",
-      "name": "陶怡然",
-      "group": "staff",
-      "role": {
-        "en": "Senior Experimentalist · PhD in Pharmacology",
-        "zh": "高级实验师 · 药理学博士",
-        "es": "Técnica superior de laboratorio · Doctora en Farmacología"
-      },
-      "affiliation": {
-        "en": "West China Hospital, Sichuan University · West China–California Center for Predictive and Interventional Medicine",
-        "zh": "四川大学华西医院/华西-加州预测干预医学研究中心",
-        "es": "Hospital de China Occidental, Universidad de Sichuan · Centro de Medicina Predictiva e Intervencionista West China–California"
-      },
-      "focus": {
-        "en": "Preparation and pharmacological efficacy studies of antibodies and antibody–drug conjugates",
-        "zh": "抗体及抗体偶联药物制备与药效研究",
-        "es": "Preparación y evaluación de la eficacia farmacológica de anticuerpos y conjugados anticuerpo-fármaco"
-      },
-      "employment": {
-        "en": "2019–present",
-        "zh": "2019年至今",
-        "es": "2019–actualidad"
-      },
-      "joined": "2026.09",
-      "image": "./assets/images/people/35-member.jpg",
-      "email": "taoyr@scu.edu.cn"
     }
   ]
 }
