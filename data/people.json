@@ -665,29 +665,6 @@
       "nameEn": "Zhendong Xie"
     },
     {
-      "id": "member-23",
-      "name": "高健",
-      "group": "student",
-      "role": {
-        "en": "Master's student",
-        "zh": "硕士生",
-        "es": "Estudiante de máster"
-      },
-      "affiliation": {
-        "en": "Zunyi Medical University · Urology",
-        "zh": "遵义医科大学/泌尿外科学",
-        "es": "Universidad Médica de Zunyi · Urología"
-      },
-      "focus": {
-        "en": "Establishment of primary organoids",
-        "zh": "原代类器官构建",
-        "es": "Establecimiento de organoides primarios"
-      },
-      "joined": "2026.03",
-      "image": "./assets/images/people/22-member.jpg",
-      "email": "137785001@qq.com"
-    },
-    {
       "id": "member-24",
       "name": "胡磊",
       "group": "student",
@@ -894,6 +871,29 @@
       "image": "./assets/images/people/11-member.jpg",
       "email": "1984526447@qq.com",
       "nameEn": "Rui Zhao"
+    },
+    {
+      "id": "member-23",
+      "name": "高健",
+      "group": "staff",
+      "role": {
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
+      },
+      "affiliation": {
+        "en": "Zunyi Medical University · Urology",
+        "zh": "遵义医科大学/泌尿外科学",
+        "es": "Universidad Médica de Zunyi · Urología"
+      },
+      "focus": {
+        "en": "Establishment of primary organoids",
+        "zh": "原代类器官构建",
+        "es": "Establecimiento de organoides primarios"
+      },
+      "joined": "2026.03",
+      "image": "./assets/images/people/22-member.jpg",
+      "email": "137785001@qq.com"
     },
     {
       "id": "member-34",
