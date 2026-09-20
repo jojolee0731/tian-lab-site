@@ -10,7 +10,7 @@
 
 管理员实际点击发布按钮，经 Edge 触发的[发布任务35478645703](https://github.com/jojolee0731/tian-lab-site/actions/runs/35478645703)构建与部署均成功。当前获批个人内容仍为0条；后台已收到胡潘宜、陶怡然、赵芮3条真实待审提交。编辑、上传与跨成员隔离的逐步操作，审核及非空内容发布仍需继续核验；本地测试不替代这些云端流程。
 
-审核提醒的迁移004与 `review-notifications` worker 已部署，`REVIEW_SMTP_PASSWORD` 已保存；匿名请求和公开 key 请求均返回401，服务端 `mode: verify` 返回200 / `smtp_verified`。正式提交会进入异步提醒队列，固定通知陈香淼 `xiangm_chen@foxmail.com`，邮件只含姓名、提交时间和审核入口，不含资料正文。已启用每分钟检查，并将发信固定在通过验证的东京区域；网络失败会退避重试。真实队列已确认1封获SMTP接收、2封等待重试，后台会显示等待或失败状态。收件箱实际收信尚未核实，SMTP接收不等于收件人已读。
+审核提醒的迁移004与 `review-notifications` worker 已部署，`REVIEW_SMTP_PASSWORD` 已保存；匿名请求和公开 key 请求均返回401，服务端 `mode: verify` 返回200 / `smtp_verified`。正式提交会进入异步提醒队列，固定通知陈香淼 `xiangm_chen@foxmail.com`，邮件只含姓名、提交时间和审核入口，不含资料正文。已启用每分钟检查，并将发信固定在通过验证的东京区域；网络失败会退避重试。真实队列已验证SMTP接收及定时自动重试，后台会显示当前等待或失败状态。收件箱实际收信尚未核实，SMTP接收不等于收件人已读。
 
 历史部署记录（2026-09-19）：Pages 切换为 GitHub Actions（`build_type: workflow`），[首次 main push 部署](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452195446)和[专用 PAT 调度](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452251756)均成功；后者的bot提交 `ae2838b` 仅规范化空目录格式。3项云端迁移、邀请检查 Hook、QQ SMTP和两类验证码模板已配置，线上角色、Logo及 `enabled: true` 已核对。
 
