@@ -26,7 +26,7 @@ UI={
 'outcome':tri('What this adds','科学贡献','Qué aporta'), 'recent':tri('Recent publications','最近发表','Publicaciones recientes'), 'stories':tri('Research in focus','代表性研究','Investigación destacada'),
 'focus':tri('Research interests','研究兴趣','Intereses de investigación'), 'affiliation':tri('Affiliation','所在单位','Afiliación'), 'joined':tri('Joined Tian Lab','入组时间','Incorporación a Tian Lab'), 'details':tri('Profile & contact','资料与联系','Perfil y contacto'),
 'qualification':tri('Qualification','学位','Titulación'), 'employment':tri('Employment','在职经历','Trayectoria laboral'),
-'postdoc':tri('Postdoctoral researchers','博士后','Investigadores posdoctorales'), 'student':tri('Research students','研究生','Estudiantes de investigación'), 'staff':tri('Technical team','技术组','Equipo técnico'), 'admin':tri('Lab administration','课题组行政联系','Administración del laboratorio'),
+'clinical':tri('Clinical research members','临床研究成员','Miembros de investigación clínica'), 'postdoc':tri('Postdoctoral researchers','博士后','Investigadores posdoctorales'), 'student':tri('Research students','研究生','Estudiantes de investigación'), 'staff':tri('Technical team','技术组','Equipo técnico'), 'admin':tri('Lab administration','课题组行政联系','Administración del laboratorio'),
 'year':tri('Year','年份','Año'), 'topic':tri('Research theme','研究主题','Tema de investigación'), 'all':tri('All','全部','Todas'), 'reset':tri('Reset filters','重置筛选','Restablecer filtros'), 'results':tri('publications shown','篇论文','publicaciones visibles'), 'noresults':tri('No matching publications. Try another filter.','没有符合条件的论文，请调整筛选。','No hay resultados. Prueba otro filtro.'),
 'cover':tri('Journal cover illustration','期刊封面插画','Ilustración de portada'), 'covers':tri('Covers & visual stories','封面与视觉故事','Portadas e historias visuales'), 'issue':tri('View journal issue','查看期刊当期目录','Ver el número de la revista'), 'coverrecord':tri('View cover record','查看封面条目','Ver registro de portada'),
 'contact':tri('Contact Xiaohe Tian','联系田肖和老师','Contactar con Xiaohe Tian'), 'location':tri('Chengdu, China','中国 · 成都','Chengdu, China'), 'featured':tri('Selected work','代表作','Trabajo destacado'),
@@ -100,7 +100,8 @@ class Site:
   if not mini:
    if t(p.get('focus'),self.lang):s+=f'<p class="member-focus">{self.tx(p["focus"])}</p>'
    s+='<details><summary>'+self.u('details')+'</summary><div class="member-details">'
-   s+=f'<p>{self.tx(p["affiliation"])}</p><p>{self.u("joined")}: {e(p["joined"])}</p>'
+   s+=f'<p>{self.tx(p["affiliation"])}</p>'
+   if p.get('joined'):s+=f'<p>{self.u("joined")}: {e(p["joined"])}</p>'
    if p.get('qualification'):s+='<p>'+self.u('qualification')+': '+self.tx(p['qualification'])+'</p>'
    if p.get('employment'):s+='<p>'+self.u('employment')+': '+self.tx(p['employment'])+'</p>'
    if p.get('email'):s+=f'<a href="mailto:{e(p["email"])}">{e(p["email"])}</a>'
@@ -224,8 +225,8 @@ class Site:
  def people_page(self):
   pi=self.people['pi'];h='<section class="section page-intro">'+self.heading(self.u('people'),self.tx(tri('Researchers from different disciplines working together on brain barriers, molecular tools, and disease imaging.','不同学科背景的研究者，共同推进脑屏障、分子工具与疾病成像研究。','Investigadores de distintas disciplinas que trabajan juntos en barreras cerebrales, herramientas moleculares e imagen de la enfermedad.')))
   h+='<article class="pi-card" id="pi">'+self.img(pi['image'],pi.get('imageAlt',pi['name']))+'<div><p class="eyebrow">'+self.tx(tri('Principal investigator','课题组负责人','Investigador principal'))+'</p><h2>'+self.tx(tri('Xiaohe Tian, PhD','田肖和 博士','Xiaohe Tian, PhD'))+'</h2><p>'+self.tx(pi['role'])+'</p><p>'+self.tx(pi['bio'])+'</p><div class="link-list">'+''.join(f'<a href="{e(l["url"])}">{self.tx(l["label"])} ↗</a>' for l in pi['links'])+'</div><dl class="pi-facts">'+''.join('<div><dt>'+self.tx(f['label'])+'</dt><dd>'+self.tx(f['value'])+'</dd></div>' for f in pi.get('facts',[])[:2])+'</dl><details class="pi-credentials"><summary>'+self.tx(tri('Appointments & recognition','任职与人才计划','Cargos y reconocimientos'))+'</summary><p>'+self.tx(pi['facts'][2]['value'])+'</p></details>'+self.email()+'</div></article>'
-  h+='<nav class="section-nav" aria-label="'+self.tx(tri('Team groups','成员分类','Grupos del equipo'))+'">'+''.join(f'<a href="#{g}">{self.u(g)} <span>{sum(p["group"]==g for p in self.people["items"])}</span></a>' for g in ('postdoc','student','staff','admin'))+'</nav></section>'
-  for g in ('postdoc','student','staff'):
+  h+='<nav class="section-nav" aria-label="'+self.tx(tri('Team groups','成员分类','Grupos del equipo'))+'">'+''.join(f'<a href="#{g}">{self.u(g)} <span>{sum(p["group"]==g for p in self.people["items"])}</span></a>' for g in ('clinical','postdoc','student','staff','admin'))+'</nav></section>'
+  for g in ('clinical','postdoc','student','staff'):
    h+=f'<section class="section people-section" id="{g}"><h2>{self.u(g)}</h2><div class="people-grid">'+''.join(self.member(p) for p in self.people['items'] if p['group']==g)+'</div></section>'
   admin=self.contact.get('admin')
   if admin:

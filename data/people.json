@@ -87,9 +87,9 @@
           "es": "Cargos y reconocimientos"
         },
         "value": {
-          "en": "National-level young talent; Sichuan Tianfu Emei Young Talent; PhD supervisor; Associate Editor of iBrain",
-          "zh": "国家级青年人才；四川省天府峨眉青年人才；博士生导师；《iBrain》期刊副主编",
-          "es": "Programa nacional para jóvenes talentos; programa Tianfu Emei de Sichuan para jóvenes talentos; director de tesis doctorales; editor asociado de iBrain"
+          "en": "National-level young talent; Sichuan Tianfu Emei Young Talent; PhD supervisor; Director, Nanoneuroscience Laboratory, West China Xiamen Research Institute; Associate Editor of iBrain",
+          "zh": "国家级青年人才；四川省天府峨眉青年人才；博士生导师；华西厦门研究院—纳米神经实验室主任；《iBrain》期刊副主编",
+          "es": "Programa nacional para jóvenes talentos; programa Tianfu Emei de Sichuan para jóvenes talentos; director de tesis doctorales; director del Laboratorio de Nanoneurociencia del Instituto de Investigación de China Occidental en Xiamen; editor asociado de iBrain"
         }
       }
     ],
@@ -946,6 +946,34 @@
       "joined": "2026.07",
       "image": "./assets/images/people/36-akhil-venugopal.jpeg",
       "email": "avenugopal18@outlook.com"
+    },
+    {
+      "id": "member-37",
+      "name": "郭硕",
+      "nameEn": "Shuo Guo",
+      "group": "clinical",
+      "role": {
+        "en": "Attending Physician · Assistant Researcher",
+        "zh": "主治医师 · 助理研究员",
+        "es": "Médico adjunto · Investigador asistente"
+      },
+      "affiliation": {
+        "en": "Department of Laboratory Medicine, West China Hospital, Sichuan University",
+        "zh": "四川大学华西医院检验科",
+        "es": "Departamento de Medicina de Laboratorio, Hospital de China Occidental, Universidad de Sichuan"
+      },
+      "focus": {
+        "en": "Biomarker Research in Neurodegenerative Diseases",
+        "zh": "神经退行性疾病的生物标志物研究",
+        "es": "Investigación de biomarcadores en enfermedades neurodegenerativas"
+      },
+      "image": "./assets/images/people/37-shuo-guo.jpeg",
+      "email": "guoshuo@wchscu.cn",
+      "qualification": {
+        "en": "M.D.",
+        "zh": "M.D.",
+        "es": "M.D."
+      }
     }
   ]
 }
