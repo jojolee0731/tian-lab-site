@@ -409,28 +409,27 @@
       "email": "taoyr@scu.edu.cn"
     },
     {
-      "id": "member-12",
-      "name": "赵芮",
+      "id": "member-33",
+      "name": "李晴",
       "group": "staff",
       "role": {
-        "en": "Research Assistant",
-        "zh": "科研助理",
-        "es": "Asistente de investigación"
+        "en": "Technician",
+        "zh": "技术员",
+        "es": "Personal técnico"
       },
       "affiliation": {
-        "en": "West China Hospital, Sichuan University · Radiological Imaging",
-        "zh": "四川大学华西医院/放射影像学",
-        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen radiológica"
+        "en": "Research Institute, West China Hospital Xiamen, Sichuan University · Chemistry",
+        "zh": "四川大学厦门华西医院研究院/化学",
+        "es": "Instituto de Investigación, Hospital de China Occidental de Xiamen, Universidad de Sichuan · Química"
       },
       "focus": {
-        "en": "",
-        "zh": "",
-        "es": ""
+        "en": "Inorganic nanomaterials for cancer therapy",
+        "zh": "无机纳米材料在肿瘤治疗中的应用",
+        "es": "Nanomateriales inorgánicos para el tratamiento del cáncer"
       },
-      "joined": "2025.08",
-      "image": "./assets/images/people/11-member.jpg",
-      "email": "1984526447@qq.com",
-      "nameEn": "Rui Zhao"
+      "joined": "2026.03.16",
+      "image": "./assets/images/people/33-li-qing.jpg",
+      "email": "li3222406658@163.com"
     },
     {
       "id": "member-13",
@@ -873,27 +872,28 @@
       "email": "210718997@qq.com"
     },
     {
-      "id": "member-33",
-      "name": "李晴",
+      "id": "member-12",
+      "name": "赵芮",
       "group": "staff",
       "role": {
-        "en": "Technician",
-        "zh": "技术员",
-        "es": "Personal técnico"
+        "en": "Research Assistant",
+        "zh": "科研助理",
+        "es": "Asistente de investigación"
       },
       "affiliation": {
-        "en": "Research Institute, West China Hospital Xiamen, Sichuan University · Chemistry",
-        "zh": "四川大学厦门华西医院研究院/化学",
-        "es": "Instituto de Investigación, Hospital de China Occidental de Xiamen, Universidad de Sichuan · Química"
+        "en": "West China Hospital, Sichuan University · Radiological Imaging",
+        "zh": "四川大学华西医院/放射影像学",
+        "es": "Hospital de China Occidental, Universidad de Sichuan · Imagen radiológica"
       },
       "focus": {
-        "en": "Inorganic nanomaterials for cancer therapy",
-        "zh": "无机纳米材料在肿瘤治疗中的应用",
-        "es": "Nanomateriales inorgánicos para el tratamiento del cáncer"
+        "en": "",
+        "zh": "",
+        "es": ""
       },
-      "joined": "2026.03.16",
-      "image": "./assets/images/people/33-li-qing.jpg",
-      "email": "li3222406658@163.com"
+      "joined": "2025.08",
+      "image": "./assets/images/people/11-member.jpg",
+      "email": "1984526447@qq.com",
+      "nameEn": "Rui Zhao"
     },
     {
       "id": "member-34",
