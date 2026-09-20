@@ -1,4 +1,270 @@
 {
-  "profiles": {},
+  "profiles": {
+    "member-11": {
+      "content": {
+        "avatar_path": "",
+        "bio": "本科毕业于四川大学医学检验专业，现就职于四川大学华西医院放射影像研究所，担任技术员。主要负责课题组的行政管理及科研支持工作，涵盖科研项目从选题论证、申报书撰写到立项执行的全流程协调与组织。在项目申报方面积累了丰富的实操经验，已成功协助申报 CSC 国家留学基金项目、四川省科技厅海聚项目，并参与国家自然科学基金、国际合作项目、国家重大专项及天府峨眉计划等多个国家级及省部级项目的申报工作。",
+        "bio_en": "",
+        "education": "",
+        "education_en": "",
+        "interests": "主要关注科研项目的组织管理与申报策略，致力于优化课题组科研行政流程，提升科研团队协作效率。结合医学检验专业背景与放射影像研究平台，为影像医学领域的多学科交叉研究提供科研管理支持。",
+        "interests_en": "",
+        "links": [],
+        "papers": [],
+        "projects": [],
+        "public_email": "xiangm_chen@wchscu.edu.cn"
+      },
+      "publishedAt": "2026-09-20T12:56:39.054455+00:00",
+      "version": "1da6c8a3-3cb7-46af-91ca-f8b7973c3759"
+    },
+    "member-12": {
+      "content": {
+        "avatar_path": "",
+        "bio": "硕士期间负责川牛膝化学成分分离鉴定及药效探索，精通甾酮、皂苷、黄酮、酚苷等成分分离，并完成大鼠平滑肌舒张、抗炎及抗氧化实验。在科伦药业任药物分析研究员2年，负责液体仿制药主成分与杂质质检，夯实了分析功底。目前进组后，研究向交叉前沿拓展，参与线粒体探针成像、AD相关分子机制实验及纳米材料合成与表征。整体经历实现了从传统中药化学、药物分析向神经退行性疾病机制及纳米生物医学的逐步延伸。",
+        "bio_en": "",
+        "education": "成都中医药大学中药学硕士",
+        "education_en": "",
+        "interests": "聚焦于中药化学、药物分析及神经退行性疾病的材料及分子机制研究。",
+        "interests_en": "",
+        "links": [],
+        "papers": [
+          {
+            "authors": "Rui Zhao; Cheng Peng; Lei Li; Xin-Rui Li; Chun-Wang Meng; Juan Liu; Liang Xiong",
+            "context": "before_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1016/j.bse.2022.104489",
+            "journal": "Biochemical Systematics and Ecology",
+            "title": "A new arborinane-type triterpenoid glycoside and three known megastigmanes from the roots of Cyathula officinalis K.C.Kuan",
+            "year": "2022"
+          }
+        ],
+        "projects": [],
+        "public_email": "rui_zhao168@163.com"
+      },
+      "publishedAt": "2026-09-20T12:38:12.734623+00:00",
+      "version": "569c4c6a-edce-49b3-a3cd-a6aa861c6f70"
+    },
+    "member-15": {
+      "content": {
+        "avatar_path": "",
+        "bio": "胡潘宜（Panyi Hu），肝胆外科博士，现任职于四川大学华西医院放射影像研究所博士后/助理研究员。研究方向为小分子荧光探针对细胞器功能状态的可视化研究，以及纳米颗粒介导的靶向药物递送。近三年以第一作者在ACS Sens.、Sensors and Actuators B、ACS Appl Mater Interfaces等发表多篇SCI论文。对肝脏相关疾病及肝脑轴方向具有浓厚的研究兴趣。",
+        "bio_en": "",
+        "education": "2022.09–2025.06　安徽医科大学第一附属医院，肝胆外科，博士\n2019.09–2022.06　安徽医科大学第一附属医院，普通外科（肝胆外科方向），硕士\n2014.09–2019.06　安徽医科大学，临床医学，学士",
+        "education_en": "",
+        "interests": "小分子荧光探针与细胞器功能状态可视化\n纳米颗粒介导的靶向药物递送\n肝脏相关疾病及肝脑轴的机制与诊疗新策略",
+        "interests_en": "",
+        "links": [],
+        "papers": [
+          {
+            "authors": "Hu P., Guo S., Ren Y., Zhao R., Su L., Cheng J., Tian X.",
+            "context": "in_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1021/acssensors.6c01055",
+            "journal": "ACS Sensors",
+            "title": "A Polarity-Sensitive Lipid Droplet Probe Reveals Aβ Species-Dependent Lipid Droplet Remodeling in Microglia",
+            "year": "2026"
+          },
+          {
+            "authors": "Hu P., Su L., Liu J., Zhao R., Wang D., Cheng J., Tian X.",
+            "context": "in_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1016/j.snb.2026.140291",
+            "journal": "Sensors and Actuators B: Chemical",
+            "title": "A lipid droplet-targeted AIEgen probe reveals stage-dependent LRP1 spatial regulation and impaired amyloid-β uptake in NAFLD",
+            "year": "2026"
+          },
+          {
+            "authors": "Liping Su; Panyi Hu; Xinmei Luo; Haitao Ding; Rundong Zhang; Yeben Qian; Shiqian Qi; Xiaohe Tian; Wenwu Ling",
+            "context": "in_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1021/acsami.4c17607",
+            "journal": "ACS Applied Materials & Interfaces",
+            "title": "Development and Application of a BODIPY Carbazole Derivative Probe for Lysosomal Imaging: Insights into Lysosomal Dynamics and Dysfunction in Inflammation-Related Diseases",
+            "year": "2025"
+          },
+          {
+            "authors": "Panyi Hu; Liping Su; Yongchao Wang; Yongqiang Chen; Xiaohe Tian; Yeben Qian",
+            "context": "in_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1021/acsami.5c02796",
+            "journal": "ACS Applied Materials & Interfaces",
+            "title": "Targeting Liver Fibrosis with Nanoparticle Technology: The Dual-Drug Strategy for Hepatic Stellate Cell Activation Inhibition",
+            "year": "2025"
+          },
+          {
+            "authors": "Liping Su; Zhihui Feng; Shangke Liu; Panyi Hu; Haitao Ding; Ridong Huang; Shiqian Qi; Yeben Qian; Kaifeng Wu; Xiaohe Tian; Liulin Xiong",
+            "context": "in_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1016/j.cej.2025.167672",
+            "journal": "Chemical Engineering Journal",
+            "title": "Nanoscale-engineered fluorescent probe reveals impaired mitochondria-lysosome crosstalk in Alzheimer's disease",
+            "year": "2025"
+          }
+        ],
+        "projects": [
+          {
+            "approach": "表征 NAFLD 进展中肝脏脂滴–LRP1 空间重塑；\n评估肝脏 LRP1 功能障碍对外周 Aβ 清除的影响；\n利用肝细胞特异性 LRP1 敲低与恢复策略验证因果作用；\n评估恢复脂代谢或 LRP1 功能对肝–脑轴功能障碍的治疗挽救潜力。",
+            "approach_en": "",
+            "contribution": "申请人作为项目提出者和主要执行人，主要承担总体实验设计、技术路线制定以及相关实验开展，同时与 IBEC 合作团队对接，整合成像、代谢与神经退行性分析平台。",
+            "contribution_en": "",
+            "id": "484830e6-b7b0-491a-90ff-588c7b2365d9",
+            "image_caption": "设计合成的脂滴探针LD-TTP发现在NAFLD细胞模型中，aβ清除受体LRP1的阶段依赖性空间重编程及其与肝细胞aβ摄取的功能偶联。",
+            "image_caption_en": "",
+            "image_path": "assets/images/member-projects/member-15/2def10e1-1a6b-4559-b52e-1b4ceab483a4.png",
+            "image_source": "https://doi.org/10.1016/j.snb.2026.140291",
+            "progress": "本项目拟研究代谢相关脂肪性肝病（MASLD/NAFLD）中肝脏低密度脂蛋白受体相关蛋白 1（LRP1）的空间重塑及其对肝–脑轴和外周淀粉样β蛋白（Aβ）清除的影响。申请人前期发现，肝细胞脂滴–LRP1–Aβ 调控轴随脂肪变性进展呈阶段依赖性改变。本项目将在体内验证该现象，明确肝细胞 LRP1 功能障碍是否促进脑 Aβ 积累，并通过肝细胞特异性 LRP1 敲低和恢复实验验证因果，评估恢复脂代谢或 LRP1 功能的治疗潜力。研究拟在西班牙巴塞罗那 IBEC 开展 6–12 个月，依托其先进生物成像、代谢疾病和神经退行性模型平台，为代谢相关神经退行性疾病提供新靶点与干预思路。",
+            "progress_en": "",
+            "question": "NAFLD 进展中，肝细胞脂滴重塑与 LRP1 再分布之间存在怎样的空间关系？\n肝脏 LRP1 功能障碍是否损害外周 Aβ 清除，并进一步促进脑内 Aβ 积累？\n肝细胞 LRP1 是否在该过程中发挥因果作用？\n恢复脂代谢或 LRP1 功能，能否挽救肝–脑轴功能障碍？",
+            "question_en": "",
+            "title": "代谢相关脂肪性肝病中肝脏 LRP1 的空间重塑对肝–脑轴功能障碍的系统性研究",
+            "title_en": ""
+          }
+        ],
+        "public_email": "hupanyi@wchscu.cn"
+      },
+      "publishedAt": "2026-09-20T12:38:25.461498+00:00",
+      "version": "137634a2-0655-424f-8142-141048a061b4"
+    },
+    "member-33": {
+      "content": {
+        "avatar_path": "",
+        "bio": "李晴，女，吉林大学化学专业硕士，主要研究方向为功能纳米材料的设计制备及其在神经疾病诊断与治疗中的应用。曾从事疫苗及蛋白药物制剂的处方筛选、工艺开发、中试研究和工艺放大工作，熟悉理化性质检测、细胞与分子生物学实验、病理样本前处理及蛋白分析等技术，并具备实验室设备管理、SOP 编写和团队协作经验。",
+        "bio_en": "",
+        "education": "1. 2015.09‑2019.06 吉林师范大学 本科 化学专业。\n2. 2019.09‑2022.06 吉林大学 硕士 无机化学专业。\n3.2022.07‑2024.06 厦门万泰沧海生物科技有限公司 新产品开发部门 助理工程师。\n4. 2024.07‑2026.03 厦门特宝生物工程股份有限公司 研发中心 技术员。\n5. 2026.03-至今 四川大学厦门华西医院研究院 纳米神经实验室 技术员。",
+        "education_en": "",
+        "interests": "1、功能纳米材料的设计制备及其在神经疾病诊断与治疗中的应用，重点关注纳米药物递送系统、神经损伤修复及联合治疗策略；\n2、疫苗及蛋白药物的处方筛选、工艺开发、稳定性研究和工艺放大，并关注生物药物的理化性质表征与分析方法开发。",
+        "interests_en": "",
+        "links": [],
+        "papers": [
+          {
+            "authors": "Qing Li; Rui Su; Xin Bao; Kunxia Cao; Yangyang Du; Nanya Wang; Jianfeng Wang; Fan Xing; Fei Yan; Keke Huang; Shouhua Feng",
+            "context": "before_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1016/j.actbio.2022.03.030",
+            "journal": "Acta Biomaterialia",
+            "title": "Glycyrrhetinic acid nanoparticles combined with ferrotherapy for improved cancer immunotherapy",
+            "year": "2022"
+          }
+        ],
+        "projects": [
+          {
+            "approach": "采用“需求调研—技术论证—设备选型—采购实施—安装验收—运行管理”的路径开展平台建设。通过使用需求汇总及设备性能比对，明确设备功能定位和技术指标；结合预算、应用场景及后期维护需求进行设备调研，并通过安装调试、性能测试和验收确认设备运行状态，最终形成 SOP、操作规范和管理制度。",
+            "approach_en": "",
+            "contribution": "主要负责平台设备需求调研与技术参数论证，结合公共平台及纳米神经实验室的科研方向和使用需求，协助梳理设备功能定位及关键技术指标；参与设备调研采购、到货验收、安装调试及性能确认等工作，保障采购设备符合科研使用和平台建设要求。",
+            "contribution_en": "",
+            "id": "d91d8dec-f2ba-49d3-9a9c-5c251e18112e",
+            "image_caption": "",
+            "image_caption_en": "",
+            "image_path": "",
+            "image_source": "",
+            "progress": "目前已完成2026年公共平台及纳米神经实验室拟采购设备的需求梳理，形成设备配置清单，并完成设备分包及采购方案梳理；正在推进设备调研、技术论证等后续工作。设备到货后，将有序开展安装调试、性能验收、SOP 编制及试运行管理，保障设备尽快投入使用。",
+            "progress_en": "",
+            "question": "围绕华西厦门研究院公共平台及纳米神经实验室的建设需求，重点解决平台设备配置与科研方向匹配度不足、检测和实验能力不完整、以及设备验收和后续运行等问题，为纳米神经实验室及公共技术服务提供设备和平台支撑。",
+            "question_en": "",
+            "title": "华西厦门研究院公共平台及纳米神经实验室2026年设备采购与平台建设",
+            "title_en": ""
+          }
+        ],
+        "public_email": ""
+      },
+      "publishedAt": "2026-09-20T12:37:29.897033+00:00",
+      "version": "5dce2281-b0bb-4309-8721-d332abf68938"
+    },
+    "member-35": {
+      "content": {
+        "avatar_path": "",
+        "bio": "长期从事肿瘤靶向治疗、抗体发现与抗体偶联药物研究，具有从靶点验证、杂交瘤抗体筛选、蛋白表达纯化与偶联优化到细胞和动物模型药效评价的系统经验。关注抗体发现、抗体工程、抗体偶联药物的设计、构建、药效评价及相关转化研究。",
+        "bio_en": "",
+        "education": "2014至2019：四川大学生物治疗国家重点实验室与肿瘤中心，药理学博士。博士论文：Targeting DDR1 with Antibody-Drug Conjugates Reveals a Novel Strategy for Colon Carcinoma Therapy。导师：Jinliang Yang 教授。\n2010至2014：四川大学华西药学院，药学学士。学位论文：槲皮素脂质纳米粒的制备（Preparation of quercetin lipid nanoparticles）。",
+        "education_en": "",
+        "interests": "抗体，抗体偶联药物，靶向治疗",
+        "interests_en": "",
+        "links": [
+          {
+            "label": "ORCID",
+            "url": "https://orcid.org/0000-0002-8894-5943"
+          }
+        ],
+        "papers": [
+          {
+            "authors": "Yiran Tao; Ruixue Wang; Qinhuai Lai; Mengdan Wu; Yuxi Wang; Xiaohua Jiang; Lishi Zeng; Shijie Zhou; Zhongping Li; Tinghan Yang; Yuqin Yao; Yangping Wu; Lin Yu; Yuyin Fu; Weirong Lai; Yujia Peng; Ying Lu; Zhixiong Zhang; Cuiyu Guo; Guangbing Zhang; Lantu Gou; Jinliang Yang",
+            "context": "before_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1002/1878-0261.12520",
+            "journal": "Molecular Oncology",
+            "title": "Targeting of DDR1 with antibody‐drug conjugates has antitumor effects in a mouse model of colon carcinoma",
+            "year": "2019"
+          },
+          {
+            "authors": "Yiran Tao; Ying Lu; Bin Yu; Yuxi Wang",
+            "context": "before_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1016/j.tips.2025.04.002",
+            "journal": "Trends in Pharmacological Sciences",
+            "title": "Molecular glue meets antibody: next-generation antibody–drug conjugates",
+            "year": "2025"
+          },
+          {
+            "authors": "Yiran Tao; Ying Lu; Ting Xue; Qinhuai Lai; Hengrui Song; Xiaofeng Chen; Cuiyu Guo; Jinliang Yang; Yuxi Wang",
+            "context": "before_lab",
+            "contribution": "",
+            "contribution_en": "",
+            "doi": "10.1080/1061186x.2024.2386621",
+            "journal": "Journal of Drug Targeting",
+            "title": "Antibody-drug conjugates targeting DDR1 as a novel strategy for treatment of breast cancer",
+            "year": "2024"
+          }
+        ],
+        "projects": [
+          {
+            "approach": "构建表达三聚体形式IgBD-tri，利用其对IgG类抗体出色的结合能力及可修饰的巯基，快速实现偶联抗体和小分子药物。",
+            "approach_en": "",
+            "contribution": "本人负责研究方案设计与项目组织，IgBD-tri偶联体系的构建以及体外和体内评价。",
+            "contribution_en": "",
+            "id": "8c38e6df-4a24-4169-9262-5bad9fa9685c",
+            "image_caption": "",
+            "image_caption_en": "",
+            "image_path": "",
+            "image_source": "",
+            "progress": "A Versatile Platform to Generate Prodrugs with Rapid and Precise Albumin Hitchhiking and High Cargo Loading for Tumor-Targeted Chemotherapy. Small 2024, 20, 2304253. https://doi.org/10.1002/smll.202304253",
+            "progress_en": "",
+            "question": "利用 IgG 结合结构域（IgG binding domin，IgBD）对 IgG 的高亲和结合特性，探索具有通用性的抗体药物偶联物构建策略。",
+            "question_en": "",
+            "title": "基于 IgG 结合结构域的通用型抗体药物偶联物制备方法",
+            "title_en": ""
+          },
+          {
+            "approach": "围绕 DDR1 的肿瘤治疗价值，开展靶点验证、杂交瘤抗体筛选、候选抗体优化、药物偶联以及结直肠癌和乳腺癌模型中的抗肿瘤活性评价。",
+            "approach_en": "",
+            "contribution": "本人主导完成 8000 余株候选杂交瘤抗体的发现与筛选，推进先导抗体进入抗体偶联药物（Antibody-drug conjugate，ADC）构建和体内外药效评价，并参与相关论文与专利工作。",
+            "contribution_en": "",
+            "id": "6c289c25-70fa-4c05-83c3-785ded7b153d",
+            "image_caption": "DDR1 靶向抗体药物偶联物的结构，DAR和细胞结合及内化特性。",
+            "image_caption_en": "",
+            "image_path": "assets/images/member-projects/member-35/8303295b-6a6a-488f-940c-c01e8714565a.png",
+            "image_source": "https://doi.org/10.1002/1878-0261.12520",
+            "progress": "第一作者；博士阶段成果，完成 DDR1 靶向抗体药物偶联物在结直肠癌模型中的评价。Tao Y, Wang R, Lai Q, et al. Targeting of DDR1 with antibody-drug conjugates has antitumor effects in a mouse model of colon carcinoma. Molecular Oncology. 2019;13:1855-1873.DOI：https://doi.org/10.1002/1878-0261.12520。第一作者；研究 DDR1 靶向抗体药物偶联物在乳腺癌治疗中的应用。Tao Y, Lu Y, Xue T, Lai Q, Wang Y. Antibody-drug conjugates targeting DDR1 as a novel strategy for treatment of breast cancer. Journal of Drug Targeting. 2024;32(10):1295-1304.DOI：https://doi.org/10.1080/1061186X.2024.2386621",
+            "progress_en": "",
+            "question": "探索靶向 DDR1 能否作为抗体偶联药物的新靶点，用于抗肿瘤治疗。",
+            "question_en": "",
+            "title": "DDR1 靶向抗体药物偶联物的发现与抗肿瘤评价",
+            "title_en": ""
+          }
+        ],
+        "public_email": "taoyr@scu.edu.cn"
+      },
+      "publishedAt": "2026-09-20T12:38:17.92075+00:00",
+      "version": "25ebd03c-3ed8-4e88-b956-51e8523cf54d"
+    }
+  },
   "schemaVersion": 1
 }
