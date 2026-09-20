@@ -6,11 +6,13 @@
 
 ## 版本与线上入口
 
-2026-09-19，成员工作台代码已部署到线上，Pages 已切换为 GitHub Actions（`build_type: workflow`）。代码提交为 `6089557`，工作流初始化提交为 `55a842fb69770a5046e8ade6a775c59c351e0279`；[首次 main push 部署](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452195446)和[专用 PAT 调度发布](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452251756)均成功。后者完成真实 Supabase 获批导出、公开差异自动提交及 Pages 部署（bot提交 `ae2838b`，仅规范化空目录格式）。线上已核对成员角色、Logo加载与 `members/config.json` 的 `enabled: true`；当前获批个人内容仍为0条。
+截至2026-09-20，真实管理员已完成登录，并通过正式网站管理员界面为34位现有成员开通权限；重新加载后已核对每人的邮箱与本人ID对应，34位成员均可编辑本人主页，其中33位为 `member`，1位按用户明确授权兼任 `admin`。原独立管理员保留，共2位管理员、35条访问记录；角色变更后已重新加载核对。此次开通未创建 Auth 用户、未发送邀请邮件；成员可使用已登记邮箱自行请求验证码登录。
 
-3 项云端迁移、邀请检查 Hook、QQ SMTP和两类验证码模板已配置，用户已确认收信。初始访问范围仅管理员，普通成员未批量邀请；真实管理员 OTP 登录、工作台管理员按钮经 Edge 发起发布，以及真实成员保存、上传和审核流程仍待云端验证。
+管理员实际点击发布按钮，经 Edge 触发的[发布任务35478645703](https://github.com/jojolee0731/tian-lab-site/actions/runs/35478645703)构建与部署均成功。当前获批个人内容仍为0条；真实成员首次登录、草稿、上传、提交、审核及非空内容发布仍待实际使用验证，本地测试结果不替代这些云端流程。
 
-单仓库 Actions 发布令牌已保存到 Supabase Edge Secret，GitHub Actions 的 Supabase URL/secret 也已保存。专用 GitHub 令牌于 **2027-09-19** 到期，届时需更换并更新 Edge Secret。PAT 调度已验证，不能据此代替真实用户会话及成员内容全流程验证。
+历史部署记录（2026-09-19）：Pages 切换为 GitHub Actions（`build_type: workflow`），[首次 main push 部署](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452195446)和[专用 PAT 调度](https://github.com/jojolee0731/tian-lab-site/actions/runs/35452251756)均成功；后者的bot提交 `ae2838b` 仅规范化空目录格式。3项云端迁移、邀请检查 Hook、QQ SMTP和两类验证码模板已配置，线上角色、Logo及 `enabled: true` 已核对。
+
+单仓库 Actions 发布令牌已保存到 Supabase Edge Secret，GitHub Actions 的 Supabase URL/secret 也已保存。专用 GitHub 令牌于 **2027-09-19** 到期，届时需更换并更新 Edge Secret。直接 PAT 调度与真实管理员按钮调度均已验证，真实成员内容全流程仍待验证。
 
 现有线上地址：[Tian Lab](https://jojolee0731.github.io/tian-lab-site/)。
 
@@ -96,7 +98,7 @@ node --test tests/*.test.mjs
 
 ## 发布范围
 
-GitHub Pages 的构建来源已设置为 GitHub Actions。`.github/workflows/publish-members.yml` 的两条路径均已成功运行：普通 `main` push 构建、检查并部署当前静态内容；专用 PAT 授权的 `workflow_dispatch` 从 Supabase 拉取获批快照，再构建、检查、限定公开文件提交和部署。本次获批目录为空，未验证真实成员图片与内容的发布；管理员工作台按钮的用户会话与 Edge 链路也仍待验证。具体 secrets 配置见后端说明，密钥不进入公开配置。
+GitHub Pages 的构建来源已设置为 GitHub Actions。`.github/workflows/publish-members.yml` 的普通 `main` push 与 `workflow_dispatch` 均已成功运行；2026-09-20又完成了真实管理员按钮经 Edge 调度的构建与部署。当前获批目录为空，真实成员图片与非空内容发布仍待验证。具体 secrets 配置见后端说明，密钥不进入公开配置。
 
 保存草稿、提交审核、批准和上线是不同步骤。后台“已批准”只选定待公开版本；“发布任务已启动”只表示请求进入工作流。部署完成后须核对公开 JSON 的提交版本 ID 与实际个人页，不能将批准、推送或请求成功直接视为上线完成。检查失败时不部署，后台获批记录保留。
 
