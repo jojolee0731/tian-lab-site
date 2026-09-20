@@ -95,7 +95,9 @@ class Site:
   return f'<article class="paper-row" id="paper-{p["id"]}" data-year="{p["year"]}" data-topics="{e(topics)}"><div class="paper-meta">{journal}</div><div><h3 lang="en">{e(p["title"])}</h3>{details}</div></article>'
  def member(self,p,mini=False):
   name=p['name'] if self.lang=='zh' else p.get('nameEn',p['name'])
-  s=self.img(p['image'],name)+f'<div><h3>{e(name)}</h3><p class="member-role">{self.tx(p["role"])}</p>'
+  portrait=self.img(p['image'],name)
+  if p['id']=='pi':portrait='<div class="pi-portrait">'+portrait+'</div>'
+  s=portrait+f'<div><h3>{e(name)}</h3><p class="member-role">{self.tx(p["role"])}</p>'
   if t(p.get('labNote'),self.lang):s+='<p class="member-role member-lab">'+self.tx(p['labNote'])+'</p>'
   if not mini:
    if t(p.get('focus'),self.lang):s+=f'<p class="member-focus">{self.tx(p["focus"])}</p>'
@@ -224,7 +226,7 @@ class Site:
   return h+'</div></section>'
  def people_page(self):
   pi=self.people['pi'];h='<section class="section page-intro">'+self.heading(self.u('people'),self.tx(tri('Researchers from different disciplines working together on brain barriers, molecular tools, and disease imaging.','不同学科背景的研究者，共同推进脑屏障、分子工具与疾病成像研究。','Investigadores de distintas disciplinas que trabajan juntos en barreras cerebrales, herramientas moleculares e imagen de la enfermedad.')))
-  h+='<article class="pi-card" id="pi">'+self.img(pi['image'],pi.get('imageAlt',pi['name']))+'<div><p class="eyebrow">'+self.tx(tri('Principal investigator','课题组负责人','Investigador principal'))+'</p><h2>'+self.tx(tri('Xiaohe Tian, PhD','田肖和 博士','Xiaohe Tian, PhD'))+'</h2><p>'+self.tx(pi['role'])+'</p><p>'+self.tx(pi['bio'])+'</p><div class="link-list">'+''.join(f'<a href="{e(l["url"])}">{self.tx(l["label"])} ↗</a>' for l in pi['links'])+'</div><dl class="pi-facts">'+''.join('<div><dt>'+self.tx(f['label'])+'</dt><dd>'+self.tx(f['value'])+'</dd></div>' for f in pi.get('facts',[])[:2])+'</dl><details class="pi-credentials"><summary>'+self.tx(tri('Appointments & recognition','任职与人才计划','Cargos y reconocimientos'))+'</summary><p>'+self.tx(pi['facts'][2]['value'])+'</p></details>'+self.email()+'</div></article>'
+  h+='<article class="pi-card" id="pi"><div class="pi-portrait">'+self.img(pi['image'],pi.get('imageAlt',pi['name']))+'</div><div><p class="eyebrow">'+self.tx(tri('Principal investigator','课题组负责人','Investigador principal'))+'</p><h2>'+self.tx(tri('Xiaohe Tian, PhD','田肖和 博士','Xiaohe Tian, PhD'))+'</h2><p>'+self.tx(pi['role'])+'</p><p>'+self.tx(pi['bio'])+'</p><div class="link-list">'+''.join(f'<a href="{e(l["url"])}">{self.tx(l["label"])} ↗</a>' for l in pi['links'])+'</div><dl class="pi-facts">'+''.join('<div><dt>'+self.tx(f['label'])+'</dt><dd>'+self.tx(f['value'])+'</dd></div>' for f in pi.get('facts',[])[:2])+'</dl><details class="pi-credentials"><summary>'+self.tx(tri('Appointments & recognition','任职与人才计划','Cargos y reconocimientos'))+'</summary><p>'+self.tx(pi['facts'][2]['value'])+'</p></details>'+self.email()+'</div></article>'
   h+='<nav class="section-nav" aria-label="'+self.tx(tri('Team groups','成员分类','Grupos del equipo'))+'">'+''.join(f'<a href="#{g}">{self.u(g)} <span>{sum(p["group"]==g for p in self.people["items"])}</span></a>' for g in ('clinical','postdoc','student','staff','admin'))+'</nav></section>'
   for g in ('clinical','postdoc','student','staff'):
    h+=f'<section class="section people-section" id="{g}"><h2>{self.u(g)}</h2><div class="people-grid">'+''.join(self.member(p) for p in self.people['items'] if p['group']==g)+'</div></section>'
