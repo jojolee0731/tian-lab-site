@@ -81,8 +81,12 @@ def stage_public_changes(root, manifest):
 
 def validate_public_config(path):
     data = json.loads(path.read_text())
-    if not isinstance(data, dict) or set(data) != {'supabaseUrl', 'supabaseAnonKey', 'enabled'} or not isinstance(data['enabled'], bool):
-        raise ValueError('Portal configuration may contain only the three public configuration fields')
+    required = {'supabaseUrl', 'supabaseAnonKey', 'enabled'}
+    allowed = required | {'reviewNotificationsEnabled'}
+    if not isinstance(data, dict) or not required <= set(data) <= allowed or not isinstance(data['enabled'], bool):
+        raise ValueError('Portal configuration may contain only the approved public configuration fields')
+    if 'reviewNotificationsEnabled' in data and not isinstance(data['reviewNotificationsEnabled'], bool):
+        raise ValueError('The review notification flag must be a boolean')
     url, key = data['supabaseUrl'], data['supabaseAnonKey']
     if not isinstance(url, str) or not isinstance(key, str):
         raise ValueError('Portal URL and public key must be strings')

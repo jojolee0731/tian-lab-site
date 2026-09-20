@@ -156,6 +156,12 @@ class ExportTests(unittest.TestCase):
         config('sb_publishable_example', serviceKey='private')
         with self.assertRaises(ValueError): guard.validate_public_config(path)
         config('sb_publishable_example'); guard.validate_public_config(path)
+        for flag in (True, False):
+            config('sb_publishable_example', reviewNotificationsEnabled=flag)
+            guard.validate_public_config(path)
+        for flag in ('true', 1, None, {'password': 'private'}):
+            config('sb_publishable_example', reviewNotificationsEnabled=flag)
+            with self.assertRaises(ValueError): guard.validate_public_config(path)
 
     def test_exact_person_and_publication_decisions_preserve_everything_else(self):
         baseline = {'people': [{'name': 'Original member'}], 'publications': [{'doi': '10.1000/original'}]}
