@@ -118,6 +118,7 @@ def package_public_site(root, destination):
         raise ValueError('Pages artifact must be a new directory outside the repository')
     files = rendered_paths(root) | {
         'styles.css', 'script.js', 'member-profile.css', 'sitemap.xml', 'robots.txt',
+        'journal-desk/index.html',
         'assets/favicon.svg', 'assets/logo-mark.svg',
         'data/people.json', 'data/contact.json', 'data/publications.json', 'data/member-profiles.json',
         'members/index.html', 'members/app.js', 'members/model.mjs',
